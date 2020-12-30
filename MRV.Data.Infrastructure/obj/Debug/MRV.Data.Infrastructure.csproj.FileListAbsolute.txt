@@ -1,0 +1,8 @@
+D:\Projects\MRV\NBI.Data.Infrastructure\bin\Debug\MRV.Data.Infrastructure.dll
+D:\Projects\MRV\NBI.Data.Infrastructure\bin\Debug\MRV.Data.Infrastructure.pdb
+D:\Projects\MRV\NBI.Data.Infrastructure\obj\Debug\MRV.Data.Infrastructure.dll
+D:\Projects\MRV\NBI.Data.Infrastructure\obj\Debug\MRV.Data.Infrastructure.pdb
+D:\Projects\MRV\MRV.Data.Infrastructure\bin\Debug\MRV.Data.Infrastructure.dll
+D:\Projects\MRV\MRV.Data.Infrastructure\bin\Debug\MRV.Data.Infrastructure.pdb
+D:\Projects\MRV\MRV.Data.Infrastructure\obj\Debug\MRV.Data.Infrastructure.dll
+D:\Projects\MRV\MRV.Data.Infrastructure\obj\Debug\MRV.Data.Infrastructure.pdb

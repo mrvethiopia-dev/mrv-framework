@@ -1,0 +1,72 @@
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.pdb
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.pdb
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.csprojResolveAssemblyReference.cache
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.csprojResolveAssemblyReference.cache
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.csprojResolveAssemblyReference.cache
+E:\Cyber Works\Projects\LIFT\App\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.csprojResolveAssemblyReference.cache
+D:\BProjects\Cyber\LIFT\App\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.csprojResolveAssemblyReference.cache
+D:\BProjects\Cyber\Core Finance\App\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.csprojResolveAssemblyReference.cache
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.pdb
+D:\Projects\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.dll
+D:\Projects\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.pdb
+D:\Projects\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.dll
+D:\Projects\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.dll
+D:\Projects\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\Projects\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.pdb
+D:\Projects\Core Finance\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.csprojResolveAssemblyReference.cache
+D:\Projects\Core Finance\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.dll
+D:\Projects\Core Finance\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Business.Tsa.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Business.Tsa\bin\Debug\NBI.Data.Model.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.csprojResolveAssemblyReference.cache
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Business.Tsa\obj\Debug\NBI.Business.Tsa.pdb

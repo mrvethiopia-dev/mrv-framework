@@ -1,0 +1,10 @@
+D:\Projects\Core Finance\NBI.Data.Infrastructure\bin\Release\NBI.Data.Infrastructure.dll
+D:\Projects\Core Finance\NBI.Data.Infrastructure\bin\Release\NBI.Data.Infrastructure.pdb
+D:\Projects\Core Finance\NBI.Data.Infrastructure\obj\Release\NBI.Data.Infrastructure.dll
+D:\Projects\Core Finance\NBI.Data.Infrastructure\obj\Release\NBI.Data.Infrastructure.pdb
+D:\Projects\Core Finance\NBI.Data.Infrastructure\obj\Release\NBI.Data.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Infrastructure\bin\Release\NBI.Data.Infrastructure.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Infrastructure\bin\Release\NBI.Data.Infrastructure.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Infrastructure\obj\Release\NBI.Data.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Infrastructure\obj\Release\NBI.Data.Infrastructure.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Infrastructure\obj\Release\NBI.Data.Infrastructure.pdb

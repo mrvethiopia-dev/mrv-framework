@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ENTRO_MISModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ENTRO_MISEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GHGDataEntryDetail" EntityType="ENTRO_MISModel.GHGDataEntryDetail" />
+    <EntitySet Name="GHGDataEntryHeader" EntityType="ENTRO_MISModel.GHGDataEntryHeader" />
+    <EntitySet Name="GHGDataTypes" EntityType="ENTRO_MISModel.GHGDataTypes" />
+    <EntitySet Name="GHGInventoryYear" EntityType="ENTRO_MISModel.GHGInventoryYear" />
+    <EntitySet Name="GHGLocations" EntityType="ENTRO_MISModel.GHGLocations" />
+    <EntitySet Name="GHGParameters" EntityType="ENTRO_MISModel.GHGParameters" />
+    <EntitySet Name="GHGSectors" EntityType="ENTRO_MISModel.GHGSectors" />
+    <EntitySet Name="GHGTypes" EntityType="ENTRO_MISModel.GHGTypes" />
+    <EntitySet Name="GHGUnits" EntityType="ENTRO_MISModel.GHGUnits" />
+    <EntitySet Name="sysdiagrams" EntityType="ENTRO_MISModel.sysdiagrams" />
+    <EntitySet Name="sysMenus" EntityType="ENTRO_MISModel.sysMenus" />
+    <EntitySet Name="sysRole" EntityType="ENTRO_MISModel.sysRole" />
+    <EntitySet Name="sysRolePermission" EntityType="ENTRO_MISModel.sysRolePermission" />
+    <EntitySet Name="sysSubMenu" EntityType="ENTRO_MISModel.sysSubMenu" />
+    <EntitySet Name="sysSystems" EntityType="ENTRO_MISModel.sysSystems" />
+    <EntitySet Name="sysUser" EntityType="ENTRO_MISModel.sysUser" />
+    <EntitySet Name="sysUserRole" EntityType="ENTRO_MISModel.sysUserRole" />
+    <EntitySet Name="sysUserSystems" EntityType="ENTRO_MISModel.sysUserSystems" />
+    <AssociationSet Name="FK_GHGDataEntryDetail_GHGDataEntryDetail" Association="ENTRO_MISModel.FK_GHGDataEntryDetail_GHGDataEntryDetail">
+      <End Role="GHGDataEntryHeader" EntitySet="GHGDataEntryHeader" />
+      <End Role="GHGDataEntryDetail" EntitySet="GHGDataEntryDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGDataEntryDetail_GHGParameters" Association="ENTRO_MISModel.FK_GHGDataEntryDetail_GHGParameters">
+      <End Role="GHGParameters" EntitySet="GHGParameters" />
+      <End Role="GHGDataEntryDetail" EntitySet="GHGDataEntryDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGDataEntryHeader_GHGInventoryYear" Association="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGInventoryYear">
+      <End Role="GHGInventoryYear" EntitySet="GHGInventoryYear" />
+      <End Role="GHGDataEntryHeader" EntitySet="GHGDataEntryHeader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGDataEntryHeader_GHGLocations" Association="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGLocations">
+      <End Role="GHGLocations" EntitySet="GHGLocations" />
+      <End Role="GHGDataEntryHeader" EntitySet="GHGDataEntryHeader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGDataEntryHeader_sysUser" Association="ENTRO_MISModel.FK_GHGDataEntryHeader_sysUser">
+      <End Role="sysUser" EntitySet="sysUser" />
+      <End Role="GHGDataEntryHeader" EntitySet="GHGDataEntryHeader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGDataEntryHeader_sysUser1" Association="ENTRO_MISModel.FK_GHGDataEntryHeader_sysUser1">
+      <End Role="sysUser" EntitySet="sysUser" />
+      <End Role="GHGDataEntryHeader" EntitySet="GHGDataEntryHeader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGParameters_GHGDataTypes" Association="ENTRO_MISModel.FK_GHGParameters_GHGDataTypes">
+      <End Role="GHGDataTypes" EntitySet="GHGDataTypes" />
+      <End Role="GHGParameters" EntitySet="GHGParameters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGLocations_GHGLocations" Association="ENTRO_MISModel.FK_GHGLocations_GHGLocations">
+      <End Role="GHGLocations" EntitySet="GHGLocations" />
+      <End Role="GHGLocations1" EntitySet="GHGLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGParameters_GHGSectors" Association="ENTRO_MISModel.FK_GHGParameters_GHGSectors">
+      <End Role="GHGSectors" EntitySet="GHGSectors" />
+      <End Role="GHGParameters" EntitySet="GHGParameters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGParameters_GHGTypes" Association="ENTRO_MISModel.FK_GHGParameters_GHGTypes">
+      <End Role="GHGTypes" EntitySet="GHGTypes" />
+      <End Role="GHGParameters" EntitySet="GHGParameters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGParameters_GHGUnits" Association="ENTRO_MISModel.FK_GHGParameters_GHGUnits">
+      <End Role="GHGUnits" EntitySet="GHGUnits" />
+      <End Role="GHGParameters" EntitySet="GHGParameters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGSectors_GHGSectors" Association="ENTRO_MISModel.FK_GHGSectors_GHGSectors">
+      <End Role="GHGSectors" EntitySet="GHGSectors" />
+      <End Role="GHGSectors1" EntitySet="GHGSectors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysMenus_sysSystems" Association="ENTRO_MISModel.FK_sysMenus_sysSystems">
+      <End Role="sysSystems" EntitySet="sysSystems" />
+      <End Role="sysMenus" EntitySet="sysMenus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysSubMenu_sysMenus" Association="ENTRO_MISModel.FK_sysSubMenu_sysMenus">
+      <End Role="sysMenus" EntitySet="sysMenus" />
+      <End Role="sysSubMenu" EntitySet="sysSubMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysRolePermission_sysRole" Association="ENTRO_MISModel.FK_sysRolePermission_sysRole">
+      <End Role="sysRole" EntitySet="sysRole" />
+      <End Role="sysRolePermission" EntitySet="sysRolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysUserRole_sysRole" Association="ENTRO_MISModel.FK_sysUserRole_sysRole">
+      <End Role="sysRole" EntitySet="sysRole" />
+      <End Role="sysUserRole" EntitySet="sysUserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysRolePermission_sysSubMenu" Association="ENTRO_MISModel.FK_sysRolePermission_sysSubMenu">
+      <End Role="sysSubMenu" EntitySet="sysSubMenu" />
+      <End Role="sysRolePermission" EntitySet="sysRolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysUserSystems_sysSystems" Association="ENTRO_MISModel.FK_sysUserSystems_sysSystems">
+      <End Role="sysSystems" EntitySet="sysSystems" />
+      <End Role="sysUserSystems" EntitySet="sysUserSystems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysUserRole_sysUser" Association="ENTRO_MISModel.FK_sysUserRole_sysUser">
+      <End Role="sysUser" EntitySet="sysUser" />
+      <End Role="sysUserRole" EntitySet="sysUserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysUserSystems_sysUser" Association="ENTRO_MISModel.FK_sysUserSystems_sysUser">
+      <End Role="sysUser" EntitySet="sysUser" />
+      <End Role="sysUserSystems" EntitySet="sysUserSystems" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="GHGDataEntryDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HeaderId" Type="Int32" Nullable="false" />
+    <Property Name="ParameterId" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="SourceOfData" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="UncertainityLevel" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="GHGDataEntryHeader" Relationship="ENTRO_MISModel.FK_GHGDataEntryDetail_GHGDataEntryDetail" FromRole="GHGDataEntryDetail" ToRole="GHGDataEntryHeader" />
+    <NavigationProperty Name="GHGParameters" Relationship="ENTRO_MISModel.FK_GHGDataEntryDetail_GHGParameters" FromRole="GHGDataEntryDetail" ToRole="GHGParameters" />
+  </EntityType>
+  <EntityType Name="GHGDataEntryHeader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InventoryYearId" Type="Int32" Nullable="false" />
+    <Property Name="LocationId" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsChecked" Type="Boolean" Nullable="false" />
+    <Property Name="DateChecked" Type="DateTime" Precision="3" />
+    <Property Name="CheckedById" Type="Int32" />
+    <Property Name="IsSentForApproval" Type="Boolean" Nullable="false" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="DateApproved" Type="DateTime" Precision="3" />
+    <Property Name="ApprovedById" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="GHGDataEntryDetail" Relationship="ENTRO_MISModel.FK_GHGDataEntryDetail_GHGDataEntryDetail" FromRole="GHGDataEntryHeader" ToRole="GHGDataEntryDetail" />
+    <NavigationProperty Name="GHGInventoryYear" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGInventoryYear" FromRole="GHGDataEntryHeader" ToRole="GHGInventoryYear" />
+    <NavigationProperty Name="GHGLocations" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGLocations" FromRole="GHGDataEntryHeader" ToRole="GHGLocations" />
+    <NavigationProperty Name="sysUser" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_sysUser" FromRole="GHGDataEntryHeader" ToRole="sysUser" />
+    <NavigationProperty Name="sysUser1" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_sysUser1" FromRole="GHGDataEntryHeader" ToRole="sysUser" />
+  </EntityType>
+  <EntityType Name="GHGDataTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="GHGParameters" Relationship="ENTRO_MISModel.FK_GHGParameters_GHGDataTypes" FromRole="GHGDataTypes" ToRole="GHGParameters" />
+  </EntityType>
+  <EntityType Name="GHGInventoryYear">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="GHGDataEntryHeader" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGInventoryYear" FromRole="GHGInventoryYear" ToRole="GHGDataEntryHeader" />
+  </EntityType>
+  <EntityType Name="GHGLocations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CanCaptureData" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="GHGDataEntryHeader" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGLocations" FromRole="GHGLocations" ToRole="GHGDataEntryHeader" />
+    <NavigationProperty Name="GHGLocations1" Relationship="ENTRO_MISModel.FK_GHGLocations_GHGLocations" FromRole="GHGLocations" ToRole="GHGLocations1" />
+    <NavigationProperty Name="GHGLocations2" Relationship="ENTRO_MISModel.FK_GHGLocations_GHGLocations" FromRole="GHGLocations1" ToRole="GHGLocations" />
+  </EntityType>
+  <EntityType Name="GHGParameters">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ParameterID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SectorId" Type="Int32" Nullable="false" />
+    <Property Name="DataTypeId" Type="Int32" Nullable="false" />
+    <Property Name="GHGTypeId" Type="Int32" Nullable="false" />
+    <Property Name="UnitId" Type="Int32" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="GHGDataEntryDetail" Relationship="ENTRO_MISModel.FK_GHGDataEntryDetail_GHGParameters" FromRole="GHGParameters" ToRole="GHGDataEntryDetail" />
+    <NavigationProperty Name="GHGDataTypes" Relationship="ENTRO_MISModel.FK_GHGParameters_GHGDataTypes" FromRole="GHGParameters" ToRole="GHGDataTypes" />
+    <NavigationProperty Name="GHGSectors" Relationship="ENTRO_MISModel.FK_GHGParameters_GHGSectors" FromRole="GHGParameters" ToRole="GHGSectors" />
+    <NavigationProperty Name="GHGTypes" Relationship="ENTRO_MISModel.FK_GHGParameters_GHGTypes" FromRole="GHGParameters" ToRole="GHGTypes" />
+    <NavigationProperty Name="GHGUnits" Relationship="ENTRO_MISModel.FK_GHGParameters_GHGUnits" FromRole="GHGParameters" ToRole="GHGUnits" />
+  </EntityType>
+  <EntityType Name="GHGSectors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CanCaptureData" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="GHGParameters" Relationship="ENTRO_MISModel.FK_GHGParameters_GHGSectors" FromRole="GHGSectors" ToRole="GHGParameters" />
+    <NavigationProperty Name="GHGSectors1" Relationship="ENTRO_MISModel.FK_GHGSectors_GHGSectors" FromRole="GHGSectors" ToRole="GHGSectors1" />
+    <NavigationProperty Name="GHGSectors2" Relationship="ENTRO_MISModel.FK_GHGSectors_GHGSectors" FromRole="GHGSectors1" ToRole="GHGSectors" />
+  </EntityType>
+  <EntityType Name="GHGTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="GHGParameters" Relationship="ENTRO_MISModel.FK_GHGParameters_GHGTypes" FromRole="GHGTypes" ToRole="GHGParameters" />
+  </EntityType>
+  <EntityType Name="GHGUnits">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="GHGParameters" Relationship="ENTRO_MISModel.FK_GHGParameters_GHGUnits" FromRole="GHGUnits" ToRole="GHGParameters" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sysMenus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SystemId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IconCls" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="sysSystems" Relationship="ENTRO_MISModel.FK_sysMenus_sysSystems" FromRole="sysMenus" ToRole="sysSystems" />
+    <NavigationProperty Name="sysSubMenu" Relationship="ENTRO_MISModel.FK_sysSubMenu_sysMenus" FromRole="sysMenus" ToRole="sysSubMenu" />
+  </EntityType>
+  <EntityType Name="sysRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="sysRolePermission" Relationship="ENTRO_MISModel.FK_sysRolePermission_sysRole" FromRole="sysRole" ToRole="sysRolePermission" />
+    <NavigationProperty Name="sysUserRole" Relationship="ENTRO_MISModel.FK_sysUserRole_sysRole" FromRole="sysRole" ToRole="sysUserRole" />
+  </EntityType>
+  <EntityType Name="sysRolePermission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="SubMenuId" Type="Int32" Nullable="false" />
+    <Property Name="CanAdd" Type="Boolean" Nullable="false" />
+    <Property Name="CanEdit" Type="Boolean" Nullable="false" />
+    <Property Name="CanDelete" Type="Boolean" Nullable="false" />
+    <Property Name="CanView" Type="Boolean" Nullable="false" />
+    <Property Name="CanApprove" Type="Boolean" Nullable="false" />
+    <Property Name="CanCheck" Type="Boolean" Nullable="false" />
+    <Property Name="CanAuthorize" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="sysRole" Relationship="ENTRO_MISModel.FK_sysRolePermission_sysRole" FromRole="sysRolePermission" ToRole="sysRole" />
+    <NavigationProperty Name="sysSubMenu" Relationship="ENTRO_MISModel.FK_sysRolePermission_sysSubMenu" FromRole="sysRolePermission" ToRole="sysSubMenu" />
+  </EntityType>
+  <EntityType Name="sysSubMenu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MenuId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Href" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IconCls" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="sysMenus" Relationship="ENTRO_MISModel.FK_sysSubMenu_sysMenus" FromRole="sysSubMenu" ToRole="sysMenus" />
+    <NavigationProperty Name="sysRolePermission" Relationship="ENTRO_MISModel.FK_sysRolePermission_sysSubMenu" FromRole="sysSubMenu" ToRole="sysRolePermission" />
+  </EntityType>
+  <EntityType Name="sysSystems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="sysMenus" Relationship="ENTRO_MISModel.FK_sysMenus_sysSystems" FromRole="sysSystems" ToRole="sysMenus" />
+    <NavigationProperty Name="sysUserSystems" Relationship="ENTRO_MISModel.FK_sysUserSystems_sysSystems" FromRole="sysSystems" ToRole="sysUserSystems" />
+  </EntityType>
+  <EntityType Name="sysUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IdentityNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="GHGDataEntryHeader" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_sysUser" FromRole="sysUser" ToRole="GHGDataEntryHeader" />
+    <NavigationProperty Name="GHGDataEntryHeader1" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_sysUser1" FromRole="sysUser" ToRole="GHGDataEntryHeader" />
+    <NavigationProperty Name="sysUserRole" Relationship="ENTRO_MISModel.FK_sysUserRole_sysUser" FromRole="sysUser" ToRole="sysUserRole" />
+    <NavigationProperty Name="sysUserSystems" Relationship="ENTRO_MISModel.FK_sysUserSystems_sysUser" FromRole="sysUser" ToRole="sysUserSystems" />
+  </EntityType>
+  <EntityType Name="sysUserRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="RoleId" Type="Int32" />
+    <NavigationProperty Name="sysRole" Relationship="ENTRO_MISModel.FK_sysUserRole_sysRole" FromRole="sysUserRole" ToRole="sysRole" />
+    <NavigationProperty Name="sysUser" Relationship="ENTRO_MISModel.FK_sysUserRole_sysUser" FromRole="sysUserRole" ToRole="sysUser" />
+  </EntityType>
+  <EntityType Name="sysUserSystems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="SystemId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="sysSystems" Relationship="ENTRO_MISModel.FK_sysUserSystems_sysSystems" FromRole="sysUserSystems" ToRole="sysSystems" />
+    <NavigationProperty Name="sysUser" Relationship="ENTRO_MISModel.FK_sysUserSystems_sysUser" FromRole="sysUserSystems" ToRole="sysUser" />
+  </EntityType>
+  <Association Name="FK_GHGDataEntryDetail_GHGDataEntryDetail">
+    <End Type="ENTRO_MISModel.GHGDataEntryHeader" Role="GHGDataEntryHeader" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.GHGDataEntryDetail" Role="GHGDataEntryDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGDataEntryHeader">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGDataEntryDetail">
+        <PropertyRef Name="HeaderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGDataEntryDetail_GHGParameters">
+    <End Type="ENTRO_MISModel.GHGParameters" Role="GHGParameters" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.GHGDataEntryDetail" Role="GHGDataEntryDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGParameters">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGDataEntryDetail">
+        <PropertyRef Name="ParameterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGDataEntryHeader_GHGInventoryYear">
+    <End Type="ENTRO_MISModel.GHGInventoryYear" Role="GHGInventoryYear" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.GHGDataEntryHeader" Role="GHGDataEntryHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGInventoryYear">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGDataEntryHeader">
+        <PropertyRef Name="InventoryYearId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGDataEntryHeader_GHGLocations">
+    <End Type="ENTRO_MISModel.GHGLocations" Role="GHGLocations" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.GHGDataEntryHeader" Role="GHGDataEntryHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGLocations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGDataEntryHeader">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGDataEntryHeader_sysUser">
+    <End Type="ENTRO_MISModel.sysUser" Role="sysUser" Multiplicity="0..1" />
+    <End Type="ENTRO_MISModel.GHGDataEntryHeader" Role="GHGDataEntryHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGDataEntryHeader">
+        <PropertyRef Name="CheckedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGDataEntryHeader_sysUser1">
+    <End Type="ENTRO_MISModel.sysUser" Role="sysUser" Multiplicity="0..1" />
+    <End Type="ENTRO_MISModel.GHGDataEntryHeader" Role="GHGDataEntryHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGDataEntryHeader">
+        <PropertyRef Name="ApprovedById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGParameters_GHGDataTypes">
+    <End Type="ENTRO_MISModel.GHGDataTypes" Role="GHGDataTypes" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.GHGParameters" Role="GHGParameters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGDataTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGParameters">
+        <PropertyRef Name="DataTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGLocations_GHGLocations">
+    <End Type="ENTRO_MISModel.GHGLocations" Role="GHGLocations" Multiplicity="0..1" />
+    <End Type="ENTRO_MISModel.GHGLocations" Role="GHGLocations1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGLocations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGLocations1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGParameters_GHGSectors">
+    <End Type="ENTRO_MISModel.GHGSectors" Role="GHGSectors" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.GHGParameters" Role="GHGParameters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGSectors">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGParameters">
+        <PropertyRef Name="SectorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGParameters_GHGTypes">
+    <End Type="ENTRO_MISModel.GHGTypes" Role="GHGTypes" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.GHGParameters" Role="GHGParameters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGParameters">
+        <PropertyRef Name="GHGTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGParameters_GHGUnits">
+    <End Type="ENTRO_MISModel.GHGUnits" Role="GHGUnits" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.GHGParameters" Role="GHGParameters" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGUnits">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGParameters">
+        <PropertyRef Name="UnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGSectors_GHGSectors">
+    <End Type="ENTRO_MISModel.GHGSectors" Role="GHGSectors" Multiplicity="0..1" />
+    <End Type="ENTRO_MISModel.GHGSectors" Role="GHGSectors1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGSectors">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGSectors1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysMenus_sysSystems">
+    <End Type="ENTRO_MISModel.sysSystems" Role="sysSystems" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.sysMenus" Role="sysMenus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysSystems">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="sysMenus">
+        <PropertyRef Name="SystemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysSubMenu_sysMenus">
+    <End Type="ENTRO_MISModel.sysMenus" Role="sysMenus" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.sysSubMenu" Role="sysSubMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysMenus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="sysSubMenu">
+        <PropertyRef Name="MenuId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysRolePermission_sysRole">
+    <End Type="ENTRO_MISModel.sysRole" Role="sysRole" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.sysRolePermission" Role="sysRolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysRole">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="sysRolePermission">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysUserRole_sysRole">
+    <End Type="ENTRO_MISModel.sysRole" Role="sysRole" Multiplicity="0..1" />
+    <End Type="ENTRO_MISModel.sysUserRole" Role="sysUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysRole">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="sysUserRole">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysRolePermission_sysSubMenu">
+    <End Type="ENTRO_MISModel.sysSubMenu" Role="sysSubMenu" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.sysRolePermission" Role="sysRolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysSubMenu">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="sysRolePermission">
+        <PropertyRef Name="SubMenuId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysUserSystems_sysSystems">
+    <End Type="ENTRO_MISModel.sysSystems" Role="sysSystems" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.sysUserSystems" Role="sysUserSystems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysSystems">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="sysUserSystems">
+        <PropertyRef Name="SystemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysUserRole_sysUser">
+    <End Type="ENTRO_MISModel.sysUser" Role="sysUser" Multiplicity="0..1" />
+    <End Type="ENTRO_MISModel.sysUserRole" Role="sysUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="sysUserRole">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysUserSystems_sysUser">
+    <End Type="ENTRO_MISModel.sysUser" Role="sysUser" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.sysUserSystems" Role="sysUserSystems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="sysUserSystems">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

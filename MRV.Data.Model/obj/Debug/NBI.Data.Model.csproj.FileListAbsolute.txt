@@ -1,0 +1,58 @@
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll.config
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\bin\Debug\NBI.Data.Model.pdb
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\obj\Debug\NBI.Data.Model.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\obj\Debug\NBI.Data.Model.pdb
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\obj\Debug\NBI.Data.Model.csprojResolveAssemblyReference.cache
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll.config
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\bin\Debug\NBI.Data.Model.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\obj\Debug\NBI.Data.Model.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\obj\Debug\NBI.Data.Model.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Model\obj\Debug\NBI.Data.Model.csprojResolveAssemblyReference.cache
+E:\Cyber Works\Projects\LIFT\App\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll.config
+E:\Cyber Works\Projects\LIFT\App\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Data.Model\bin\Debug\NBI.Data.Model.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Data.Model\obj\Debug\NBI.Data.Model.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Data.Model\obj\Debug\NBI.Data.Model.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll.config
+D:\BProjects\Cyber\LIFT\App\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Data.Model\bin\Debug\NBI.Data.Model.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Data.Model\obj\Debug\NBI.Data.Model.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Data.Model\obj\Debug\NBI.Data.Model.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Data.Model\obj\Debug\NBI.Data.Model.csprojResolveAssemblyReference.cache
+D:\BProjects\Cyber\Core Finance\App\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll.config
+D:\BProjects\Cyber\Core Finance\App\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Data.Model\bin\Debug\NBI.Data.Model.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Data.Model\obj\Debug\NBI.Data.Model.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Data.Model\obj\Debug\NBI.Data.Model.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Data.Model\obj\Debug\NBI.Data.Model.csprojResolveAssemblyReference.cache
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll.config
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Data.Model\bin\Debug\NBI.Data.Model.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Data.Model\obj\Debug\NBI.Data.Model.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Data.Model\obj\Debug\NBI.Data.Model.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Data.Model\obj\Debug\NBI.Data.Model.csprojResolveAssemblyReference.cache
+D:\Projects\Core Finance\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll.config
+D:\Projects\Core Finance\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll
+D:\Projects\Core Finance\NBI.Data.Model\bin\Debug\NBI.Data.Model.pdb
+D:\Projects\Core Finance\NBI.Data.Model\obj\Debug\NBI.Data.Model.dll
+D:\Projects\Core Finance\NBI.Data.Model\obj\Debug\NBI.Data.Model.pdb
+D:\Projects\Core Finance\NBI.Data.Model\obj\Debug\NBI.Data.Model.csprojResolveAssemblyReference.cache
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll.config
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Debug\NBI.Data.Model.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Debug\DevExpress.Data.v10.1.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Debug\DevExpress.Utils.v10.1.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Debug\DevExpress.XtraEditors.v10.1.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Debug\DevExpress.XtraGrid.v10.1.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Debug\DevExpress.XtraLayout.v10.1.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\obj\Debug\NBI.Data.Model.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\obj\Debug\NBI.Data.Model.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\obj\Debug\NBI.Data.Model.csprojResolveAssemblyReference.cache
+D:\Projects\MRV\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll.config
+D:\Projects\MRV\NBI.Data.Model\bin\Debug\NBI.Data.Model.dll
+D:\Projects\MRV\NBI.Data.Model\bin\Debug\NBI.Data.Model.pdb
+D:\Projects\MRV\NBI.Data.Model\obj\Debug\NBI.Data.Model.csprojResolveAssemblyReference.cache
+D:\Projects\MRV\NBI.Data.Model\obj\Debug\NBI.Data.Model.dll
+D:\Projects\MRV\NBI.Data.Model\obj\Debug\NBI.Data.Model.pdb

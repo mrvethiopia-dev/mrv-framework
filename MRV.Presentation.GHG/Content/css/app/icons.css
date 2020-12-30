@@ -1,0 +1,315 @@
+﻿.icon-key {
+    background-image: url(../../images/app/key.png) !important;
+}
+.icon-accept {
+    background-image: url(../../images/app/accept.png) !important;
+}
+.icon-selection {
+    background-image: url(../../images/app/select.png) !important;
+}
+.icon-add {
+    background-image: url(../../images/app/add.png) !important;
+}
+.icon-edit {
+    background-image: url(../../images/app/edit.png) !important;
+}
+.icon-cal {
+    background-image: url(../../images/app/calendar.png) !important;
+}
+.icon-delete {
+    background-image: url(../../images/app/delete.png) !important;
+}
+.icon-generate {
+    background-image: url(../../images/app/generate.png) !important;
+}
+.icon-insert-all {
+    background-image: url(../../images/app/insert-all.png) !important;
+}
+.icon-save {
+    background-image: url(../../images/app/disk.png) !important;
+}
+.icon-exit {
+    background-image: url(../../images/app/cancel.png) !important;
+}
+
+.icon-upload {
+    background-image: url(../../images/app/image_add.png) !important;
+}
+
+.icon-home {
+    background-image: url(../../images/app/home.png) !important;
+}
+
+.icon-module {
+    background-image: url(../../images/app/module.png) !important;
+}
+
+.icon-operation {
+    background-image: url(../../images/app/operation.png) !important;
+}
+
+.icon-menu {
+    background-image: url(../../images/app/menu.png) !important;
+}
+
+.icon-member {
+    background-image: url(../../images/app/member.png) !important;
+}
+
+.icon-permission {
+    background-image: url(../../images/app/permission.png) !important;
+}
+
+.icon-role {
+    background-image: url(../../images/app/role.png) !important;
+}
+
+.icon-subsystem {
+    background-image: url(../../images/app/subsystem.png) !important;
+}
+
+.icon-hierarchy {
+    background-image: url(../../images/app/hierarchy.png) !important;
+}
+
+.icon-filter {
+    background-image: url(../../images/app/filter.png) !important;
+}
+
+.icon-information {
+    background-image: url(../../images/app/information.png) !important;
+}
+
+.icon-unit {
+    background-image: url(../../images/app/unit.png) !important;
+}
+
+.icon-jobgrade {
+    background-image: url(../../images/app/jobgrade.png) !important;
+}
+
+.icon-salaryscale {
+    background-image: url(../../images/app/salaryscale.png) !important;
+}
+
+.icon-positionclass {
+    background-image: url(../../images/app/positionclass.png) !important;
+}
+
+.icon-position {
+    background-image: url(../../images/app/position.png) !important;
+}
+
+.icon-professioncategory {
+    background-image: url(../../images/app/professioncategory.png) !important;
+}
+
+.icon-payrollitem {
+    background-image: url(../../images/app/payrollitem.png) !important;
+}
+
+.icon-expand-all {
+    background-image: url(../../images/app/expand-all.gif) !important;
+}
+
+.icon-collapse-all {
+    background-image: url(../../images/app/collapse-all.gif) !important;
+}
+
+.icon-benefit {
+    background-image: url(../../images/app/benefit.png) !important;
+}
+
+.icon-education {
+    background-image: url(../../images/app/education.png) !important;
+}
+
+.icon-experience {
+    background-image: url(../../images/app/experience.png) !important;
+}
+
+.icon-adjustment {
+    background-image: url(../../images/app/adjustment.png) !important;
+}
+
+.x-tree-node-collapsed .x-tree-node-icon 
+{ 
+    background-image: url(../../images/app/hierarchy.png) !important; 
+    background-repeat: no-repeat; 
+} 
+
+.x-tree-node-expanded .x-tree-node-icon 
+{ 
+    background-image: url(../../images/app/hierarchy.png) !important; 
+    background-repeat: no-repeat; 
+}
+
+.icon-printer {
+    background-image: url(../../images/app/printer.png) !important;
+}
+
+.icon-first {
+    background-image: url(../../images/app/resultset_first.png) !important;
+}
+
+.icon-prev {
+    background-image: url(../../images/app/resultset_previous.png) !important;
+}
+
+.icon-last {
+    background-image: url(../../images/app/resultset_last.png) !important;
+}
+
+.icon-next {
+    background-image: url(../../images/app/resultset_next.png) !important;
+}
+
+.icon-cancel {
+    background-image: url(../../images/app/cancel.png) !important;
+}
+
+.icon-select {
+    background-image: url(../../images/app/select.png) !important;
+}
+
+.icon-refresh {
+    background-image: url(../../images/app/refresh.gif) !important;
+}
+
+.icon-preview {
+    background-image: url(../../images/app/preview.png) !important;
+}
+
+.icon-yes {
+    background-image: url(../../images/app/yes.png) !important;
+}
+
+.icon-no {
+    background-image: url(../../images/app/no.png) !important;
+}
+
+.icon-exclamation {
+    background-image: url(../../images/app/exclamation.gif) !important;
+}
+.icon-transaction {
+    background-image: url(../../images/app/transactions.png) !important;
+}
+.icon-bank {
+    background-image: url(../../images/app/bank.png) !important;
+}
+.icon-logout {
+    background-image: url(../../images/app/logout.png) !important;
+}
+.icon-roles {
+    background-image: url(../../images/app/roles.png) !important;
+}
+.icon-help {
+    background-image: url(../../images/app/Help.png) !important;
+}
+.icon-html {
+    background-image: url(../../images/app/html.png) !important;
+}
+.icon-pdf {
+    background-image: url(../../images/app/pdf.png) !important;
+}
+.icon-cngpwd {
+    background-image: url(../../images/app/cp.png) !important;
+}
+.icon-reconcile {
+    background-image: url(../../images/app/reconcile.png) !important;
+}
+.icon-UserAdd {
+    background-image: url(../../images/app/user_add.png) !important;
+}
+.icon-UserRemove {
+    background-image: url(../../images/app/user_delete.png) !important;
+}
+.icon-GroupRemove {
+    background-image: url(../../images/app/group_delete.png) !important;
+}
+.icon-CloseTrans {
+    background-image: url(../../images/app/CloseTrans.png) !important;
+}
+.icon-RefreshTrans {
+    background-image: url(../../images/app/refresh.png) !important;
+}
+.icon-Email {
+    background-image: url(../../images/app/email.png) !important;
+}
+.icon-DeActive {
+    background-image: url(../../images/app/deActive.ico) !important;
+}
+.icon-FiscalYear {
+    background-image: url(../../images/app/FiscalYear.png) !important;
+}
+.icon-Calendar {
+    background-image: url(../../images/app/calendar_edit.png) !important;
+}
+.icon-Close {
+    background-image: url(../../images/app/No.png) !important;
+}
+.icon-Unclose {
+    background-image: url(../../images/app/Yes.png) !important;
+}
+.icon-Compare {
+    background-image: url(../../images/app/compare.png) !important;
+}
+.icon-Excel {
+    background-image: url(../../images/app/excel.png) !important;
+}.icon-Money {
+    background-image: url(../../images/app/money.png) !important;
+}.icon-Reset {
+    background-image: url(../../images/app/reset.png) !important;
+}.icon-Remove {
+    background-image: url(../../images/app/remove.png) !important;
+}.icon-settings {
+    background-image: url(../../images/app/settings.png) !important;
+}.icon-cheque {
+    background-image: url(../../images/app/cheque.png) !important;
+}.icon-payrollBasic {
+    background-image: url(../../images/app/coinsBasic.png) !important;
+}.icon-user {
+    background-image: url(../../images/app/user.png) !important;
+}.icon-lists {
+    background-image: url(../../images/app/lists.png) !important;
+}.icon-acctTrans {
+    background-image: url(../../images/app/trans.png) !important;
+}.icon-shield {
+    background-image: url(../../images/app/shield.png) !important;
+}.icon-report {
+    background-image: url(../../images/app/report.png) !important;
+}.icon-fa {
+    background-image: url(../../images/app/cabinet.png) !important;
+}.icon-plus {
+    background-image: url(../../images/app/plus.gif) !important;
+}.icon-void {
+    background-image: url(../../images/app/void.png) !important;
+}.icon-po {
+    background-image: url(../../images/app/PO.png) !important;
+}.icon-approve {
+    background-image: url(../../images/app/approve.png) !important;
+}.icon-disapprove {
+    background-image: url(../../images/app/disapprove.png) !important;
+}.icon-authorize {
+    background-image: url(../../images/app/authorize.png) !important;
+}.icon-check {
+    background-image: url(../../images/app/verify.gif) !important;
+}.icon-RowAdd {
+    background-image: url(../../images/app/RowInsert.png) !important;
+}.icon-RowDelete {
+    background-image: url(../../images/app/RowDelete.png) !important;
+}.icon-Print {
+    background-image: url(../../images/app/printer.png) !important;
+}.icon-Preview {
+    background-image: url(../../images/app/export_excel.png) !important;
+}.icon-Copy {
+    background-image: url(../../images/app/copy.png) !important;
+}.icon-Paste {
+    background-image: url(../../images/app/paste.png) !important;
+}.icon-win {
+    background-image: url(../../images/app/window.png) !important;
+}.icon-coins {
+    background-image: url(../../images/app/coinsActivity.png) !important;
+}.icon-pound {
+    background-image: url(../../images/app/pound.png) !important;
+}

@@ -1,0 +1,554 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<title>Payroll Management System Help- Table of Contents</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/silver-theme/jquery-ui-1.8.12.custom.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/dynatree/chm/ui.dynatree.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="css/toc.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#tabs .ui-widget-header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.dynatree.min.js"></script>
+	<script type="text/javascript" src="js/hndjsse.js"></script>
+	<script type="text/javascript">
+	
+		window.bSearchDataLoaded = false;
+		var sHelpIdToActivate = '';
+	
+		$(document).ready(function()
+		{
+			var sAnchorName = '';
+			try { sAnchorName = top.location.href.substring(top.location.href.lastIndexOf("#") + 1, top.location.href.length); }
+			catch(err) { sAnchorName = ''; }
+			var nSelectedTab = 0;
+			if (sAnchorName == '_index') nSelectedTab = 1
+			else if (sAnchorName == '_search') nSelectedTab = 2;			
+			$("#tabs").tabs({
+				selected: nSelectedTab,
+				select: function(event, ui) { HideKwPopup(); }
+			});
+			
+			// Toc
+			if ($("#tab-toc").length) {
+				$("#tab-toc").dynatree({
+					clickFolderMode: 1,
+					debugLevel: 0,
+					imagePath: 'css/dynatree/chm/',
+					onActivate: function(node){
+						if ($("#tab-keywords").length && $("#tab-keywords").dynatree && $("#tab-keywords").dynatree("getTree") && $("#tab-keywords").dynatree("getTree").activateKey)
+							$("#tab-keywords").dynatree("getTree").activateKey(null);
+						if(node.data.href && node.data.href != '#'){
+							window.open(node.data.href, node.data.target);
+						}
+					}
+				});
+				// Expand all nodes if required
+				$("#tab-toc").dynatree("getRoot").visit(function(node){
+						node.expand(true);
+					});
+				// Select the active help id
+				if (sHelpIdToActivate != '') $("#tab-toc").dynatree("getTree").activateKey(sHelpIdToActivate);
+			}
+			
+			// Keywords
+			
+			if ($("#tab-keywords").length) {
+				$("#tab-keywords").dynatree({
+					clickFolderMode: 1,
+					debugLevel: 0,
+					imagePath: 'css/dynatree/chm/',
+					onClick: function(node, event){
+						HideKwPopup();
+						if (node.data && node.data.click)
+						{
+							var aRefList = null;
+							eval('aRefList=' + node.data.click);
+							if (ShowKwPopup(node.li, aRefList))
+							{
+								if ($("#tab-toc") && $("#tab-toc").dynatree && $("#tab-toc").dynatree("getTree") && $("#tab-toc").dynatree("getTree").activateKey)
+									$("#tab-toc").dynatree("getTree").activateKey(null);
+								if(node.data.href && node.data.href != '#'){
+									window.open(node.data.href, node.data.target);
+								}
+							}
+						}
+					}
+				});
+				// Expand all nodes if required
+				$("#tab-keywords").dynatree("getRoot").visit(function(node){
+						node.expand(true);
+					});
+				}
+			
+			// Load search data
+			(function() {
+				var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+				se.src = 'js/hndsd.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+			})();
+		});
+		
+		$('body').click(function() {
+			HideKwPopup();
+		});
+		
+		function SelectTocItem(sHelpId)
+		{
+			if ($("#tab-toc").length && $("#tab-toc").dynatree && $("#tab-toc").dynatree("getTree") && $("#tab-toc").dynatree("getTree").getNodeByKey) {
+				$("#tab-toc").dynatree("getTree").getNodeByKey(sHelpId).activateSilently();
+			}
+			else {
+				sHelpIdToActivate = sHelpId;
+			}
+		}
+		
+		function HideKwPopup()
+		{
+			if($("#popupMenu")) $("#popupMenu").remove();
+		}
+		
+		function ShowKwPopup(oSender, aLinks)
+		{
+			HideKwPopup();
+			if (!aLinks || !aLinks.length || aLinks.length == 0) return false
+			else if (aLinks.length == 1) return true
+			else
+			{
+				var oParentDiv = document.createElement("DIV");
+				oParentDiv.id = "popupMenu";
+				var oLink = null;
+				// Close button
+				oLink = document.createElement("SPAN");
+				oLink.className = "close-button";
+				oLink.innerHTML = "X";
+				oLink.href = "#";
+				oLink.onclick = HideKwPopup;
+				oParentDiv.appendChild(oLink);
+				// Items
+				for (var nCnt=0; nCnt<aLinks.length; nCnt++)
+				{
+					oLink = document.createElement("A");
+					oLink.innerHTML = aLinks[nCnt][0];
+					oLink.href = aLinks[nCnt][1];
+					oLink.target = "FrameMain";
+					oLink.onclick = HideKwPopup;
+					oParentDiv.appendChild(oLink);
+				}
+				document.body.appendChild(oParentDiv);
+				var pos = $(oSender).offset(); 
+				var height = $(oSender).height();
+				$(oParentDiv).css({
+					"left": (pos.left+20) + "px",
+					"top": (pos.top + height + 5) + "px"
+				});
+				$(oParentDiv).show();
+				return false;
+			}
+		}
+		
+		function PerformSearch()
+		{
+			if (!window.bSearchDataLoaded) {
+				$("#search_results").html("Search engine data hasn't been fully loaded yet or an error occurred while loading it. This usually happens when documentation is browsed locally.");
+				return;
+			}
+			sValue = $("#search_value").val();
+			$("#search_results").html('Searching...');
+			var oSearchEngine = new HndJsSe;
+			oSearchEngine.ParseInput(sValue);			
+			oSearchEngine.PerformSearch();
+			if (!oSearchEngine.aResults || !oSearchEngine.aResults.length)
+			{
+				$("#search_results").html('No results found.');
+			}
+			else
+			{
+				$("#search_results").html('<div id="search_results_content"></div>');
+				var oUl = $("#search_results_content").append("<ul id='lr'></ul>").find("ul");
+				for (var nCnt = 0; nCnt < oSearchEngine.aResults.length; nCnt++)
+				{
+					if (oSearchEngine.aResults[nCnt][0] < aTl.length)
+					{
+						oUl.append("<li><a href='" + aTl[oSearchEngine.aResults[nCnt][0]][0] + "?search=" + escape(sValue) + "' target='FrameMain'>" + unescape(aTl[oSearchEngine.aResults[nCnt][0]][1]) + "</a></li>");
+					}
+				}
+				// Tree
+				$("#search_results_content").dynatree({
+					clickFolderMode: 1,
+					debugLevel: 0,
+					imagePath: 'css/dynatree/chm/',
+					onActivate: function(node){
+						if ($("#search_results_content") && $("#search_results_content").dynatree && $("#search_results_content").dynatree("getTree") && $("#search_results_content").dynatree("getTree").activateKey)
+							$("#search_results_content").dynatree("getTree").activateKey(null);
+						if(node.data.href && node.data.href != '#'){
+							window.open(node.data.href, node.data.target);
+						}
+					}
+				});
+			}
+		}
+	</script>
+</head>
+
+<body>
+
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-toc">Contents</a></li>
+			<li><a href="#tab-keywords">Index</a></li>
+			<li><a href="#tab-search">Search</a></li>
+			</ul>
+		<div id="tab-toc">
+			<ul id="toc" class="">
+
+				<li class="folder" id="WelcometoEasyPay" data="icon: '1.png'">
+							<a
+							href="WelcometoEasyPay.html"
+							target="FrameMain">
+								Welcome to EasyPay</a>
+
+				<ul><li class="" id="GettingstartedwithEasyPay" data="">
+							<a
+							href="GettingstartedwithEasyPay.html"
+							target="FrameMain">
+								Getting started with EasyPay</a>
+
+				</li></ul></li><li class="folder" id="Introduction" data="">
+							<a
+							href="Introduction.html"
+							target="FrameMain">
+								Introduction</a>
+
+				<ul><li class="" id="AboutEasyPay" data="">
+							<a
+							href="AboutEasyPay.html"
+							target="FrameMain">
+								About EasyPay</a>
+
+				</li><li class="" id="SystemRequirments" data="">
+							<a
+							href="SystemRequirments.html"
+							target="FrameMain">
+								System Requirments</a>
+
+				</li><li class="" id="GettingHelp1" data="">
+							<a
+							href="GettingHelp1.html"
+							target="FrameMain">
+								Getting Help</a>
+
+				</li><li class="" id="EasyPayLicenseAgreement" data="">
+							<a
+							href="EasyPayLicenseAgreement.html"
+							target="FrameMain">
+								EasyPay License Agreement</a>
+
+				</li><li class="" id="WhatsnewinEasyPay11002" data="">
+							<a
+							href="WhatsnewinEasyPay11002.html"
+							target="FrameMain">
+								What's new in EasyPay 1.1.0.02</a>
+
+				</li></ul></li><li class="folder" id="GettingStarted" data="">
+							<a
+							href="GettingStarted.html"
+							target="FrameMain">
+								Getting Started</a>
+
+				<ul><li class="folder" id="InstallationandConfiguration" data="">
+							<a
+							href="InstallationandConfiguration.html"
+							target="FrameMain">
+								Installation and Configuration</a>
+
+				<ul><li class="" id="InstallingNETFramework40" data="">
+							<a
+							href="InstallingNETFramework40.html"
+							target="FrameMain">
+								Installing .NET Framework 4.0</a>
+
+				</li><li class="" id="RegisteringNETFramework40inIIS" data="">
+							<a
+							href="RegisteringNETFramework40inIIS.html"
+							target="FrameMain">
+								Registering .NET Framework 4.0 in IIS</a>
+
+				</li><li class="" id="InstallingSQLServer" data="">
+							<a
+							href="InstallingSQLServer.html"
+							target="FrameMain">
+								Installing SQL Server</a>
+
+				</li><li class="" id="ConfiguringSQLServer" data="">
+							<a
+							href="ConfiguringSQLServer.html"
+							target="FrameMain">
+								Configuring SQL Server</a>
+
+				</li><li class="" id="InstallingInternetInformationSer" data="">
+							<a
+							href="InstallingInternetInformationSer.html"
+							target="FrameMain">
+								Installing Internet Information Services (IIS)</a>
+
+				</li><li class="" id="DeployingtheSystemonIIS" data="">
+							<a
+							href="DeployingtheSystemonIIS.html"
+							target="FrameMain">
+								Deploying the System on IIS</a>
+
+				</li></ul></li><li class="folder" id="UsingthePayrollManagementSystemE" data="">
+							<a
+							href="UsingthePayrollManagementSystemE.html"
+							target="FrameMain">
+								Using the Payroll Management System (EasyPay)</a>
+
+				<ul><li class="" id="LaunchingtheSystem" data="">
+							<a
+							href="LaunchingtheSystem.html"
+							target="FrameMain">
+								Launching the System</a>
+
+				</li><li class="folder" id="AccessingtheSystem" data="">
+							<a
+							href="AccessingtheSystem.html"
+							target="FrameMain">
+								Accessing the System</a>
+
+				<ul><li class="folder" id="UsingSystemAdministratorsAccount" data="">
+							<a
+							href="UsingSystemAdministratorsAccount.html"
+							target="FrameMain">
+								Using System Administrators Account (SAA)</a>
+
+				<ul><li class="" id="WhatisSystemAdministratorsAccoun" data="">
+							<a
+							href="WhatisSystemAdministratorsAccoun.html"
+							target="FrameMain">
+								What is System Administrators Account (SAA)</a>
+
+				</li><li class="" id="CreatingUserRoles" data="">
+							<a
+							href="CreatingUserRoles.html"
+							target="FrameMain">
+								Creating User Roles</a>
+
+				</li><li class="" id="ManagingUsers1" data="">
+							<a
+							href="ManagingUsers1.html"
+							target="FrameMain">
+								Managing Users</a>
+
+				</li></ul></li><li class="folder" id="UsingPayrollUsersAccountPUA" data="">
+							<a
+							href="UsingPayrollUsersAccountPUA.html"
+							target="FrameMain">
+								Using Payroll Users Account (PUA)</a>
+
+				<ul><li class="" id="WhatisPayrollUsersAccountPUA" data="">
+							<a
+							href="WhatisPayrollUsersAccountPUA.html"
+							target="FrameMain">
+								What is Payroll Users Account (PUA)</a>
+
+				</li><li class="folder" id="BasicInfoMenu" data="">
+							<a
+							href="BasicInfoMenu.html"
+							target="FrameMain">
+								Basic Info Menu</a>
+
+				<ul><li class="" id="DefiningTaxRates" data="">
+							<a
+							href="DefiningTaxRates.html"
+							target="FrameMain">
+								Defining Tax Rates</a>
+
+				</li><li class="" id="DefiningOvertimeRates" data="">
+							<a
+							href="DefiningOvertimeRates.html"
+							target="FrameMain">
+								Defining Overtime Rates</a>
+
+				</li><li class="" id="MaintainingChartofAccounts" data="">
+							<a
+							href="MaintainingChartofAccounts.html"
+							target="FrameMain">
+								Maintaining Chart of Accounts</a>
+
+				</li><li class="" id="DefiningBanks" data="">
+							<a
+							href="DefiningBanks.html"
+							target="FrameMain">
+								Defining Banks</a>
+
+				</li><li class="" id="CreatingCompanyDepartments" data="">
+							<a
+							href="CreatingCompanyDepartments.html"
+							target="FrameMain">
+								Creating Company Departments</a>
+
+				</li><li class="" id="ManagingEmployees" data="">
+							<a
+							href="ManagingEmployees.html"
+							target="FrameMain">
+								Managing Employees</a>
+
+				</li></ul></li><li class="folder" id="PayrollActivitiesMenu" data="">
+							<a
+							href="PayrollActivitiesMenu.html"
+							target="FrameMain">
+								Payroll Activities Menu</a>
+
+				<ul><li class="" id="MaintainingAdditionsandDeduction" data="">
+							<a
+							href="MaintainingAdditionsandDeduction.html"
+							target="FrameMain">
+								Maintaining Additions and Deductions</a>
+
+				</li><li class="" id="ManagingEmployeeAdditionsandDedu" data="">
+							<a
+							href="ManagingEmployeeAdditionsandDedu.html"
+							target="FrameMain">
+								Managing Employee Additions and Deductions</a>
+
+				</li><li class="" id="ManagingEmployeeOvertimeHours" data="">
+							<a
+							href="ManagingEmployeeOvertimeHours.html"
+							target="FrameMain">
+								Managing Employee Overtime Hours</a>
+
+				</li><li class="" id="ManagingEmployeeAttendance" data="">
+							<a
+							href="ManagingEmployeeAttendance.html"
+							target="FrameMain">
+								Managing Employee Attendance</a>
+
+				</li><li class="" id="GeneratingPayroll" data="">
+							<a
+							href="GeneratingPayroll.html"
+							target="FrameMain">
+								Generating Payroll</a>
+
+				</li><li class="" id="GeneratingPayrollJournals" data="">
+							<a
+							href="GeneratingPayrollJournals.html"
+							target="FrameMain">
+								Generating Payroll Journals</a>
+
+				</li><li class="" id="QuickViewingofPayrollTransaction" data="">
+							<a
+							href="QuickViewingofPayrollTransaction.html"
+							target="FrameMain">
+								Quick Viewing of Payroll Transactions</a>
+
+				</li></ul></li><li class="folder" id="ReportsMenu" data="">
+							<a
+							href="ReportsMenu.html"
+							target="FrameMain">
+								Reports Menu</a>
+
+				<ul><li class="" id="ViewingPaySheets" data="">
+							<a
+							href="ViewingPaySheets.html"
+							target="FrameMain">
+								Viewing Pay Sheets</a>
+
+				</li><li class="" id="ViewingPaySlips" data="">
+							<a
+							href="ViewingPaySlips.html"
+							target="FrameMain">
+								Viewing Pay Slips</a>
+
+				</li><li class="" id="FilteringMonthlyExpensesbyPayrol" data="">
+							<a
+							href="FilteringMonthlyExpensesbyPayrol.html"
+							target="FrameMain">
+								Filtering Monthly Expenses by Payroll Item</a>
+
+				</li><li class="" id="ViewingPayrollSummary" data="">
+							<a
+							href="ViewingPayrollSummary.html"
+							target="FrameMain">
+								Viewing Payroll Summary</a>
+
+				</li><li class="" id="ViewingPayrollJournals" data="">
+							<a
+							href="ViewingPayrollJournals.html"
+							target="FrameMain">
+								Viewing Payroll Journals</a>
+
+				</li><li class="" id="GeneratingBankLetters" data="">
+							<a
+							href="GeneratingBankLetters.html"
+							target="FrameMain">
+								Generating Bank Letters </a>
+
+				</li><li class="" id="ViewingSeverancePayJournals" data="">
+							<a
+							href="ViewingSeverancePayJournals.html"
+							target="FrameMain">
+								Viewing Severance Pay Journals</a>
+
+				</li><li class="" id="GeneratingOtherReports" data="">
+							<a
+							href="GeneratingOtherReports.html"
+							target="FrameMain">
+								Generating Other Reports</a>
+
+				</li></ul></li><li class="folder" id="SettingsWindow" data="">
+							<a
+							href="SettingsWindow.html"
+							target="FrameMain">
+								Settings Window</a>
+
+				<ul><li class="" id="PostingSettings" data="">
+							<a
+							href="PostingSettings.html"
+							target="FrameMain">
+								Posting Settings</a>
+
+				</li><li class="" id="GeneralSettings" data="">
+							<a
+							href="GeneralSettings.html"
+							target="FrameMain">
+								General Settings</a>
+
+				</li></ul></li></ul></li></ul></li></ul></li></ul></li></ul>
+		</div>
+		
+		<div id="tab-keywords">
+			<ul id="keywords">
+
+				</ul>
+		</div>
+		
+		<div id="tab-search">
+			<form onsubmit="PerformSearch(); return false;">
+				<label for="search_value">Search:</label>
+				<input id="search_value" name="search_value"></input>
+				<input type="submit" value="Search"/>
+			</form>
+			<div id="search_results"></div>
+		</div>
+		
+		</div>
+    
+</body>
+
+</html>
+

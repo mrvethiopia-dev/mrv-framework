@@ -1,0 +1,112 @@
+﻿<html>
+	
+<head>
+	<title>Registering .NET Framework 4.0 in IIS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Payroll Management System Help.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("RegisteringNETFramework40inIIS");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Registering .NET Framework 4.0 in IIS</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="GettingStarted.html">Getting Started</a> &rsaquo;&rsaquo; <a href="InstallationandConfiguration.html">Installation and Configuration</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="InstallationandConfiguration.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="InstallingNETFramework40.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="InstallingSQLServer.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts22">Registering .NET Framework 4.0 in IIS </span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts11">The following step by step guide will show you how to register ASP.Net with IIS i.e. installing the ASP.Net in IIS so that ASP.Net pages can be served from IIS server. If ASP.Net is not registered with IIS then when accessing ASP.Net Website you will get the following error. "The page you are requesting cannot be served because of the extension configuration. If the page is a script, add a handler. If the file should be downloaded, add a MIME map."</span></p>
+<p class="rvps2"><span class="rvts11">Once the ASP.Net is registered the IIS will show ASP.Net 4.0 Application pools.</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Steps</span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Look for the aspnet_regiiis.exe file</span></p>
+<p class="rvps2"><span class="rvts11">Once the .Net Framework is installed, you can look for the aspnet_regiiis.exe file for registering the .Net Framework in IIS server.</span></p>
+<p class="rvps2"><span class="rvts11">If your windows is installed in C drive you could find the aspnet_regiiis.exe at the following locations.</span></p>
+<p class="rvps2"><span class="rvts11">32 BIT</span></p>
+<p class="rvps2"><span class="rvts11">C:\Windows\Microsoft.NET</span></p>
+<p class="rvps2"><span class="rvts11">Installing and registering ASP.Net with IIS and add ASP.Net 4.0 Application Pool in IIS</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">64 BIT</span></p>
+<p class="rvps2"><span class="rvts11">C:\Windows\Microsoft.NET\Framework64</span></p>
+<p class="rvps2"><span class="rvts11">Installing and registering ASP.Net with IIS and add ASP.Net 4.0 Application Pool in IIS</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Now based on whether your System is 32 BIT or 64 BIT and the .Net Framework version you want to register, you need to get into the .Net Framework Folder.</span></p>
+<p class="rvps2"><span class="rvts11">In my case the Windows is 64 BIT and I need to register .Net Framework 4 I am looking for the aspnet_regiiis.exe in the following location C:\Windows\Microsoft.NET\Framework64\v4.0.30319\</span></p>
+<p class="rvps2"><span class="rvts11">Installing and registering ASP.Net with IIS and add ASP.Net 4.0 Application Pool in IIS</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11"> </span></p>
+<p class="rvps2"><span class="rvts23">Registering the ASP.Net with IIS server</span></p>
+<p class="rvps2"><span class="rvts11">Now you need to start command prompt by typing cmd at the Run command and then execute the command prompt with Administrator rights by right clicking and choosing Run as administrator from the context menu.</span></p>
+<p class="rvps2"><span class="rvts11">Installing and registering ASP.Net with IIS and add ASP.Net 4.0 Application Pool in IIS</span></p>
+<p class="rvps2"><span class="rvts11"> </span></p>
+<p class="rvps2"><span class="rvts11">Then on the command prompt you need to navigate to the Directory that has the aspnet_regiiis.exe file for that you need to type</span></p>
+<p class="rvps2"><span class="rvts11">CD C:\Windows\Microsoft.NET\Framework64\v4.0.30319\</span></p>
+<p class="rvps2"><span class="rvts11">And then you need to type the following command and hit enter to register ASP.Net with IIS.</span></p>
+<p class="rvps2"><span class="rvts11">aspnet_regiiis -i</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts23">Installing and registering ASP.Net with IIS and add ASP.Net 4.0 Application Pool in IIS </span></p>
+<p class="rvps2"><span class="rvts11">Once the ASP.Net is installed in IIS, you will see ASP.Net 4.0 Application pools in the IIS server</span></p>
+<p class="rvps2"><span class="rvts11">Installing and registering ASP.Net with IIS and add ASP.Net 4.0 Application Pool in IIS</span></p>
+<p class="rvps2"><span class="rvts11"> </span></p>
+<p class="rvps2"><span class="rvts11">That's it and you are done with registering the ASP.Net with IIS. </span></p>
+<p></p>
+
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Dawit Kiros Woldemichael. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

@@ -1,0 +1,348 @@
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.pdb
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\Ext.Direct.Mvc.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Data.Model.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\Newtonsoft.Json.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.pdb
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.pdb
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Data.Model.pdb
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.csprojResolveAssemblyReference.cache
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.csprojResolveAssemblyReference.cache
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\Ext.Direct.Mvc.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Data.Model.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\Newtonsoft.Json.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\bin\NBI.Data.Model.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\Ext.Direct.Mvc.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\Microsoft.CSharp.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Data.Model.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\Newtonsoft.Json.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.ComponentModel.DataAnnotations.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Configuration.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Data.DataSetExtensions.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Data.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Data.Entity.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Drawing.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.EnterpriseServices.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Transactions.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Abstractions.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.ApplicationServices.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.DynamicData.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Entity.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Extensions.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Mvc.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Routing.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Services.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Xml.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Xml.Linq.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Data.Model.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.xml
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Mvc.xml
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.csprojResolveAssemblyReference.cache
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\obj\Debug\RdlCompile.cache
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\obj\Debug\RdlCompile.compiled
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\favicon.ico
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\Help\UserManual.pdf
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\Ext.Direct.Mvc.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\Microsoft.CSharp.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.Common.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Data.Model.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\Newtonsoft.Json.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.ComponentModel.DataAnnotations.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Configuration.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Data.DataSetExtensions.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Data.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Data.Entity.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Drawing.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.EnterpriseServices.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Transactions.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Abstractions.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.ApplicationServices.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.DynamicData.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Entity.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Extensions.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Mvc.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Routing.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Services.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Xml.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Xml.Linq.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\NBI.Data.Model.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.xml
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\bin\System.Web.Mvc.xml
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.csprojResolveAssemblyReference.cache
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\obj\Debug\RdlCompile.cache
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\obj\Debug\RdlCompile.compiled
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\favicon.ico
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\Help\UserManual.pdf
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\Ext.Direct.Mvc.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\Microsoft.CSharp.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.Common.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\NBI.Data.Model.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\Newtonsoft.Json.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.ComponentModel.DataAnnotations.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Configuration.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Data.DataSetExtensions.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Data.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Data.Entity.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Drawing.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.EnterpriseServices.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Transactions.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Web.Abstractions.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Web.ApplicationServices.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Web.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Web.DynamicData.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Web.Entity.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Web.Extensions.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Web.Mvc.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Web.Routing.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Web.Services.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Xml.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Xml.Linq.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\NBI.Data.Model.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.xml
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\bin\System.Web.Mvc.xml
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.csprojResolveAssemblyReference.cache
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\obj\Debug\RdlCompile.cache
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\obj\Debug\RdlCompile.compiled
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\favicon.ico
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\UserManual.pdf
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\Help\UserManual.pdf
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\Ext.Direct.Mvc.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\Microsoft.CSharp.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.Common.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\NBI.Data.Model.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\Newtonsoft.Json.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.ComponentModel.DataAnnotations.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Configuration.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Data.DataSetExtensions.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Data.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Data.Entity.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Drawing.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.EnterpriseServices.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Transactions.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Web.Abstractions.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Web.ApplicationServices.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Web.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Web.DynamicData.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Web.Entity.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Web.Extensions.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Web.Mvc.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Web.Routing.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Web.Services.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Xml.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Xml.Linq.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\NBI.Data.Model.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.xml
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\bin\System.Web.Mvc.xml
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.csprojResolveAssemblyReference.cache
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\obj\Debug\RdlCompile.cache
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\obj\Debug\RdlCompile.compiled
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.pdb
+D:\Projects\Core Finance\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.csprojResolveAssemblyReference.cache
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\favicon.ico
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\UserManual.pdf
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\Help\UserManual.pdf
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll.config
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.pdb
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\Ext.Direct.Mvc.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\Microsoft.CSharp.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.Common.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\NBI.Data.Model.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\Newtonsoft.Json.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.ComponentModel.DataAnnotations.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Configuration.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Data.DataSetExtensions.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Data.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Data.Entity.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Drawing.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.EnterpriseServices.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Transactions.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Web.Abstractions.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Web.ApplicationServices.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Web.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Web.DynamicData.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Web.Entity.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Web.Extensions.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Web.Routing.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Web.Services.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Xml.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\System.Xml.Linq.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\stdole.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.pdb
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.pdb
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\NBI.Data.Model.pdb
+D:\Projects\Core Finance\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.xml
+D:\Projects\Core Finance\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.dll
+D:\Projects\Core Finance\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\favicon.ico
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\UserManual.pdf
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\Help\UserManual.pdf
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll.config
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportSource.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.Shared.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.Web.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\Ext.Direct.Mvc.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\Microsoft.CSharp.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.Common.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\NBI.Data.Model.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\Newtonsoft.Json.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.ComponentModel.DataAnnotations.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Configuration.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Data.DataSetExtensions.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Data.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Data.Entity.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Drawing.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.EnterpriseServices.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Transactions.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Web.Abstractions.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Web.ApplicationServices.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Web.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Web.DynamicData.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Web.Entity.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Web.Extensions.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Web.Routing.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Web.Services.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Xml.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\System.Xml.Linq.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\stdole.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\NBI.Data.Model.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.xml
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.csprojResolveAssemblyReference.cache
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\obj\Debug\RdlCompile.cache
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Presentation.Tsa\obj\Debug\RdlCompile.compiled
+D:\Projects\MRV\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.csprojResolveAssemblyReference.cache
+D:\Projects\MRV\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\obj\Debug\NBI.Presentation.Tsa.pdb
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\favicon.ico
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\UserManual.pdf
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll.config
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\NBI.Presentation.Tsa.pdb
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportSource.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.Shared.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.Web.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\Ext.Direct.Mvc.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\Microsoft.CSharp.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.Common.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\NBI.Data.Model.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\Newtonsoft.Json.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.ComponentModel.DataAnnotations.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Configuration.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Data.DataSetExtensions.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Data.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Data.Entity.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Drawing.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.EnterpriseServices.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Transactions.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Web.Abstractions.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Web.ApplicationServices.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Web.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Web.DynamicData.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Web.Entity.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Web.Extensions.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Web.Routing.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Web.Services.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Xml.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\System.Xml.Linq.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\stdole.dll
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\NBI.Business.Tsa.pdb
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\NBI.Data.Infrastructure.pdb
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\NBI.Data.Model.pdb
+D:\Projects\MRV\NBI.Presentation.Tsa\bin\Microsoft.ReportViewer.WebForms.xml

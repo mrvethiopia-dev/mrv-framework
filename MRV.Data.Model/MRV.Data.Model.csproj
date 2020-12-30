@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22800F5D-7E92-4BC3-B541-CBD856C101C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MRV.Data.Model</RootNamespace>
+    <AssemblyName>MRV.Data.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GHGDataEntryDetail.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GHGDataEntryHeader.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GHGDataTypes.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GHGInventoryYear.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GHGLocations.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GHGParameters.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GHGSectors.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GHGTypes.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GHGUnits.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysMenus.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysRole.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysRolePermission.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysSubMenu.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysSystems.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysUser.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysUserRole.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysUserSystems.cs">
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tsa.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tsa.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tsa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tsa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tsa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tsa.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Tsa.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Tsa.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Tsa.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Tsa.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Tsa.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Tsa.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+D:\Projects\MRV\NBI.Business.Tsa\obj\Debug\MRV.Business.GHG.csprojResolveAssemblyReference.cache
+D:\Projects\MRV\MRV.Business.GHG\bin\Debug\MRV.Business.GHG.dll
+D:\Projects\MRV\MRV.Business.GHG\bin\Debug\MRV.Business.GHG.pdb
+D:\Projects\MRV\MRV.Business.GHG\bin\Debug\MRV.Data.Infrastructure.dll
+D:\Projects\MRV\MRV.Business.GHG\bin\Debug\MRV.Data.Model.dll
+D:\Projects\MRV\MRV.Business.GHG\bin\Debug\MRV.Data.Infrastructure.pdb
+D:\Projects\MRV\MRV.Business.GHG\bin\Debug\MRV.Data.Model.pdb
+D:\Projects\MRV\MRV.Business.GHG\obj\Debug\MRV.Business.GHG.csprojResolveAssemblyReference.cache
+D:\Projects\MRV\MRV.Business.GHG\obj\Debug\MRV.Business.GHG.dll
+D:\Projects\MRV\MRV.Business.GHG\obj\Debug\MRV.Business.GHG.pdb

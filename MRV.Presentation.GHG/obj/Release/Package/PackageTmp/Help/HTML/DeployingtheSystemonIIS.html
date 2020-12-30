@@ -1,0 +1,104 @@
+﻿<html>
+	
+<head>
+	<title>Deploying the System on IIS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Payroll Management System Help.html?" + sTopicUrl;
+			}
+			else if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+			{
+				top.FrameTOC.SelectTocItem("DeployingtheSystemonIIS");
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Deploying the System on IIS</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="GettingStarted.html">Getting Started</a> &rsaquo;&rsaquo; <a href="InstallationandConfiguration.html">Installation and Configuration</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="InstallationandConfiguration.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="InstallingInternetInformationSer.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="UsingthePayrollManagementSystemE.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts22">Deploying the system on IIS</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Once you install the IIS, the next step is to deploy the Payroll Management System on it. Follow these steps to configure your IIS and launch the application.</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Steps</span></p>
+<p class="rvps2"><span class="rvts11">Type 'inetmgr' in run &nbsp;</span><br/><img alt="" style="padding : 1px;" src="lib/NewItem9.png"></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">The IIS Manager window will be opened. Now, right click on the sites link from the left panel of trees and click on Add Web Sites &nbsp;as follows </span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NewItem10.png"></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">After you click on the 'Add Web Site' menu , a new pop up window will appear on the screen. This window will let you configure the web site information, a site, that is going to be deployed on IIS. Give a meaningful name to the Site Name field E.g. 'PayrollSystem'. Enter the physical path to the system (path to EasyPay software which you get from your software vendor). If the default port number (80) is not assigned to another web site, you can use that, otherwise you have to provide a different port number. Again give a meaningful name to the Host Name field (this is the address which you would be typing along with the port number on web browsers to access the system). Then click on OK and close the dialog box.</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NewItem11.png"></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Configuring database connection string</span></p>
+<p class="rvps2"><span class="rvts11">The following is a step by step guide on how to set up the connection string with IIS manager.</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts18">Steps</span></p>
+<p class="rvps2"><span class="rvts11">Open IIS manager and connect to your site as described above -&gt; Click on the web site that you have created (PayrollSystem) -&gt; then double click the Connection Strings icon as follows </span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NewItem12.png"></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Double click to open each connection string file </span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NewItem13.png"></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Change the data source to the SQL Server instance name that you used while installing SQL Server. And change the initial catalog to the database name of the system. then click on okay and exit the dialog box.</span></p>
+<p class="rvps2"><span class="rvts11"><br/></span></p>
+<p class="rvps2"><span class="rvts11">That's it! your connection string has been configured.</span></p>
+<p></p>
+
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; 2015 by Dawit Kiros Woldemichael. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

@@ -1,0 +1,17 @@
+D:\Projects\Core Finance\NBI.Data.Model\bin\Release\NBI.Data.Model.dll.config
+D:\Projects\Core Finance\NBI.Data.Model\bin\Release\NBI.Data.Model.dll
+D:\Projects\Core Finance\NBI.Data.Model\bin\Release\NBI.Data.Model.pdb
+D:\Projects\Core Finance\NBI.Data.Model\obj\Release\NBI.Data.Model.csprojResolveAssemblyReference.cache
+D:\Projects\Core Finance\NBI.Data.Model\obj\Release\NBI.Data.Model.dll
+D:\Projects\Core Finance\NBI.Data.Model\obj\Release\NBI.Data.Model.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Release\NBI.Data.Model.dll.config
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Release\NBI.Data.Model.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Release\NBI.Data.Model.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\obj\Release\NBI.Data.Model.csprojResolveAssemblyReference.cache
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\obj\Release\NBI.Data.Model.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\obj\Release\NBI.Data.Model.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Release\DevExpress.Data.v10.1.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Release\DevExpress.Utils.v10.1.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Release\DevExpress.XtraEditors.v10.1.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Release\DevExpress.XtraGrid.v10.1.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Model\bin\Release\DevExpress.XtraLayout.v10.1.dll

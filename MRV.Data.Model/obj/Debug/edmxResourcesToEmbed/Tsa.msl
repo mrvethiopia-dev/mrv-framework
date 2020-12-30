@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ENTRO_MISModelStoreContainer" CdmEntityContainer="ENTRO_MISEntities">
+    <EntitySetMapping Name="GHGDataEntryDetail">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGDataEntryDetail">
+        <MappingFragment StoreEntitySet="GHGDataEntryDetail">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="UncertainityLevel" ColumnName="UncertainityLevel" />
+          <ScalarProperty Name="SourceOfData" ColumnName="SourceOfData" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ParameterId" ColumnName="ParameterId" />
+          <ScalarProperty Name="HeaderId" ColumnName="HeaderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHGDataEntryHeader">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGDataEntryHeader">
+        <MappingFragment StoreEntitySet="GHGDataEntryHeader">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ApprovedById" ColumnName="ApprovedById" />
+          <ScalarProperty Name="DateApproved" ColumnName="DateApproved" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsSentForApproval" ColumnName="IsSentForApproval" />
+          <ScalarProperty Name="CheckedById" ColumnName="CheckedById" />
+          <ScalarProperty Name="DateChecked" ColumnName="DateChecked" />
+          <ScalarProperty Name="IsChecked" ColumnName="IsChecked" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="InventoryYearId" ColumnName="InventoryYearId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHGDataTypes">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGDataTypes">
+        <MappingFragment StoreEntitySet="GHGDataTypes">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHGInventoryYear">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGInventoryYear">
+        <MappingFragment StoreEntitySet="GHGInventoryYear">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHGLocations">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGLocations">
+        <MappingFragment StoreEntitySet="GHGLocations">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CanCaptureData" ColumnName="CanCaptureData" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHGParameters">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGParameters">
+        <MappingFragment StoreEntitySet="GHGParameters">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="UnitId" ColumnName="UnitId" />
+          <ScalarProperty Name="GHGTypeId" ColumnName="GHGTypeId" />
+          <ScalarProperty Name="DataTypeId" ColumnName="DataTypeId" />
+          <ScalarProperty Name="SectorId" ColumnName="SectorId" />
+          <ScalarProperty Name="ParameterID" ColumnName="ParameterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHGSectors">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGSectors">
+        <MappingFragment StoreEntitySet="GHGSectors">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CanCaptureData" ColumnName="CanCaptureData" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHGTypes">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGTypes">
+        <MappingFragment StoreEntitySet="GHGTypes">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHGUnits">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGUnits">
+        <MappingFragment StoreEntitySet="GHGUnits">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysMenus">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysMenus">
+        <MappingFragment StoreEntitySet="sysMenus">
+          <ScalarProperty Name="IconCls" ColumnName="IconCls" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SystemId" ColumnName="SystemId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysRole">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysRole">
+        <MappingFragment StoreEntitySet="sysRole">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysRolePermission">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysRolePermission">
+        <MappingFragment StoreEntitySet="sysRolePermission">
+          <ScalarProperty Name="CanAuthorize" ColumnName="CanAuthorize" />
+          <ScalarProperty Name="CanCheck" ColumnName="CanCheck" />
+          <ScalarProperty Name="CanApprove" ColumnName="CanApprove" />
+          <ScalarProperty Name="CanView" ColumnName="CanView" />
+          <ScalarProperty Name="CanDelete" ColumnName="CanDelete" />
+          <ScalarProperty Name="CanEdit" ColumnName="CanEdit" />
+          <ScalarProperty Name="CanAdd" ColumnName="CanAdd" />
+          <ScalarProperty Name="SubMenuId" ColumnName="SubMenuId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysSubMenu">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysSubMenu">
+        <MappingFragment StoreEntitySet="sysSubMenu">
+          <ScalarProperty Name="IconCls" ColumnName="IconCls" />
+          <ScalarProperty Name="Href" ColumnName="Href" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysSystems">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysSystems">
+        <MappingFragment StoreEntitySet="sysSystems">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUser">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysUser">
+        <MappingFragment StoreEntitySet="sysUser">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IdentityNo" ColumnName="IdentityNo" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUserRole">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysUserRole">
+        <MappingFragment StoreEntitySet="sysUserRole">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUserSystems">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysUserSystems">
+        <MappingFragment StoreEntitySet="sysUserSystems">
+          <ScalarProperty Name="SystemId" ColumnName="SystemId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

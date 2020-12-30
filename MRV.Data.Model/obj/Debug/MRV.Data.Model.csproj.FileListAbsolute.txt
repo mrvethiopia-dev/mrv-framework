@@ -1,0 +1,10 @@
+D:\Projects\MRV\NBI.Data.Model\bin\Debug\MRV.Data.Model.dll.config
+D:\Projects\MRV\NBI.Data.Model\bin\Debug\MRV.Data.Model.dll
+D:\Projects\MRV\NBI.Data.Model\bin\Debug\MRV.Data.Model.pdb
+D:\Projects\MRV\NBI.Data.Model\obj\Debug\MRV.Data.Model.dll
+D:\Projects\MRV\NBI.Data.Model\obj\Debug\MRV.Data.Model.pdb
+D:\Projects\MRV\MRV.Data.Model\bin\Debug\MRV.Data.Model.dll.config
+D:\Projects\MRV\MRV.Data.Model\bin\Debug\MRV.Data.Model.dll
+D:\Projects\MRV\MRV.Data.Model\bin\Debug\MRV.Data.Model.pdb
+D:\Projects\MRV\MRV.Data.Model\obj\Debug\MRV.Data.Model.dll
+D:\Projects\MRV\MRV.Data.Model\obj\Debug\MRV.Data.Model.pdb

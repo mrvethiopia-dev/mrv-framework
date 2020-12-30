@@ -1,0 +1,1825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ENTRO_MISModelStoreContainer" CdmEntityContainer="ENTRO_MISEntities">
+    <EntitySetMapping Name="lupPayrollAmountApplicationMethod">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupPayrollAmountApplicationMethod">
+        <MappingFragment StoreEntitySet="lupPayrollAmountApplicationMethod">
+          <ScalarProperty Name="ConversionFactor" ColumnName="ConversionFactor" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupPayrollItemRateType">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupPayrollItemRateType">
+        <MappingFragment StoreEntitySet="lupPayrollItemRateType">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupPayrollOTTypes">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupPayrollOTTypes">
+        <MappingFragment StoreEntitySet="lupPayrollOTTypes">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupWoreda">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupWoreda">
+        <MappingFragment StoreEntitySet="lupWoreda">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlEmployeeLoan">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlEmployeeLoan">
+        <MappingFragment StoreEntitySet="PrlEmployeeLoan">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="PaidPeriodIds" ColumnName="PaidPeriodIds" />
+          <ScalarProperty Name="AppliedRateType" ColumnName="AppliedRateType" />
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+          <ScalarProperty Name="MonthlyDeduction" ColumnName="MonthlyDeduction" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="LoanDate" ColumnName="LoanDate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="IsLoanCompleted" ColumnName="IsLoanCompleted" />
+          <ScalarProperty Name="LoanTypeId" ColumnName="LoanTypeId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlEmployeeOvertimeHours">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlEmployeeOvertimeHours">
+        <MappingFragment StoreEntitySet="PrlEmployeeOvertimeHours">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="OTWorkedHours" ColumnName="OTWorkedHours" />
+          <ScalarProperty Name="OTDate" ColumnName="OTDate" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="OTId" ColumnName="OTId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlLoanTypes">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlLoanTypes">
+        <MappingFragment StoreEntitySet="PrlLoanTypes">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsBasedOnSalary" ColumnName="IsBasedOnSalary" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlOvertimeRates">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlOvertimeRates">
+        <MappingFragment StoreEntitySet="PrlOvertimeRates">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="OTRateIsActive" ColumnName="OTRateIsActive" />
+          <ScalarProperty Name="OTRateAmount" ColumnName="OTRateAmount" />
+          <ScalarProperty Name="OTRateName" ColumnName="OTRateName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlSettings">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlSettings">
+        <MappingFragment StoreEntitySet="PrlSettings">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlTaxRate">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlTaxRate">
+        <MappingFragment StoreEntitySet="PrlTaxRate">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DeductableAmount" ColumnName="DeductableAmount" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="ToSalary" ColumnName="ToSalary" />
+          <ScalarProperty Name="FromSalary" ColumnName="FromSalary" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlTransactionPItems">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlTransactionPItems">
+        <MappingFragment StoreEntitySet="PrlTransactionPItems">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="PItemAmount" ColumnName="PItemAmount" />
+          <ScalarProperty Name="PItemId" ColumnName="PItemId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysRole">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysRole">
+        <MappingFragment StoreEntitySet="sysRole">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysSubMenu">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysSubMenu">
+        <MappingFragment StoreEntitySet="sysSubMenu">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IconCls" ColumnName="IconCls" />
+          <ScalarProperty Name="Href" ColumnName="Href" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysSystems">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysSystems">
+        <MappingFragment StoreEntitySet="sysSystems">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUserRole">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysUserRole">
+        <MappingFragment StoreEntitySet="sysUserRole">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUserSystems">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysUserSystems">
+        <MappingFragment StoreEntitySet="sysUserSystems">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="SystemId" ColumnName="SystemId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupAccounts">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupAccounts">
+        <MappingFragment StoreEntitySet="lupAccounts">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupDepartments">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupDepartments">
+        <MappingFragment StoreEntitySet="lupDepartments">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlItemsAccountMapping">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlItemsAccountMapping">
+        <MappingFragment StoreEntitySet="PrlItemsAccountMapping">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+          <ScalarProperty Name="PItemId" ColumnName="PItemId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupBanks">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupBanks">
+        <MappingFragment StoreEntitySet="lupBanks">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlMonthlyIncomeTaxSummary">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlMonthlyIncomeTaxSummary">
+        <MappingFragment StoreEntitySet="PrlMonthlyIncomeTaxSummary">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="TotalIncomeTax" ColumnName="TotalIncomeTax" />
+          <ScalarProperty Name="TotalTaxableIncome" ColumnName="TotalTaxableIncome" />
+          <ScalarProperty Name="TotalNoOfEmployees" ColumnName="TotalNoOfEmployees" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlMonthlyPensionSummary">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlMonthlyPensionSummary">
+        <MappingFragment StoreEntitySet="PrlMonthlyPensionSummary">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="TotalPensionAmount" ColumnName="TotalPensionAmount" />
+          <ScalarProperty Name="TotalEmployersContAmount" ColumnName="TotalEmployersContAmount" />
+          <ScalarProperty Name="TotalEmployeesContAmount" ColumnName="TotalEmployeesContAmount" />
+          <ScalarProperty Name="TotalWageAmount" ColumnName="TotalWageAmount" />
+          <ScalarProperty Name="TotalNoOfEmployees" ColumnName="TotalNoOfEmployees" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlPeriod">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlPeriod">
+        <MappingFragment StoreEntitySet="PrlPeriod">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="TotalWorkingDays" ColumnName="TotalWorkingDays" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FiscalYear" ColumnName="FiscalYear" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwEmployeePItemsDetail">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwEmployeePItemsDetail">
+        <MappingFragment StoreEntitySet="vwEmployeePItemsDetail">
+          <ScalarProperty Name="ApplicableTo" ColumnName="ApplicableTo" />
+          <ScalarProperty Name="ApplicableFrom" ColumnName="ApplicableFrom" />
+          <ScalarProperty Name="IdentityNo" ColumnName="IdentityNo" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PItemId" ColumnName="PItemId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlAttendance">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlAttendance">
+        <MappingFragment StoreEntitySet="PrlAttendance">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DeductableAmount" ColumnName="DeductableAmount" />
+          <ScalarProperty Name="TotalDaysWorked" ColumnName="TotalDaysWorked" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlEmployeeTermination">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlEmployeeTermination">
+        <MappingFragment StoreEntitySet="PrlEmployeeTermination">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="TerminationDate" ColumnName="TerminationDate" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwTerminationDetails">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwTerminationDetails">
+        <MappingFragment StoreEntitySet="vwTerminationDetails">
+          <ScalarProperty Name="TerminationDate" ColumnName="TerminationDate" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="EmpFullName" ColumnName="EmpFullName" />
+          <ScalarProperty Name="TINNumber" ColumnName="TINNumber" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlSalaryAdjustment">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlSalaryAdjustment">
+        <MappingFragment StoreEntitySet="PrlSalaryAdjustment">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="ResultingAmount" ColumnName="ResultingAmount" />
+          <ScalarProperty Name="AmountAdded" ColumnName="AmountAdded" />
+          <ScalarProperty Name="StartingPeriodId" ColumnName="StartingPeriodId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlChangesMade">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlChangesMade">
+        <MappingFragment StoreEntitySet="PrlChangesMade">
+          <ScalarProperty Name="IsDetectedOnPGeneration" ColumnName="IsDetectedOnPGeneration" />
+          <ScalarProperty Name="DateChanged" ColumnName="DateChanged" />
+          <ScalarProperty Name="ChangePeriodId" ColumnName="ChangePeriodId" />
+          <ScalarProperty Name="ReasonForChange" ColumnName="ReasonForChange" />
+          <ScalarProperty Name="Difference" ColumnName="Difference" />
+          <ScalarProperty Name="ChangedAmount" ColumnName="ChangedAmount" />
+          <ScalarProperty Name="PreviousAmount" ColumnName="PreviousAmount" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="PItemId" ColumnName="PItemId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlReconciliation">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlReconciliation">
+        <MappingFragment StoreEntitySet="PrlReconciliation">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="IsAddition" ColumnName="IsAddition" />
+          <ScalarProperty Name="TotalDifference" ColumnName="TotalDifference" />
+          <ScalarProperty Name="AmountDueToReason" ColumnName="AmountDueToReason" />
+          <ScalarProperty Name="ReasonForDifference" ColumnName="ReasonForDifference" />
+          <ScalarProperty Name="PeriodTwoPItemAmount" ColumnName="PeriodTwoPItemAmount" />
+          <ScalarProperty Name="PeriodOnePItemAmount" ColumnName="PeriodOnePItemAmount" />
+          <ScalarProperty Name="PayrollItem" ColumnName="PayrollItem" />
+          <ScalarProperty Name="PeriodTwoId" ColumnName="PeriodTwoId" />
+          <ScalarProperty Name="PeriodOneId" ColumnName="PeriodOneId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPrlReconciliation">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwPrlReconciliation">
+        <MappingFragment StoreEntitySet="vwPrlReconciliation">
+          <ScalarProperty Name="IsAddition" ColumnName="IsAddition" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="TotalDifference" ColumnName="TotalDifference" />
+          <ScalarProperty Name="AmountDueToReason" ColumnName="AmountDueToReason" />
+          <ScalarProperty Name="ReasonForDifference" ColumnName="ReasonForDifference" />
+          <ScalarProperty Name="PeriodTwoPItemAmount" ColumnName="PeriodTwoPItemAmount" />
+          <ScalarProperty Name="PeriodOnePItemAmount" ColumnName="PeriodOnePItemAmount" />
+          <ScalarProperty Name="PayrollItem" ColumnName="PayrollItem" />
+          <ScalarProperty Name="PeriodTwoId" ColumnName="PeriodTwoId" />
+          <ScalarProperty Name="PeriodOneId" ColumnName="PeriodOneId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwChangesMade">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwChangesMade">
+        <MappingFragment StoreEntitySet="vwChangesMade">
+          <ScalarProperty Name="DateChanged" ColumnName="DateChanged" />
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+          <ScalarProperty Name="ChangePeriodId" ColumnName="ChangePeriodId" />
+          <ScalarProperty Name="ReasonForChange" ColumnName="ReasonForChange" />
+          <ScalarProperty Name="Difference" ColumnName="Difference" />
+          <ScalarProperty Name="ChangedAmount" ColumnName="ChangedAmount" />
+          <ScalarProperty Name="PreviousAmount" ColumnName="PreviousAmount" />
+          <ScalarProperty Name="PItemName" ColumnName="PItemName" />
+          <ScalarProperty Name="PItemId" ColumnName="PItemId" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="IdentityNo" ColumnName="IdentityNo" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwAttendance">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwAttendance">
+        <MappingFragment StoreEntitySet="vwAttendance">
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="SalaryGBP" ColumnName="SalaryGBP" />
+          <ScalarProperty Name="DeductableAmount" ColumnName="DeductableAmount" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IdentityNo" ColumnName="IdentityNo" />
+          <ScalarProperty Name="IsTerminated" ColumnName="IsTerminated" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlAttendanceDetail">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlAttendanceDetail">
+        <MappingFragment StoreEntitySet="PrlAttendanceDetail">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DeductableAmount" ColumnName="DeductableAmount" />
+          <ScalarProperty Name="AbsenceDate" ColumnName="AbsenceDate" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlTransactionDifferences">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlTransactionDifferences">
+        <MappingFragment StoreEntitySet="PrlTransactionDifferences">
+          <ScalarProperty Name="PeriodTwoId" ColumnName="PeriodTwoId" />
+          <ScalarProperty Name="PeriodOneId" ColumnName="PeriodOneId" />
+          <ScalarProperty Name="BaseCurrency" ColumnName="BaseCurrency" />
+          <ScalarProperty Name="Difference" ColumnName="Difference" />
+          <ScalarProperty Name="PeriodTwoVal" ColumnName="PeriodTwoVal" />
+          <ScalarProperty Name="PeriodOneVal" ColumnName="PeriodOneVal" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupCurrency">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupCurrency">
+        <MappingFragment StoreEntitySet="lupCurrency">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlTransactionDifferencesPItems">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlTransactionDifferencesPItems">
+        <MappingFragment StoreEntitySet="PrlTransactionDifferencesPItems">
+          <ScalarProperty Name="PeriodTwoId" ColumnName="PeriodTwoId" />
+          <ScalarProperty Name="PeriodOneId" ColumnName="PeriodOneId" />
+          <ScalarProperty Name="Difference" ColumnName="Difference" />
+          <ScalarProperty Name="PeriodTwoVal" ColumnName="PeriodTwoVal" />
+          <ScalarProperty Name="PeriodOneVal" ColumnName="PeriodOneVal" />
+          <ScalarProperty Name="PItemId" ColumnName="PItemId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPrlTransactionDifferencesPItems">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwPrlTransactionDifferencesPItems">
+        <MappingFragment StoreEntitySet="vwPrlTransactionDifferencesPItems">
+          <ScalarProperty Name="PItemApplicationType" ColumnName="PItemApplicationType" />
+          <ScalarProperty Name="PItemIsAddition" ColumnName="PItemIsAddition" />
+          <ScalarProperty Name="PItemName" ColumnName="PItemName" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="PeriodTwoId" ColumnName="PeriodTwoId" />
+          <ScalarProperty Name="PeriodOneId" ColumnName="PeriodOneId" />
+          <ScalarProperty Name="Difference" ColumnName="Difference" />
+          <ScalarProperty Name="PeriodTwoVal" ColumnName="PeriodTwoVal" />
+          <ScalarProperty Name="PeriodOneVal" ColumnName="PeriodOneVal" />
+          <ScalarProperty Name="PItemId" ColumnName="PItemId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupInternationalConsultant">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupInternationalConsultant">
+        <MappingFragment StoreEntitySet="lupInternationalConsultant">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupWorkshops">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupWorkshops">
+        <MappingFragment StoreEntitySet="lupWorkshops">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupVoucherType">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupVoucherType">
+        <MappingFragment StoreEntitySet="lupVoucherType">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupBalanceSide">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupBalanceSide">
+        <MappingFragment StoreEntitySet="lupBalanceSide">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinOpeningBalance">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinOpeningBalance">
+        <MappingFragment StoreEntitySet="FinOpeningBalance">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="FiscalYearId" ColumnName="FiscalYearId" />
+          <ScalarProperty Name="OpeningBalance" ColumnName="OpeningBalance" />
+          <ScalarProperty Name="ControlAccountId" ColumnName="ControlAccountId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinAccountCategory">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinAccountCategory">
+        <MappingFragment StoreEntitySet="FinAccountCategory">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinAccountType">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinAccountType">
+        <MappingFragment StoreEntitySet="FinAccountType">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="BalanceSideId" ColumnName="BalanceSideId" />
+          <ScalarProperty Name="AccountCategoryId" ColumnName="AccountCategoryId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupBudgetCodes">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupBudgetCodes">
+        <MappingFragment StoreEntitySet="lupBudgetCodes">
+          <ScalarProperty Name="ParentBudgetCodeId" ColumnName="ParentBudgetCodeId" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysMenus">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysMenus">
+        <MappingFragment StoreEntitySet="sysMenus">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IconCls" ColumnName="IconCls" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SystemId" ColumnName="SystemId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupModeOfPayment">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupModeOfPayment">
+        <MappingFragment StoreEntitySet="lupModeOfPayment">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUser">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysUser">
+        <MappingFragment StoreEntitySet="sysUser">
+          <ScalarProperty Name="IdentityNo" ColumnName="IdentityNo" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupPOTypes">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupPOTypes">
+        <MappingFragment StoreEntitySet="lupPOTypes">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinPODetail">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinPODetail">
+        <MappingFragment StoreEntitySet="FinPODetail">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="POTypeId" ColumnName="POTypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HeaderId" ColumnName="HeaderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinPOHeader">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinPOHeader">
+        <MappingFragment StoreEntitySet="FinPOHeader">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupBankBranches">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupBankBranches">
+        <MappingFragment StoreEntitySet="lupBankBranches">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsCompany" ColumnName="IsCompany" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinVoidCheques">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinVoidCheques">
+        <MappingFragment StoreEntitySet="FinVoidCheques">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="VoidDate" ColumnName="VoidDate" />
+          <ScalarProperty Name="VoidBy" ColumnName="VoidBy" />
+          <ScalarProperty Name="VoidNumber" ColumnName="VoidNumber" />
+          <ScalarProperty Name="ChequeId" ColumnName="ChequeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinBankCheques">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinBankCheques">
+        <MappingFragment StoreEntitySet="FinBankCheques">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsClosed" ColumnName="IsClosed" />
+          <ScalarProperty Name="CurrentNo" ColumnName="CurrentNo" />
+          <ScalarProperty Name="EndNo" ColumnName="EndNo" />
+          <ScalarProperty Name="StartNo" ColumnName="StartNo" />
+          <ScalarProperty Name="IsBTR" ColumnName="IsBTR" />
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupRegion">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupRegion">
+        <MappingFragment StoreEntitySet="lupRegion">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupParentBudgetCodes">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupParentBudgetCodes">
+        <MappingFragment StoreEntitySet="lupParentBudgetCodes">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinAccountBankMapping">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinAccountBankMapping">
+        <MappingFragment StoreEntitySet="FinAccountBankMapping">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="ControlAccountId" ColumnName="ControlAccountId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinBankReconciliationDetail">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinBankReconciliationDetail">
+        <MappingFragment StoreEntitySet="FinBankReconciliationDetail">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="VoucherDetailId" ColumnName="VoucherDetailId" />
+          <ScalarProperty Name="ReconciliationHeaderId" ColumnName="ReconciliationHeaderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_FinancialTransactions" FunctionName="ENTRO_MISModel.Store.SP_FinancialTransactions">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ENTRO_MISModel.SP_FinancialTransactions_Result">
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="CNT" ColumnName="CNT" />
+          <ScalarProperty Name="DEBITTOTAL" ColumnName="DEBITTOTAL" />
+          <ScalarProperty Name="CREDITTOTAL" ColumnName="CREDITTOTAL" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_FinancialTransactionsAudAdj" FunctionName="ENTRO_MISModel.Store.SP_FinancialTransactionsAudAdj">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ENTRO_MISModel.SP_FinancialTransactionsAudAdj_Result">
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="CNT" ColumnName="CNT" />
+          <ScalarProperty Name="DEBITTOTAL" ColumnName="DEBITTOTAL" />
+          <ScalarProperty Name="CREDITTOTAL" ColumnName="CREDITTOTAL" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="lupOutsideCompanies">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupOutsideCompanies">
+        <MappingFragment StoreEntitySet="lupOutsideCompanies">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPrlJournal">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwPrlJournal">
+        <MappingFragment StoreEntitySet="vwPrlJournal">
+          <ScalarProperty Name="WoredaCode" ColumnName="WoredaCode" />
+          <ScalarProperty Name="IdentityNo" ColumnName="IdentityNo" />
+          <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Credit" ColumnName="Credit" />
+          <ScalarProperty Name="Debit" ColumnName="Debit" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_AdvanceControl" FunctionName="ENTRO_MISModel.Store.SP_AdvanceControl">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ENTRO_MISModel.SP_AdvanceControl_Result">
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="ReferenceCode" ColumnName="ReferenceCode" />
+          <ScalarProperty Name="CNT" ColumnName="CNT" />
+          <ScalarProperty Name="Advance" ColumnName="Advance" />
+          <ScalarProperty Name="Settled" ColumnName="Settled" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_UpdateReferenceCodes" FunctionName="ENTRO_MISModel.Store.SP_UpdateReferenceCodes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ENTRO_MISModel.SP_UpdateReferenceCodes_Result">
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="ImportTable">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.ImportTable">
+        <MappingFragment StoreEntitySet="ImportTable">
+          <ScalarProperty Name="ADVCredit" ColumnName="ADVCredit" />
+          <ScalarProperty Name="ADVDebit" ColumnName="ADVDebit" />
+          <ScalarProperty Name="Credit" ColumnName="Credit" />
+          <ScalarProperty Name="Debit" ColumnName="Debit" />
+          <ScalarProperty Name="BudgetCodeCG" ColumnName="BudgetCodeCG" />
+          <ScalarProperty Name="BudgetCode" ColumnName="BudgetCode" />
+          <ScalarProperty Name="ReferenceCode" ColumnName="ReferenceCode" />
+          <ScalarProperty Name="WoredaCode" ColumnName="WoredaCode" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="PCPayment" ColumnName="PCPayment" />
+          <ScalarProperty Name="PCReceipt" ColumnName="PCReceipt" />
+          <ScalarProperty Name="ORPayment" ColumnName="ORPayment" />
+          <ScalarProperty Name="ORReceipt" ColumnName="ORReceipt" />
+          <ScalarProperty Name="TGPayment" ColumnName="TGPayment" />
+          <ScalarProperty Name="TGReceipt" ColumnName="TGReceipt" />
+          <ScalarProperty Name="SNPayment" ColumnName="SNPayment" />
+          <ScalarProperty Name="SNReceipt" ColumnName="SNReceipt" />
+          <ScalarProperty Name="AMPayment" ColumnName="AMPayment" />
+          <ScalarProperty Name="AMReceipt" ColumnName="AMReceipt" />
+          <ScalarProperty Name="AAPayment" ColumnName="AAPayment" />
+          <ScalarProperty Name="AAReceipt" ColumnName="AAReceipt" />
+          <ScalarProperty Name="HHPayment" ColumnName="HHPayment" />
+          <ScalarProperty Name="HHReceipt" ColumnName="HHReceipt" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Payee" ColumnName="Payee" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="Period" ColumnName="Period" />
+          <ScalarProperty Name="VoucherNumber" ColumnName="VoucherNumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="No" ColumnName="No" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlSeverancePay">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlSeverancePay">
+        <MappingFragment StoreEntitySet="PrlSeverancePay">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AccumulatedAmount" ColumnName="AccumulatedAmount" />
+          <ScalarProperty Name="MonthlyAmount" ColumnName="MonthlyAmount" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPrlSeverancePay">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwPrlSeverancePay">
+        <MappingFragment StoreEntitySet="vwPrlSeverancePay">
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="MonthlyAmount" ColumnName="MonthlyAmount" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="AccumulatedAmount" ColumnName="AccumulatedAmount" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="DeptCode" ColumnName="DeptCode" />
+          <ScalarProperty Name="IdentityNo" ColumnName="IdentityNo" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlClosedPeriods">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlClosedPeriods">
+        <MappingFragment StoreEntitySet="PrlClosedPeriods">
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="IsPosted" ColumnName="IsPosted" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinBankReconciliationHeader">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinBankReconciliationHeader">
+        <MappingFragment StoreEntitySet="FinBankReconciliationHeader">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ReconciliationDate" ColumnName="ReconciliationDate" />
+          <ScalarProperty Name="ReconciledBy" ColumnName="ReconciledBy" />
+          <ScalarProperty Name="DepositInTransit" ColumnName="DepositInTransit" />
+          <ScalarProperty Name="BankErrorPayment" ColumnName="BankErrorPayment" />
+          <ScalarProperty Name="BankErrorDeposit" ColumnName="BankErrorDeposit" />
+          <ScalarProperty Name="BankStatementRefNo" ColumnName="BankStatementRefNo" />
+          <ScalarProperty Name="BankStatementDate" ColumnName="BankStatementDate" />
+          <ScalarProperty Name="BankStatementBalance" ColumnName="BankStatementBalance" />
+          <ScalarProperty Name="CashBookBankBalance" ColumnName="CashBookBankBalance" />
+          <ScalarProperty Name="TotalUnreconciledAmount" ColumnName="TotalUnreconciledAmount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_GeneralLedger" FunctionName="ENTRO_MISModel.Store.SP_GeneralLedger">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ENTRO_MISModel.SP_GeneralLedger_Result">
+          <ScalarProperty Name="VoucherDetailId" ColumnName="VoucherDetailId" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="ControlAccountId" ColumnName="ControlAccountId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="ReferenceCode" ColumnName="ReferenceCode" />
+          <ScalarProperty Name="DebitAmount" ColumnName="DebitAmount" />
+          <ScalarProperty Name="CreditAmount" ColumnName="CreditAmount" />
+          <ScalarProperty Name="RunningBalance" ColumnName="RunningBalance" />
+          <ScalarProperty Name="WoredaCode" ColumnName="WoredaCode" />
+          <ScalarProperty Name="DeptCode" ColumnName="DeptCode" />
+          <ScalarProperty Name="MonthYear" ColumnName="MonthYear" />
+          <ScalarProperty Name="DrOpeningBalance" ColumnName="DrOpeningBalance" />
+          <ScalarProperty Name="CrOpeningBalance" ColumnName="CrOpeningBalance" />
+          <ScalarProperty Name="DrTotal" ColumnName="DrTotal" />
+          <ScalarProperty Name="CrTotal" ColumnName="CrTotal" />
+          <ScalarProperty Name="DEBITSUM" ColumnName="DEBITSUM" />
+          <ScalarProperty Name="CREDITSUM" ColumnName="CREDITSUM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="PrlBatchSalaryChangeDetail">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlBatchSalaryChangeDetail">
+        <MappingFragment StoreEntitySet="PrlBatchSalaryChangeDetail">
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="ToMonth" ColumnName="ToMonth" />
+          <ScalarProperty Name="FromMonth" ColumnName="FromMonth" />
+          <ScalarProperty Name="HeaderId" ColumnName="HeaderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlBatchSalaryChangeHeader">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlBatchSalaryChangeHeader">
+        <MappingFragment StoreEntitySet="PrlBatchSalaryChangeHeader">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Exceptions" ColumnName="Exceptions" />
+          <ScalarProperty Name="CuttOffDate" ColumnName="CuttOffDate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinAccountGroup">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinAccountGroup">
+        <MappingFragment StoreEntitySet="FinAccountGroup">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AccountTypeId" ColumnName="AccountTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwFinChartOfAccount">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwFinChartOfAccount">
+        <MappingFragment StoreEntitySet="vwFinChartOfAccount">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupTransactionType">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupTransactionType">
+        <MappingFragment StoreEntitySet="lupTransactionType">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupPosition">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupPosition">
+        <MappingFragment StoreEntitySet="lupPosition">
+          <ScalarProperty Name="BudgetCodeId" ColumnName="BudgetCodeId" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlTimeSheet">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlTimeSheet">
+        <MappingFragment StoreEntitySet="PrlTimeSheet">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ActualDaysWorked" ColumnName="ActualDaysWorked" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinExchangeRates">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinExchangeRates">
+        <MappingFragment StoreEntitySet="FinExchangeRates">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_GeneralLedgerV2" FunctionName="ENTRO_MISModel.Store.SP_GeneralLedgerV2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ENTRO_MISModel.SP_GeneralLedgerV2_Result">
+          <ScalarProperty Name="VoucherDetailId" ColumnName="VoucherDetailId" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="ControlAccountId" ColumnName="ControlAccountId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="ReferenceCode" ColumnName="ReferenceCode" />
+          <ScalarProperty Name="DebitAmount" ColumnName="DebitAmount" />
+          <ScalarProperty Name="CreditAmount" ColumnName="CreditAmount" />
+          <ScalarProperty Name="RunningBalance" ColumnName="RunningBalance" />
+          <ScalarProperty Name="WoredaCode" ColumnName="WoredaCode" />
+          <ScalarProperty Name="DeptCode" ColumnName="DeptCode" />
+          <ScalarProperty Name="MonthYear" ColumnName="MonthYear" />
+          <ScalarProperty Name="DrOpeningBalance" ColumnName="DrOpeningBalance" />
+          <ScalarProperty Name="CrOpeningBalance" ColumnName="CrOpeningBalance" />
+          <ScalarProperty Name="DrTotal" ColumnName="DrTotal" />
+          <ScalarProperty Name="CrTotal" ColumnName="CrTotal" />
+          <ScalarProperty Name="DEBITSUM" ColumnName="DEBITSUM" />
+          <ScalarProperty Name="CREDITSUM" ColumnName="CREDITSUM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="vwFinBankReconciliation">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwFinBankReconciliation">
+        <MappingFragment StoreEntitySet="vwFinBankReconciliation">
+          <ScalarProperty Name="VoucherHeaderDate" ColumnName="VoucherHeaderDate" />
+          <ScalarProperty Name="DepositInTransit" ColumnName="DepositInTransit" />
+          <ScalarProperty Name="BankErrorPayment" ColumnName="BankErrorPayment" />
+          <ScalarProperty Name="BankErrorDeposit" ColumnName="BankErrorDeposit" />
+          <ScalarProperty Name="ReconciledBy" ColumnName="ReconciledBy" />
+          <ScalarProperty Name="VoucherDetailAmount" ColumnName="VoucherDetailAmount" />
+          <ScalarProperty Name="CreditAmount" ColumnName="CreditAmount" />
+          <ScalarProperty Name="DebitAmount" ColumnName="DebitAmount" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VoucherDetailId" ColumnName="VoucherDetailId" />
+          <ScalarProperty Name="ReconciliationHeaderId" ColumnName="ReconciliationHeaderId" />
+          <ScalarProperty Name="BankStatementBalance" ColumnName="BankStatementBalance" />
+          <ScalarProperty Name="CashBookBankBalance" ColumnName="CashBookBankBalance" />
+          <ScalarProperty Name="TotalUnreconciledAmount" ColumnName="TotalUnreconciledAmount" />
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinAccountRegionMapping">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinAccountRegionMapping">
+        <MappingFragment StoreEntitySet="FinAccountRegionMapping">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ProjectAccountCode" ColumnName="ProjectAccountCode" />
+          <ScalarProperty Name="BankAccountId" ColumnName="BankAccountId" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_UpdateEmployeeIds" FunctionName="ENTRO_MISModel.Store.SP_UpdateEmployeeIds">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ENTRO_MISModel.SP_UpdateEmployeeIds_Result">
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="FinVoucherSetting">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinVoucherSetting">
+        <MappingFragment StoreEntitySet="FinVoucherSetting">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="NumberOfDigits" ColumnName="NumberOfDigits" />
+          <ScalarProperty Name="CurrentNumber" ColumnName="CurrentNumber" />
+          <ScalarProperty Name="StartingNumber" ColumnName="StartingNumber" />
+          <ScalarProperty Name="VoucherTypeId" ColumnName="VoucherTypeId" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlBatchCurrencyChange">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlBatchCurrencyChange">
+        <MappingFragment StoreEntitySet="PrlBatchCurrencyChange">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="EffectivePeriodId" ColumnName="EffectivePeriodId" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="ChangeType" ColumnName="ChangeType" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlBatchCurrencyChangeExceptions">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlBatchCurrencyChangeExceptions">
+        <MappingFragment StoreEntitySet="PrlBatchCurrencyChangeExceptions">
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="CurrencyChangeId" ColumnName="CurrencyChangeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlPositionChange">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlPositionChange">
+        <MappingFragment StoreEntitySet="PrlPositionChange">
+          <ScalarProperty Name="IsFromBCC" ColumnName="IsFromBCC" />
+          <ScalarProperty Name="ChangePercentage" ColumnName="ChangePercentage" />
+          <ScalarProperty Name="IsFromBSC" ColumnName="IsFromBSC" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="EffectivePeriodId" ColumnName="EffectivePeriodId" />
+          <ScalarProperty Name="NewPositionId" ColumnName="NewPositionId" />
+          <ScalarProperty Name="NewCurrencyId" ColumnName="NewCurrencyId" />
+          <ScalarProperty Name="NewSalaryGBP" ColumnName="NewSalaryGBP" />
+          <ScalarProperty Name="NewSalaryETB" ColumnName="NewSalaryETB" />
+          <ScalarProperty Name="PreviousPositionId" ColumnName="PreviousPositionId" />
+          <ScalarProperty Name="PreviousCurrencyId" ColumnName="PreviousCurrencyId" />
+          <ScalarProperty Name="PreviousSalaryGBP" ColumnName="PreviousSalaryGBP" />
+          <ScalarProperty Name="PreviousSalaryETB" ColumnName="PreviousSalaryETB" />
+          <ScalarProperty Name="IsPositionChanged" ColumnName="IsPositionChanged" />
+          <ScalarProperty Name="IsSalaryChanged" ColumnName="IsSalaryChanged" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinAccountPositionMapping">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinAccountPositionMapping">
+        <MappingFragment StoreEntitySet="FinAccountPositionMapping">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ControlAccountId" ColumnName="ControlAccountId" />
+          <ScalarProperty Name="PositionId" ColumnName="PositionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPrlSalaryPositionChangeDetail">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwPrlSalaryPositionChangeDetail">
+        <MappingFragment StoreEntitySet="vwPrlSalaryPositionChangeDetail">
+          <ScalarProperty Name="IsFromBCC" ColumnName="IsFromBCC" />
+          <ScalarProperty Name="NewCurrencyId" ColumnName="NewCurrencyId" />
+          <ScalarProperty Name="PreviousCurrencyId" ColumnName="PreviousCurrencyId" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="WoredaCode" ColumnName="WoredaCode" />
+          <ScalarProperty Name="WoredaName" ColumnName="WoredaName" />
+          <ScalarProperty Name="EmploymentDate" ColumnName="EmploymentDate" />
+          <ScalarProperty Name="IdentityNo" ColumnName="IdentityNo" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ChangePercentage" ColumnName="ChangePercentage" />
+          <ScalarProperty Name="IsFromBSC" ColumnName="IsFromBSC" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="NewPositionId" ColumnName="NewPositionId" />
+          <ScalarProperty Name="NewPosition" ColumnName="NewPosition" />
+          <ScalarProperty Name="NewSalaryGBP" ColumnName="NewSalaryGBP" />
+          <ScalarProperty Name="NewSalaryETB" ColumnName="NewSalaryETB" />
+          <ScalarProperty Name="PreviousPosition" ColumnName="PreviousPosition" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="PreviousPositionId" ColumnName="PreviousPositionId" />
+          <ScalarProperty Name="PreviousSalaryGBP" ColumnName="PreviousSalaryGBP" />
+          <ScalarProperty Name="PreviousSalaryETB" ColumnName="PreviousSalaryETB" />
+          <ScalarProperty Name="IsPositionChanged" ColumnName="IsPositionChanged" />
+          <ScalarProperty Name="IsSalaryChanged" ColumnName="IsSalaryChanged" />
+          <ScalarProperty Name="EffectivePeriodId" ColumnName="EffectivePeriodId" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinProjectNumbers">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinProjectNumbers">
+        <MappingFragment StoreEntitySet="FinProjectNumbers">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="ProjectNumber" ColumnName="ProjectNumber" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_GeneralLedgerByEmployee" FunctionName="ENTRO_MISModel.Store.SP_GeneralLedgerByEmployee">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ENTRO_MISModel.SP_GeneralLedgerByEmployee_Result">
+          <ScalarProperty Name="VoucherDetailId" ColumnName="VoucherDetailId" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="ControlAccountId" ColumnName="ControlAccountId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="ReferenceCode" ColumnName="ReferenceCode" />
+          <ScalarProperty Name="DebitAmount" ColumnName="DebitAmount" />
+          <ScalarProperty Name="CreditAmount" ColumnName="CreditAmount" />
+          <ScalarProperty Name="RunningBalance" ColumnName="RunningBalance" />
+          <ScalarProperty Name="WoredaCode" ColumnName="WoredaCode" />
+          <ScalarProperty Name="DeptCode" ColumnName="DeptCode" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="MonthYear" ColumnName="MonthYear" />
+          <ScalarProperty Name="DrOpeningBalance" ColumnName="DrOpeningBalance" />
+          <ScalarProperty Name="CrOpeningBalance" ColumnName="CrOpeningBalance" />
+          <ScalarProperty Name="DrTotal" ColumnName="DrTotal" />
+          <ScalarProperty Name="CrTotal" ColumnName="CrTotal" />
+          <ScalarProperty Name="DEBITSUM" ColumnName="DEBITSUM" />
+          <ScalarProperty Name="CREDITSUM" ColumnName="CREDITSUM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_EmployeeExpenseSummary" FunctionName="ENTRO_MISModel.Store.SP_EmployeeExpenseSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ENTRO_MISModel.SP_EmployeeExpenseSummary_Result">
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="ReferenceCode" ColumnName="ReferenceCode" />
+          <ScalarProperty Name="ControlAccountId" ColumnName="ControlAccountId" />
+          <ScalarProperty Name="CNT" ColumnName="CNT" />
+          <ScalarProperty Name="Advance" ColumnName="Advance" />
+          <ScalarProperty Name="Settled" ColumnName="Settled" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="FinVoucherHeader">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinVoucherHeader">
+        <MappingFragment StoreEntitySet="FinVoucherHeader">
+          <ScalarProperty Name="IsBalanced" ColumnName="IsBalanced" />
+          <ScalarProperty Name="TransactionTypeId" ColumnName="TransactionTypeId" />
+          <ScalarProperty Name="VendorInvoiceNo" ColumnName="VendorInvoiceNo" />
+          <ScalarProperty Name="IsChecked" ColumnName="IsChecked" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsAuthorized" ColumnName="IsAuthorized" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DateAuthorized" ColumnName="DateAuthorized" />
+          <ScalarProperty Name="AuthorizedBy" ColumnName="AuthorizedBy" />
+          <ScalarProperty Name="DateReceived" ColumnName="DateReceived" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="DateApproved" ColumnName="DateApproved" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="DateChecked" ColumnName="DateChecked" />
+          <ScalarProperty Name="CheckedBy" ColumnName="CheckedBy" />
+          <ScalarProperty Name="DatePrepared" ColumnName="DatePrepared" />
+          <ScalarProperty Name="PreparedBy" ColumnName="PreparedBy" />
+          <ScalarProperty Name="IsAuditAdjustment" ColumnName="IsAuditAdjustment" />
+          <ScalarProperty Name="UnpostedDate" ColumnName="UnpostedDate" />
+          <ScalarProperty Name="UnpostedBy" ColumnName="UnpostedBy" />
+          <ScalarProperty Name="VoidDate" ColumnName="VoidDate" />
+          <ScalarProperty Name="VoidBy" ColumnName="VoidBy" />
+          <ScalarProperty Name="PostedDate" ColumnName="PostedDate" />
+          <ScalarProperty Name="PostedBy" ColumnName="PostedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsVoid" ColumnName="IsVoid" />
+          <ScalarProperty Name="IsAdjustment" ColumnName="IsAdjustment" />
+          <ScalarProperty Name="IsPosted" ColumnName="IsPosted" />
+          <ScalarProperty Name="CashierId" ColumnName="CashierId" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="ModeOfPaymentId" ColumnName="ModeOfPaymentId" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="PayedToReceivedFrom" ColumnName="PayedToReceivedFrom" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+          <ScalarProperty Name="ProjectNumberId" ColumnName="ProjectNumberId" />
+          <ScalarProperty Name="VoucherTypeId" ColumnName="VoucherTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlTransactions">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlTransactions">
+        <MappingFragment StoreEntitySet="PrlTransactions">
+          <ScalarProperty Name="BasicSalaryGBP" ColumnName="BasicSalaryGBP" />
+          <ScalarProperty Name="NumberOfDaysWorked" ColumnName="NumberOfDaysWorked" />
+          <ScalarProperty Name="ReportToDutyOn" ColumnName="ReportToDutyOn" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="ExemptAdvance" ColumnName="ExemptAdvance" />
+          <ScalarProperty Name="ExemptCredit" ColumnName="ExemptCredit" />
+          <ScalarProperty Name="ExemptAttendance" ColumnName="ExemptAttendance" />
+          <ScalarProperty Name="ExemptLoan" ColumnName="ExemptLoan" />
+          <ScalarProperty Name="IncludeOvertime" ColumnName="IncludeOvertime" />
+          <ScalarProperty Name="TotalWorkingDays" ColumnName="TotalWorkingDays" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="NetPaymentGBP" ColumnName="NetPaymentGBP" />
+          <ScalarProperty Name="NetPayment" ColumnName="NetPayment" />
+          <ScalarProperty Name="TotalDeductions" ColumnName="TotalDeductions" />
+          <ScalarProperty Name="PensionEmployer" ColumnName="PensionEmployer" />
+          <ScalarProperty Name="PensionEmployee" ColumnName="PensionEmployee" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Loan" ColumnName="Loan" />
+          <ScalarProperty Name="TaxableIncome" ColumnName="TaxableIncome" />
+          <ScalarProperty Name="GrossSalary" ColumnName="GrossSalary" />
+          <ScalarProperty Name="TaxableOvertime" ColumnName="TaxableOvertime" />
+          <ScalarProperty Name="TotalOvertime" ColumnName="TotalOvertime" />
+          <ScalarProperty Name="TaxableAdditions" ColumnName="TaxableAdditions" />
+          <ScalarProperty Name="TotalAdditions" ColumnName="TotalAdditions" />
+          <ScalarProperty Name="BasicPay" ColumnName="BasicPay" />
+          <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+          <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinFiscalYear">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinFiscalYear">
+        <MappingFragment StoreEntitySet="FinFiscalYear">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FACategory">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FACategory">
+        <MappingFragment StoreEntitySet="FACategory">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="RemainingYearDepreciationRate" ColumnName="RemainingYearDepreciationRate" />
+          <ScalarProperty Name="YearOneDepreciationRate" ColumnName="YearOneDepreciationRate" />
+          <ScalarProperty Name="UsesSameRate" ColumnName="UsesSameRate" />
+          <ScalarProperty Name="DepreciationExpenseAccountId" ColumnName="DepreciationExpenseAccountId" />
+          <ScalarProperty Name="AccumulatedDepreciationAccountId" ColumnName="AccumulatedDepreciationAccountId" />
+          <ScalarProperty Name="ControlAccountId" ColumnName="ControlAccountId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAClass">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FAClass">
+        <MappingFragment StoreEntitySet="FAClass">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAFixedAsset">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FAFixedAsset">
+        <MappingFragment StoreEntitySet="FAFixedAsset">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsDepreciationComputed" ColumnName="IsDepreciationComputed" />
+          <ScalarProperty Name="IsDisposed" ColumnName="IsDisposed" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="OtherCost" ColumnName="OtherCost" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="EngineNumber" ColumnName="EngineNumber" />
+          <ScalarProperty Name="PlateNumber" ColumnName="PlateNumber" />
+          <ScalarProperty Name="PINNumber" ColumnName="PINNumber" />
+          <ScalarProperty Name="GRNNumber" ColumnName="GRNNumber" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="IsVehicle" ColumnName="IsVehicle" />
+          <ScalarProperty Name="VoucherNumber" ColumnName="VoucherNumber" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="PurchaseCost" ColumnName="PurchaseCost" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="GRNDate" ColumnName="GRNDate" />
+          <ScalarProperty Name="Custodian" ColumnName="Custodian" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="PrevInventoryCode" ColumnName="PrevInventoryCode" />
+          <ScalarProperty Name="InventoryCode" ColumnName="InventoryCode" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="ReferenceCode" ColumnName="ReferenceCode" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupVehicles">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupVehicles">
+        <MappingFragment StoreEntitySet="lupVehicles">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="PlateNo" ColumnName="PlateNo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_RefCodeExpenseSummary" FunctionName="ENTRO_MISModel.Store.SP_RefCodeExpenseSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ENTRO_MISModel.SP_RefCodeExpenseSummary_Result">
+          <ScalarProperty Name="ReferenceCode" ColumnName="ReferenceCode" />
+          <ScalarProperty Name="ControlAccountId" ColumnName="ControlAccountId" />
+          <ScalarProperty Name="CNT" ColumnName="CNT" />
+          <ScalarProperty Name="Advance" ColumnName="Advance" />
+          <ScalarProperty Name="Settled" ColumnName="Settled" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="FinControlAccount">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinControlAccount">
+        <MappingFragment StoreEntitySet="FinControlAccount">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="RunningBalance" ColumnName="RunningBalance" />
+          <ScalarProperty Name="BudgetCodeId" ColumnName="BudgetCodeId" />
+          <ScalarProperty Name="BalanceSideId" ColumnName="BalanceSideId" />
+          <ScalarProperty Name="AccountGroupId" ColumnName="AccountGroupId" />
+          <ScalarProperty Name="CodeAsDecimal" ColumnName="CodeAsDecimal" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysRolePermission">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.sysRolePermission">
+        <MappingFragment StoreEntitySet="sysRolePermission">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="CanBulkUpdate" ColumnName="CanBulkUpdate" />
+          <ScalarProperty Name="CanAuthorize" ColumnName="CanAuthorize" />
+          <ScalarProperty Name="CanCheck" ColumnName="CanCheck" />
+          <ScalarProperty Name="CanApprove" ColumnName="CanApprove" />
+          <ScalarProperty Name="CanView" ColumnName="CanView" />
+          <ScalarProperty Name="CanDelete" ColumnName="CanDelete" />
+          <ScalarProperty Name="CanEdit" ColumnName="CanEdit" />
+          <ScalarProperty Name="CanAdd" ColumnName="CanAdd" />
+          <ScalarProperty Name="SubMenuId" ColumnName="SubMenuId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlJournals">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlJournals">
+        <MappingFragment StoreEntitySet="PrlJournals">
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Credit" ColumnName="Credit" />
+          <ScalarProperty Name="Debit" ColumnName="Debit" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlEmployeePayrollItems">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlEmployeePayrollItems">
+        <MappingFragment StoreEntitySet="PrlEmployeePayrollItems">
+          <ScalarProperty Name="DeptId" ColumnName="DeptId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="ApplicableTo" ColumnName="ApplicableTo" />
+          <ScalarProperty Name="ApplicableFrom" ColumnName="ApplicableFrom" />
+          <ScalarProperty Name="ApplyAlways" ColumnName="ApplyAlways" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PItemId" ColumnName="PItemId" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlItems">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlItems">
+        <MappingFragment StoreEntitySet="PrlItems">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsDisplayedOnSettings" ColumnName="IsDisplayedOnSettings" />
+          <ScalarProperty Name="ChildId" ColumnName="ChildId" />
+          <ScalarProperty Name="HasEmployerSide" ColumnName="HasEmployerSide" />
+          <ScalarProperty Name="IgnoreOnPayrollGen" ColumnName="IgnoreOnPayrollGen" />
+          <ScalarProperty Name="ApplyForAllEmployees" ColumnName="ApplyForAllEmployees" />
+          <ScalarProperty Name="IsDependentOnWorkingDays" ColumnName="IsDependentOnWorkingDays" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="IsBuiltin" ColumnName="IsBuiltin" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PItemAmount" ColumnName="PItemAmount" />
+          <ScalarProperty Name="PItemInitialTaxableAmount" ColumnName="PItemInitialTaxableAmount" />
+          <ScalarProperty Name="PItemApplicationType" ColumnName="PItemApplicationType" />
+          <ScalarProperty Name="PItemIsTaxed" ColumnName="PItemIsTaxed" />
+          <ScalarProperty Name="PItemIsAddition" ColumnName="PItemIsAddition" />
+          <ScalarProperty Name="PItemName" ColumnName="PItemName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrlEmployees">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.PrlEmployees">
+        <MappingFragment StoreEntitySet="PrlEmployees">
+          <ScalarProperty Name="SalaryExpenceAccountId" ColumnName="SalaryExpenceAccountId" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="HasPension" ColumnName="HasPension" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsTerminated" ColumnName="IsTerminated" />
+          <ScalarProperty Name="IsPermanent" ColumnName="IsPermanent" />
+          <ScalarProperty Name="IsUnderProbation" ColumnName="IsUnderProbation" />
+          <ScalarProperty Name="BankAccountNo" ColumnName="BankAccountNo" />
+          <ScalarProperty Name="WoredaId" ColumnName="WoredaId" />
+          <ScalarProperty Name="BankBranchId" ColumnName="BankBranchId" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="PositionId" ColumnName="PositionId" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="ContractEndDate" ColumnName="ContractEndDate" />
+          <ScalarProperty Name="EmploymentDate" ColumnName="EmploymentDate" />
+          <ScalarProperty Name="SalaryETB" ColumnName="SalaryETB" />
+          <ScalarProperty Name="SalaryGBP" ColumnName="SalaryGBP" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="TINNumber" ColumnName="TINNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastNameAmharic" ColumnName="LastNameAmharic" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleNameAmharic" ColumnName="MiddleNameAmharic" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="FirstNameAmharic" ColumnName="FirstNameAmharic" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="IdentityNo" ColumnName="IdentityNo" />
+          <ScalarProperty Name="AdvanceControlBalance" ColumnName="AdvanceControlBalance" />
+          <ScalarProperty Name="IsIC" ColumnName="IsIC" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwPrlTransactionDetails">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwPrlTransactionDetails">
+        <MappingFragment StoreEntitySet="vwPrlTransactionDetails">
+          <ScalarProperty Name="SalaryExpenceAccountId" ColumnName="SalaryExpenceAccountId" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="ContractEndDate" ColumnName="ContractEndDate" />
+          <ScalarProperty Name="PItemApplicationType" ColumnName="PItemApplicationType" />
+          <ScalarProperty Name="IgnoreOnPayrollGen" ColumnName="IgnoreOnPayrollGen" />
+          <ScalarProperty Name="IsTerminated" ColumnName="IsTerminated" />
+          <ScalarProperty Name="IsPermanent" ColumnName="IsPermanent" />
+          <ScalarProperty Name="IsUnderProbation" ColumnName="IsUnderProbation" />
+          <ScalarProperty Name="ReportToDutyOn" ColumnName="ReportToDutyOn" />
+          <ScalarProperty Name="BankBranchId" ColumnName="BankBranchId" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="TINNumber" ColumnName="TINNumber" />
+          <ScalarProperty Name="EmployeeNameAmharic" ColumnName="EmployeeNameAmharic" />
+          <ScalarProperty Name="MiddleNameAmharic" ColumnName="MiddleNameAmharic" />
+          <ScalarProperty Name="FirstNameAmharic" ColumnName="FirstNameAmharic" />
+          <ScalarProperty Name="LastNameAmharic" ColumnName="LastNameAmharic" />
+          <ScalarProperty Name="DutyStation" ColumnName="DutyStation" />
+          <ScalarProperty Name="NumberOfDaysWorked" ColumnName="NumberOfDaysWorked" />
+          <ScalarProperty Name="RegionCode" ColumnName="RegionCode" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="WoredaCode" ColumnName="WoredaCode" />
+          <ScalarProperty Name="Woreda" ColumnName="Woreda" />
+          <ScalarProperty Name="WoredaId" ColumnName="WoredaId" />
+          <ScalarProperty Name="PositionCode" ColumnName="PositionCode" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="TotalWorkingDays" ColumnName="TotalWorkingDays" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="PItemAmount" ColumnName="PItemAmount" />
+          <ScalarProperty Name="PItemIsAddition" ColumnName="PItemIsAddition" />
+          <ScalarProperty Name="PItemName" ColumnName="PItemName" />
+          <ScalarProperty Name="PItemId" ColumnName="PItemId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="NetPaymentGBP" ColumnName="NetPaymentGBP" />
+          <ScalarProperty Name="NetPayment" ColumnName="NetPayment" />
+          <ScalarProperty Name="TotalDeductions" ColumnName="TotalDeductions" />
+          <ScalarProperty Name="BasicSalaryGBP" ColumnName="BasicSalaryGBP" />
+          <ScalarProperty Name="PensionEmployer" ColumnName="PensionEmployer" />
+          <ScalarProperty Name="PensionEmployee" ColumnName="PensionEmployee" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Loan" ColumnName="Loan" />
+          <ScalarProperty Name="TaxableIncome" ColumnName="TaxableIncome" />
+          <ScalarProperty Name="GrossSalary" ColumnName="GrossSalary" />
+          <ScalarProperty Name="TaxableOvertime" ColumnName="TaxableOvertime" />
+          <ScalarProperty Name="TaxableAdditions" ColumnName="TaxableAdditions" />
+          <ScalarProperty Name="TotalAdditions" ColumnName="TotalAdditions" />
+          <ScalarProperty Name="BasicPay" ColumnName="BasicPay" />
+          <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+          <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="BankAccountNo" ColumnName="BankAccountNo" />
+          <ScalarProperty Name="BankId" ColumnName="BankId" />
+          <ScalarProperty Name="TotalOvertime" ColumnName="TotalOvertime" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="PositionId" ColumnName="PositionId" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="EmploymentDate" ColumnName="EmploymentDate" />
+          <ScalarProperty Name="SalaryETB" ColumnName="SalaryETB" />
+          <ScalarProperty Name="SalaryGBP" ColumnName="SalaryGBP" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="IdentityNo" ColumnName="IdentityNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwFinVoucherDetail">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.vwFinVoucherDetail">
+        <MappingFragment StoreEntitySet="vwFinVoucherDetail">
+          <ScalarProperty Name="SNReceipt2" ColumnName="SNReceipt2" />
+          <ScalarProperty Name="SNPayment2" ColumnName="SNPayment2" />
+          <ScalarProperty Name="ABReceipt" ColumnName="ABReceipt" />
+          <ScalarProperty Name="ABPayment" ColumnName="ABPayment" />
+          <ScalarProperty Name="ProjectNumber" ColumnName="ProjectNumber" />
+          <ScalarProperty Name="ProjectNumberId" ColumnName="ProjectNumberId" />
+          <ScalarProperty Name="EmployeeWoredaCode" ColumnName="EmployeeWoredaCode" />
+          <ScalarProperty Name="EmployeeWoredaName" ColumnName="EmployeeWoredaName" />
+          <ScalarProperty Name="EmployeeWoredaId" ColumnName="EmployeeWoredaId" />
+          <ScalarProperty Name="EmployeeRegionCode" ColumnName="EmployeeRegionCode" />
+          <ScalarProperty Name="EmployeeRegionName" ColumnName="EmployeeRegionName" />
+          <ScalarProperty Name="EmployeeRegionId" ColumnName="EmployeeRegionId" />
+          <ScalarProperty Name="AccountGroupName" ColumnName="AccountGroupName" />
+          <ScalarProperty Name="VoucherDetailId" ColumnName="VoucherDetailId" />
+          <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+          <ScalarProperty Name="AdvanceControlBalance" ColumnName="AdvanceControlBalance" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="IsVoucherDetailDeleted" ColumnName="IsVoucherDetailDeleted" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="CodeAsDecimal" ColumnName="CodeAsDecimal" />
+          <ScalarProperty Name="RunningBalance" ColumnName="RunningBalance" />
+          <ScalarProperty Name="OtherDebit" ColumnName="OtherDebit" />
+          <ScalarProperty Name="OtherCredit" ColumnName="OtherCredit" />
+          <ScalarProperty Name="ADVDebit" ColumnName="ADVDebit" />
+          <ScalarProperty Name="ADVCredit" ColumnName="ADVCredit" />
+          <ScalarProperty Name="PTYCReceipt" ColumnName="PTYCReceipt" />
+          <ScalarProperty Name="PTYCPayment" ColumnName="PTYCPayment" />
+          <ScalarProperty Name="TGReceipt" ColumnName="TGReceipt" />
+          <ScalarProperty Name="TGPayment" ColumnName="TGPayment" />
+          <ScalarProperty Name="SNReceipt" ColumnName="SNReceipt" />
+          <ScalarProperty Name="SNPayment" ColumnName="SNPayment" />
+          <ScalarProperty Name="ORReceipt" ColumnName="ORReceipt" />
+          <ScalarProperty Name="ORPayment" ColumnName="ORPayment" />
+          <ScalarProperty Name="ARReceipt" ColumnName="ARReceipt" />
+          <ScalarProperty Name="ARPayment" ColumnName="ARPayment" />
+          <ScalarProperty Name="AAReceipt" ColumnName="AAReceipt" />
+          <ScalarProperty Name="AAPayment" ColumnName="AAPayment" />
+          <ScalarProperty Name="HHReceipt" ColumnName="HHReceipt" />
+          <ScalarProperty Name="HHPayment" ColumnName="HHPayment" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="IsAuditAdjustment" ColumnName="IsAuditAdjustment" />
+          <ScalarProperty Name="IsVoid" ColumnName="IsVoid" />
+          <ScalarProperty Name="IsPosted" ColumnName="IsPosted" />
+          <ScalarProperty Name="BudgetName" ColumnName="BudgetName" />
+          <ScalarProperty Name="BudgetCode" ColumnName="BudgetCode" />
+          <ScalarProperty Name="BudgetCodeId" ColumnName="BudgetCodeId" />
+          <ScalarProperty Name="VoucherType" ColumnName="VoucherType" />
+          <ScalarProperty Name="VoucherTypeId" ColumnName="VoucherTypeId" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="PeriodId" ColumnName="PeriodId" />
+          <ScalarProperty Name="PeriodName" ColumnName="PeriodName" />
+          <ScalarProperty Name="FiscalYear" ColumnName="FiscalYear" />
+          <ScalarProperty Name="CreditBalance" ColumnName="CreditBalance" />
+          <ScalarProperty Name="DebitBalance" ColumnName="DebitBalance" />
+          <ScalarProperty Name="BalanceSide" ColumnName="BalanceSide" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="WoredaId" ColumnName="WoredaId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="ControlAccountId" ColumnName="ControlAccountId" />
+          <ScalarProperty Name="VoucherHeaderId" ColumnName="VoucherHeaderId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="AccountDescription" ColumnName="AccountDescription" />
+          <ScalarProperty Name="DeptCode" ColumnName="DeptCode" />
+          <ScalarProperty Name="CreditAmount" ColumnName="CreditAmount" />
+          <ScalarProperty Name="DebitAmount" ColumnName="DebitAmount" />
+          <ScalarProperty Name="WoredaCode" ColumnName="WoredaCode" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="ReferenceCode" ColumnName="ReferenceCode" />
+          <ScalarProperty Name="DateApproved" ColumnName="DateApproved" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="DateChecked" ColumnName="DateChecked" />
+          <ScalarProperty Name="CheckedBy" ColumnName="CheckedBy" />
+          <ScalarProperty Name="DatePrepared" ColumnName="DatePrepared" />
+          <ScalarProperty Name="PreparedBy" ColumnName="PreparedBy" />
+          <ScalarProperty Name="DateAuthorized" ColumnName="DateAuthorized" />
+          <ScalarProperty Name="AuthorizedBy" ColumnName="AuthorizedBy" />
+          <ScalarProperty Name="DateReceived" ColumnName="DateReceived" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PayedToReceivedFrom" ColumnName="PayedToReceivedFrom" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="BankAccountNo" ColumnName="BankAccountNo" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FinVoucherDetail">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.FinVoucherDetail">
+        <MappingFragment StoreEntitySet="FinVoucherDetail">
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsReconciled" ColumnName="IsReconciled" />
+          <ScalarProperty Name="CreditAmount" ColumnName="CreditAmount" />
+          <ScalarProperty Name="DebitAmount" ColumnName="DebitAmount" />
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="ReferenceTypeId" ColumnName="ReferenceTypeId" />
+          <ScalarProperty Name="WoredaId" ColumnName="WoredaId" />
+          <ScalarProperty Name="ControlAccountId" ColumnName="ControlAccountId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VoucherHeaderId" ColumnName="VoucherHeaderId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lupReferenceType">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.lupReferenceType">
+        <MappingFragment StoreEntitySet="lupReferenceType">
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

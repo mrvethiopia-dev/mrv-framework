@@ -1,0 +1,34 @@
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.dll
+D:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.pdb
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.dll
+E:\Cyber Works\Projects\NBI_MIS\NBI_MIS\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.pdb
+E:\Cyber Works\Projects\LIFT\App\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.dll
+E:\Cyber Works\Projects\LIFT\App\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\LIFT\App\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\LIFT\App\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\Core Finance\App\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\Core Finance\App\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.dll
+D:\BProjects\Cyber\Bitbucket\Finance\LIFT\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.pdb
+D:\Projects\Core Finance\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.dll
+D:\Projects\Core Finance\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\Projects\Core Finance\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.dll
+D:\Projects\Core Finance\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.pdb
+D:\Projects\Core Finance\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Infrastructure\bin\Debug\NBI.Data.Infrastructure.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.dll
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.pdb
+D:\Projects\LIFT_FINANCE\Core Finance\NBI.Data.Infrastructure\obj\Debug\NBI.Data.Infrastructure.csprojResolveAssemblyReference.cache
