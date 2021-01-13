@@ -1,6 +1,6 @@
-﻿Ext.namespace('Ext.core.finance.ux.reception');
+﻿Ext.namespace('Ext.mrv.ghginventory.ux.reception');
 
-Ext.core.finance.ux.reception.LogoutWindowButton = Ext.extend(Ext.BoxComponent, {
+Ext.mrv.ghginventory.ux.reception.LogoutWindowButton = Ext.extend(Ext.BoxComponent, {
     initComponent: function () {
         Ext.apply(this, {
             handler: this.handler || Ext.emptyFn,
@@ -19,14 +19,14 @@ Ext.core.finance.ux.reception.LogoutWindowButton = Ext.extend(Ext.BoxComponent, 
             }
         });
         this.on('render', this._onRender, this, { single: true });
-        Ext.core.finance.ux.reception.LogoutWindowButton.superclass.initComponent.call(this);
+        Ext.mrv.ghginventory.ux.reception.LogoutWindowButton.superclass.initComponent.call(this);
     },
     _onRender: function () {
         Ext.fly(this.el.dom.firstChild).on('click', this.handler, this.scope);
     }
 });
 
-Ext.core.finance.ux.reception.LogoutWindow = Ext.extend(Ext.Window, {
+Ext.mrv.ghginventory.ux.reception.LogoutWindow = Ext.extend(Ext.Window, {
     initComponent: function () {
         Ext.apply(this, {
             cls: 'reception-LogoutWindow',
@@ -38,33 +38,33 @@ Ext.core.finance.ux.reception.LogoutWindow = Ext.extend(Ext.Window, {
             resizable: false,
             layout: 'column',
             items: [
-                new Ext.core.finance.ux.reception.LogoutWindowButton({
+                new Ext.mrv.ghginventory.ux.reception.LogoutWindowButton({
                     cls: 'reception-LogoutWindow-lockButton',
                     overCls: 'over',
                     columnWidth: .33,
                     text: 'Lock',
                     handler: function () {
-                        Ext.core.finance.ux.Reception.lockWorkbench();
+                        Ext.mrv.ghginventory.ux.Reception.lockWorkbench();
                         this.close();
                     },
                     scope: this
                 }),
-                new Ext.core.finance.ux.reception.LogoutWindowButton({
+                new Ext.mrv.ghginventory.ux.reception.LogoutWindowButton({
                     cls: 'reception-LogoutWindow-logoutButton',
                     overCls: 'over',
                     columnWidth: .33,
                     text: 'Sign out',
                     handler: function () {
-                        Ext.core.finance.ux.Reception.logout();
+                        Ext.mrv.ghginventory.ux.Reception.logout();
                     }
                 }),
-                new Ext.core.finance.ux.reception.LogoutWindowButton({
+                new Ext.mrv.ghginventory.ux.reception.LogoutWindowButton({
                     cls: 'reception-LogoutWindow-restartButton',
                     overCls: 'over',
                     columnWidth: .33,
                     text: 'Restart',
                     handler: function () {
-                        Ext.core.finance.ux.Reception.restart();
+                        Ext.mrv.ghginventory.ux.Reception.restart();
                     }
                 })
             ],
@@ -79,6 +79,6 @@ Ext.core.finance.ux.reception.LogoutWindow = Ext.extend(Ext.Window, {
                 scope: this
             }]
         });
-        Ext.core.finance.ux.reception.LogoutWindow.superclass.initComponent.call(this);
+        Ext.mrv.ghginventory.ux.reception.LogoutWindow.superclass.initComponent.call(this);
     }
 });

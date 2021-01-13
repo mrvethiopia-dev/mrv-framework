@@ -1,15 +1,15 @@
-﻿Ext.ns('Ext.core.finance.ux.roleMember');
+﻿Ext.ns('Ext.mrv.ghginventory.ux.roleMember');
 /**
 * @desc      RoleMember registration form
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.roleMember
-* @class     Ext.core.finance.ux.roleMember.Form
+
+
+* @namespace Ext.mrv.ghginventory.ux.roleMember
+* @class     Ext.mrv.ghginventory.ux.roleMember.Form
 * @extends   Ext.form.FormPanel
 */
-Ext.core.finance.ux.roleMember.Form = function (config) {
-    Ext.core.finance.ux.roleMember.Form.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.roleMember.Form = function (config) {
+    Ext.mrv.ghginventory.ux.roleMember.Form.superclass.constructor.call(this, Ext.apply({
         api: {
             load: RoleMember.Get,
             submit: RoleMember.Save
@@ -54,20 +54,20 @@ Ext.core.finance.ux.roleMember.Form = function (config) {
         }]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.roleMember.Form, Ext.form.FormPanel);
-Ext.reg('roleMember-form', Ext.core.finance.ux.roleMember.Form);
+Ext.extend(Ext.mrv.ghginventory.ux.roleMember.Form, Ext.form.FormPanel);
+Ext.reg('roleMember-form', Ext.mrv.ghginventory.ux.roleMember.Form);
 
 /**
 * @desc      RoleMember registration form host window
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.roleMember
-* @class     Ext.core.finance.ux.roleMember.Window
+
+
+* @namespace Ext.mrv.ghginventory.ux.roleMember
+* @class     Ext.mrv.ghginventory.ux.roleMember.Window
 * @extends   Ext.Window
 */
-Ext.core.finance.ux.roleMember.Window = function (config) {
-    Ext.core.finance.ux.roleMember.Window.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.roleMember.Window = function (config) {
+    Ext.mrv.ghginventory.ux.roleMember.Window.superclass.constructor.call(this, Ext.apply({
         layout: 'form',
         width: 500,
         autoHeight: true,
@@ -78,10 +78,10 @@ Ext.core.finance.ux.roleMember.Window = function (config) {
         bodyStyle: 'padding:5px;'
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.roleMember.Window, Ext.Window, {
+Ext.extend(Ext.mrv.ghginventory.ux.roleMember.Window, Ext.Window, {
     initComponent: function () {
-        this.form = new Ext.core.finance.ux.roleMember.Form();
-        this.grid = new Ext.core.finance.ux.roleMember.Grid({ roleId: this.roleId });
+        this.form = new Ext.mrv.ghginventory.ux.roleMember.Form();
+        this.grid = new Ext.mrv.ghginventory.ux.roleMember.Grid({ roleId: this.roleId });
         this.items = [this.form, this.grid];
         this.buttons = [{
             text: 'Save',
@@ -107,7 +107,7 @@ Ext.extend(Ext.core.finance.ux.roleMember.Window, Ext.Window, {
             },
             scope: this
         }];
-        Ext.core.finance.ux.roleMember.Window.superclass.initComponent.call(this, arguments);
+        Ext.mrv.ghginventory.ux.roleMember.Window.superclass.initComponent.call(this, arguments);
     },
     onSaveRoleMember: function () {
         if (!this.form.getForm().isValid()) return;
@@ -162,19 +162,19 @@ Ext.extend(Ext.core.finance.ux.roleMember.Window, Ext.Window, {
         this.close();
     }
 });
-Ext.reg('roleMember-window', Ext.core.finance.ux.roleMember.Window);
+Ext.reg('roleMember-window', Ext.mrv.ghginventory.ux.roleMember.Window);
 
 /**
 * @desc      RoleMember grid
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.roleMember
-* @class     Ext.core.finance.ux.roleMember.Grid
+
+
+* @namespace Ext.mrv.ghginventory.ux.roleMember
+* @class     Ext.mrv.ghginventory.ux.roleMember.Grid
 * @extends   Ext.grid.GridPanel
 */
-Ext.core.finance.ux.roleMember.Grid = function (config) {
-    Ext.core.finance.ux.roleMember.Grid.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.roleMember.Grid = function (config) {
+    Ext.mrv.ghginventory.ux.roleMember.Grid.superclass.constructor.call(this, Ext.apply({
         store: new Ext.data.DirectStore({
             directFn: RoleMember.GetAll,
             paramsAsHash: false,
@@ -243,7 +243,7 @@ Ext.core.finance.ux.roleMember.Grid = function (config) {
         }]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.roleMember.Grid, Ext.grid.GridPanel, {
+Ext.extend(Ext.mrv.ghginventory.ux.roleMember.Grid, Ext.grid.GridPanel, {
     initComponent: function () {
         this.store.baseParams = { record: Ext.encode({ roleId: this.roleId }) };
         this.bbar = new Ext.PagingToolbar({
@@ -252,11 +252,11 @@ Ext.extend(Ext.core.finance.ux.roleMember.Grid, Ext.grid.GridPanel, {
             displayInfo: true,
             pageSize: this.pageSize
         });
-        Ext.core.finance.ux.roleMember.Grid.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.roleMember.Grid.superclass.initComponent.apply(this, arguments);
     },
     afterRender: function () {
         this.getStore().load({ params: { start: 0, limit: this.pageSize} });
-        Ext.core.finance.ux.roleMember.Grid.superclass.afterRender.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.roleMember.Grid.superclass.afterRender.apply(this, arguments);
     }
 });
-Ext.reg('roleMember-grid', Ext.core.finance.ux.roleMember.Grid);
+Ext.reg('roleMember-grid', Ext.mrv.ghginventory.ux.roleMember.Grid);

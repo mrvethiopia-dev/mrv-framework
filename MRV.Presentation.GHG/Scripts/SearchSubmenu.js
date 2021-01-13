@@ -1,18 +1,18 @@
-﻿Ext.ns('Ext.core.finance.ux.searchSubmenu');
-Ext.core.finance.ux.searchSubmenu.Observable = new Ext.util.Observable();
-Ext.core.finance.ux.searchSubmenu.Observable.addEvents('search-operation');
+﻿Ext.ns('Ext.mrv.ghginventory.ux.searchSubmenu');
+Ext.mrv.ghginventory.ux.searchSubmenu.Observable = new Ext.util.Observable();
+Ext.mrv.ghginventory.ux.searchSubmenu.Observable.addEvents('search-operation');
 
 /**
 * @desc      Menu form
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.searchSubmenu
-* @class     Ext.core.finance.ux.searchSubmenu.Form
+
+
+* @namespace Ext.mrv.ghginventory.ux.searchSubmenu
+* @class     Ext.mrv.ghginventory.ux.searchSubmenu.Form
 * @extends   Ext.form.FormPanel
 */
-Ext.core.finance.ux.searchSubmenu.Form = function (config) {
-    Ext.core.finance.ux.searchSubmenu.Form.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.searchSubmenu.Form = function (config) {
+    Ext.mrv.ghginventory.ux.searchSubmenu.Form.superclass.constructor.call(this, Ext.apply({
         defaults: {
             anchor: '95%',
             labelStyle: 'text-align:right;',
@@ -79,20 +79,20 @@ Ext.core.finance.ux.searchSubmenu.Form = function (config) {
         }]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.searchSubmenu.Form, Ext.form.FormPanel);
-Ext.reg('searchSubmenu-form', Ext.core.finance.ux.searchSubmenu.Form);
+Ext.extend(Ext.mrv.ghginventory.ux.searchSubmenu.Form, Ext.form.FormPanel);
+Ext.reg('searchSubmenu-form', Ext.mrv.ghginventory.ux.searchSubmenu.Form);
 
 /**
 * @desc      AccountSearch registration form host window
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.searchSubmenu
-* @class     Ext.core.finance.ux.searchSubmenu.Window
+
+
+* @namespace Ext.mrv.ghginventory.ux.searchSubmenu
+* @class     Ext.mrv.ghginventory.ux.searchSubmenu.Window
 * @extends   Ext.Window
 */
-Ext.core.finance.ux.searchSubmenu.Window = function (config) {
-    Ext.core.finance.ux.searchSubmenu.Window.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.searchSubmenu.Window = function (config) {
+    Ext.mrv.ghginventory.ux.searchSubmenu.Window.superclass.constructor.call(this, Ext.apply({
         layout: 'fit',
         width: 600,
         autoHeight: true,
@@ -103,9 +103,9 @@ Ext.core.finance.ux.searchSubmenu.Window = function (config) {
         bodyStyle: 'padding:5px;'
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.searchSubmenu.Window, Ext.Window, {
+Ext.extend(Ext.mrv.ghginventory.ux.searchSubmenu.Window, Ext.Window, {
     initComponent: function () {
-        var form = new Ext.core.finance.ux.searchSubmenu.Form();
+        var form = new Ext.mrv.ghginventory.ux.searchSubmenu.Form();
         this.items = [form];
         this.bbar = [{
             xtype: 'tbfill'
@@ -130,7 +130,7 @@ Ext.extend(Ext.core.finance.ux.searchSubmenu.Window, Ext.Window, {
             },
             scope: this
         }];
-        Ext.core.finance.ux.searchSubmenu.Window.superclass.initComponent.call(this, arguments);
+        Ext.mrv.ghginventory.ux.searchSubmenu.Window.superclass.initComponent.call(this, arguments);
     },
     onFilter: function () {
         var form = Ext.getCmp('searchSubmenu-form').getForm();
@@ -141,10 +141,10 @@ Ext.extend(Ext.core.finance.ux.searchSubmenu.Window, Ext.Window, {
                 result[cmb.hiddenName] = cmb.getValue() + ';' + cmb.getRawValue();
             }
         });
-        Ext.core.finance.ux.searchSubmenu.Observable.fireEvent(this.searchEvent, result);
+        Ext.mrv.ghginventory.ux.searchSubmenu.Observable.fireEvent(this.searchEvent, result);
     },
     onClose: function () {
         this.close();
     }
 });
-Ext.reg('searchSubmenu-window', Ext.core.finance.ux.searchSubmenu.Window);
+Ext.reg('searchSubmenu-window', Ext.mrv.ghginventory.ux.searchSubmenu.Window);

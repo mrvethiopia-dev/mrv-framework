@@ -1,0 +1,9 @@
+D:\Projects\MRV\MRV.Business.GHG\bin\Release\MRV.Business.GHG.dll
+D:\Projects\MRV\MRV.Business.GHG\bin\Release\MRV.Business.GHG.pdb
+D:\Projects\MRV\MRV.Business.GHG\bin\Release\MRV.Data.Infrastructure.dll
+D:\Projects\MRV\MRV.Business.GHG\bin\Release\MRV.Data.Model.dll
+D:\Projects\MRV\MRV.Business.GHG\bin\Release\MRV.Data.Infrastructure.pdb
+D:\Projects\MRV\MRV.Business.GHG\bin\Release\MRV.Data.Model.pdb
+D:\Projects\MRV\MRV.Business.GHG\obj\Release\MRV.Business.GHG.csprojResolveAssemblyReference.cache
+D:\Projects\MRV\MRV.Business.GHG\obj\Release\MRV.Business.GHG.dll
+D:\Projects\MRV\MRV.Business.GHG\obj\Release\MRV.Business.GHG.pdb

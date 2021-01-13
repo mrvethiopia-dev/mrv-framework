@@ -224,21 +224,6 @@ namespace MRV.Data.Model
         }
         private GHGInventoryYear _gHGInventoryYear;
     
-        public virtual GHGLocations GHGLocations
-        {
-            get { return _gHGLocations; }
-            set
-            {
-                if (!ReferenceEquals(_gHGLocations, value))
-                {
-                    var previousValue = _gHGLocations;
-                    _gHGLocations = value;
-                    FixupGHGLocations(previousValue);
-                }
-            }
-        }
-        private GHGLocations _gHGLocations;
-    
         public virtual sysUser sysUser
         {
             get { return _sysUser; }
@@ -268,6 +253,21 @@ namespace MRV.Data.Model
             }
         }
         private sysUser _sysUser1;
+    
+        public virtual GHGLocations GHGLocations
+        {
+            get { return _gHGLocations; }
+            set
+            {
+                if (!ReferenceEquals(_gHGLocations, value))
+                {
+                    var previousValue = _gHGLocations;
+                    _gHGLocations = value;
+                    FixupGHGLocations(previousValue);
+                }
+            }
+        }
+        private GHGLocations _gHGLocations;
 
         #endregion
 
@@ -291,26 +291,6 @@ namespace MRV.Data.Model
                 if (InventoryYearId != GHGInventoryYear.Id)
                 {
                     InventoryYearId = GHGInventoryYear.Id;
-                }
-            }
-        }
-    
-        private void FixupGHGLocations(GHGLocations previousValue)
-        {
-            if (previousValue != null && previousValue.GHGDataEntryHeader.Contains(this))
-            {
-                previousValue.GHGDataEntryHeader.Remove(this);
-            }
-    
-            if (GHGLocations != null)
-            {
-                if (!GHGLocations.GHGDataEntryHeader.Contains(this))
-                {
-                    GHGLocations.GHGDataEntryHeader.Add(this);
-                }
-                if (LocationId != GHGLocations.Id)
-                {
-                    LocationId = GHGLocations.Id;
                 }
             }
         }
@@ -360,6 +340,26 @@ namespace MRV.Data.Model
             else if (!_settingFK)
             {
                 ApprovedById = null;
+            }
+        }
+    
+        private void FixupGHGLocations(GHGLocations previousValue)
+        {
+            if (previousValue != null && previousValue.GHGDataEntryHeader.Contains(this))
+            {
+                previousValue.GHGDataEntryHeader.Remove(this);
+            }
+    
+            if (GHGLocations != null)
+            {
+                if (!GHGLocations.GHGDataEntryHeader.Contains(this))
+                {
+                    GHGLocations.GHGDataEntryHeader.Add(this);
+                }
+                if (LocationId != GHGLocations.Id)
+                {
+                    LocationId = GHGLocations.Id;
+                }
             }
         }
     

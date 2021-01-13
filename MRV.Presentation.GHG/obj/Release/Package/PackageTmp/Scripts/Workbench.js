@@ -3,7 +3,7 @@
 * @desc      Panel to host north items
 * @author    Dawit Kiros Woldemichael
 * @editor    Dawit Kiros Woldemichael
-* @copyright (c) 2014, LIFT
+
 * @date      November 12, 2010
 * @namespace Ext.erp.ux.main
 * @class     Ext.erp.ux.main.North
@@ -20,53 +20,16 @@ Ext.erp.ux.main.North = function () {
             xtype: 'box',
             autoEl: {
                 tag: 'div',
-                html: "<div id='header'><a style='float:right;margin-right:0px;' href='/'><img style='margin-top: 2px;' src='content/images/app/logo.png'/></a><div class='api-title'>Financial Management System</div></div>"
+                html: "<div id='header'><a style='float:right;margin-right:0px;' href='/'><img style='margin-top: 2px;' src='content/images/app/logo.png'/></a><div class='api-title'> . </div></div>"
             }
         }, {
             xtype: 'toolbar',
             items: [
             {
                 text: 'Setting',
-                //hidden: Ext.core.finance.ux.Reception.getPermission('Journal Voucher (JV)', 'CanAdd'),
+                hidden: true,
                 menu: [
-                    {
-                        text: 'Payroll Settings',
-                        iconCls: 'icon-settings',
-                        handler: function () {
-                            if (!Ext.core.finance.ux.Reception.getPermission('Journal Voucher (JV)', 'CanAdd')) {
-                                Ext.MessageBox.show({
-                                    title: 'Permission',
-                                    msg: 'You can not access this page. Permission Error!',
-                                    buttons: Ext.Msg.OK,
-                                    icon: Ext.MessageBox.ERROR,
-                                    scope: this
-                                });
-                                return;
-                            } else {
-                                new Ext.core.finance.ux.payrollItemSettings.Window().show();
-                            }
-                            
-                        }
-                    },
-                     {
-                        text: 'Finance Settings',
-                        iconCls: 'icon-settings',
-                        //hidden: true,
-                        handler: function () {
-                            if (!Ext.core.finance.ux.Reception.getPermission('Journal Voucher (JV)', 'CanAdd')) {
-                                Ext.MessageBox.show({
-                                    title: 'Permission',
-                                    msg: 'You can not access this page. Permission Error!',
-                                    buttons: Ext.Msg.OK,
-                                    icon: Ext.MessageBox.ERROR,
-                                    scope: this
-                                });
-                                return;
-                            } else {
-                                new Ext.core.finance.ux.financeSettings.Window().show();
-                            }
-                        }
-                    }
+                   
                 ]
             }, '->', '-', {
                 //text: 'Setting',
@@ -104,25 +67,14 @@ Ext.erp.ux.main.North = function () {
                 hidden:true
 
 
-            }, '-', {
-                xtype: 'button',
-                id: 'btnExchangeRates',
-                iconCls: 'icon-pound',
-                tooltip: 'Weekly Exchange Rates',
-
-                handler: function () {
-                    new Ext.core.finance.ux.FinanceExchangeRates.Window({
-                        title: 'Exchange Rates'
-                    }).show();
-                }
-            }, '-', {
+            }, '-',  {
                 xtype: 'button',
                 id: 'btnChangePassword',
                 iconCls: 'icon-cngpwd',
                 tooltip: 'Change Password',
 
                 handler: function () {
-                    new Ext.core.finance.ux.changePassword.Window({
+                    new Ext.mrv.ghginventory.ux.changePassword.Window({
                         title: 'Change Password', CallerId: 0
                     }).show();
                 }
@@ -134,7 +86,7 @@ Ext.erp.ux.main.North = function () {
 
                 handler: function () {
                     var msg = Ext.MessageBox;
-                    Ext.core.finance.ux.SystemMessageManager.show({
+                    Ext.mrv.ghginventory.ux.SystemMessageManager.show({
                         title: 'Logout',
                         msg: 'Are you sure you want to log out of the system?',
                         buttons: msg.YESNO,
@@ -143,10 +95,10 @@ Ext.erp.ux.main.North = function () {
                         width: 400,
                         fn: function (buttonType) {
                             if (buttonType == 'yes') {
-                                Ext.core.finance.ux.SystemMessageManager.wait(
-                                    new Ext.core.finance.ux.SystemMessage({
+                                Ext.mrv.ghginventory.ux.SystemMessageManager.wait(
+                                    new Ext.mrv.ghginventory.ux.SystemMessage({
                                         text: 'Please wait, signing out...',
-                                        type: Ext.core.finance.ux.SystemMessageManager.TYPE_WAIT
+                                        type: Ext.mrv.ghginventory.ux.SystemMessageManager.TYPE_WAIT
                                     })
                                 );
                                 Workbench.Logout(function (request, response) {
@@ -167,7 +119,7 @@ Ext.reg('north-panel', Ext.erp.ux.main.North);
 /**
 * @desc      Panel to host east items
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, LIFT
+
 * @date      November 12, 2010
 * @namespace Ext.erp.ux.main
 * @class     Ext.erp.ux.main.East
@@ -193,7 +145,7 @@ Ext.reg('east-panel', Ext.erp.ux.main.East);
 /**
 * @desc      Panel to host south items
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, LIFT
+
 * @date      November 12, 2010
 * @namespace Ext.erp.ux.main
 * @class     Ext.erp.ux.main.South
@@ -215,7 +167,7 @@ Ext.reg('south-panel', Ext.erp.ux.main.South);
 /**
 * @desc      Panel to host west items
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, LIFT
+
 * @date      November 12, 2010
 * @namespace Ext.erp.ux.main
 * @class     Ext.erp.ux.main.South
@@ -243,7 +195,7 @@ Ext.reg('west-panel', Ext.erp.ux.main.West);
 * @desc      Panel to host content items in the center
 * @author    Dawit Kiros Woldemichael
 * @editor    Dawit Kiros Woldemichael
-* @copyright (c) 2014, LIFT
+
 * @date      November 12, 2010
 * @namespace Ext.erp.ux.main
 * @class     Ext.erp.ux.main.Center
@@ -307,7 +259,7 @@ Ext.onReady(function () {
 
     var currentUser = Ext.getCmp('loggedInUser-toolbar');
     var loggedInUserFullName = Ext.getCmp('loggedInUserFullName-toolbar');
-    var reception = Ext.core.finance.ux.Reception;
+    var reception = Ext.mrv.ghginventory.ux.Reception;
     reception.getInstance(true);
 
     window.Workbench.InitializeApp(function (response, action) {
@@ -341,7 +293,7 @@ Ext.onReady(function () {
         Ext.getCmp('loggedInUser-toolbar').setValue(action.result.data.Username + ' - ');
         
 
-        Ext.core.finance.ux.Reception.initializeApp(options);
+        Ext.mrv.ghginventory.ux.Reception.initializeApp(options);
         window.Workbench.GetModules(function (result) {
             var modules = result.data;
             for (i = 0; i < modules.length; i++) {
@@ -382,185 +334,7 @@ Ext.onReady(function () {
                 items: [northPanel, westPanel, centerPanel]
             });
 
-            var canCheckJV = Ext.core.finance.ux.Reception.getPermission('Journal Voucher (JV)', 'CanCheck');
-            var canCheckDV = Ext.core.finance.ux.Reception.getPermission('Disbursement Voucher (DV)', 'CanCheck');
-            var canCheckCRV = Ext.core.finance.ux.Reception.getPermission('Cash Receipt Voucher (CRV)', 'CanCheck');
-
-            var canApproveJV = Ext.core.finance.ux.Reception.getPermission('Journal Voucher (JV)', 'CanApprove');
-            var canApproveDV = Ext.core.finance.ux.Reception.getPermission('Disbursement Voucher (DV)', 'CanApprove');
-            var canApproveCRV = Ext.core.finance.ux.Reception.getPermission('Cash Receipt Voucher (CRV)', 'CanApprove');
-
-            var canAuthorizeJV = Ext.core.finance.ux.Reception.getPermission('Journal Voucher (JV)', 'CanAuthorize');
-            var canAuthorizeDV = Ext.core.finance.ux.Reception.getPermission('Disbursement Voucher (DV)', 'CanAuthorize');
-            var canAuthorizeCRV = Ext.core.finance.ux.Reception.getPermission('Cash Receipt Voucher (CRV)', 'CanAuthorize');
-
-            if (Ext.core.finance.ux.Reception.getPermission('Approve Requisition', 'CanApprove')) {
-//                var runner = new Ext.util.TaskRunner();
-//                runner.start({
-//                    run: function() {
-                        //Ext.getCmp('DocumentNotification-paging').moveFirst();
-//                    Notification.ReadInvoiceConfirmation(function (result) {
-//                    });
-                        window.FinancePurchaseOrder.GetPOApprovalRequest(function(result) {
-                            if (result.success) {
-                                var t = new Ext.ToolTip({
-                                    floating: {
-                                        shim: true
-                                    },
-                                    style: {
-                                        'color': '#5f5f5f',
-                                        'font-size': '12px'
-                                    },
-                                    // anchor: 'bottom',
-                                    // anchorToTarget: false,
-                                    targetXY: [viewport.getWidth() - 330, viewport.getHeight() - 100],
-                                    title: 'New PO Request',
-                                    height: 300,
-                                    html: "<table><tr><td><img style='margin-top:2px;' src='content/images/app/messagebox-info.png'/></td><td>A new <b>Purchase Order Request</b> awaits your approval. Please review the pending requests! </td></tr></table>",
-                                    hideDelay: 15000,
-                                    closable: true
-                                });
-                                t.show();
-                                // t.showAt([0, 300]);
-                                // t.showAt(t.el.getAlignToXY(viewport.el, 'bl-bl', [10, -10]));
-                                t.el.slideIn('b');
-                            } else {
-                            }
-                        });
-
-
-//                    },
-//                    interval: 60000 // in milli seconds
-//                });
-            }
-
-            if (canCheckJV || canCheckDV || canCheckCRV) {
-//                var runner = new Ext.util.TaskRunner();
-//                runner.start({
-//                    run: function () {
-                        //Ext.getCmp('DocumentNotification-paging').moveFirst();
-                        //                    Notification.ReadInvoiceConfirmation(function (result) {
-                        //                    });
-                        window.FinanceVoucher.GetCheckStatusRequest(function (result) {
-                            if (result.success) {
-                                var t = new Ext.ToolTip({
-                                    floating: {
-                                        shim: true
-                                    },
-                                    style: {
-                                        'color': '#6f6f6f',
-                                        'font-size': '12px'
-                                    },
-                                    // anchor: 'bottom',
-                                    // anchorToTarget: false,
-                                    targetXY: [viewport.getWidth() - 330, viewport.getHeight() - 80],
-                                    title: 'Check Vouchers',
-                                    height: 300,
-                                    html: "<table background = #343434><tr><td><img style='margin-top:2px;' src='content/images/app/messagebox-info.png'/></td><td>There are new <b>Vouchers</b> which need to be checked. </td></tr></table>",
-//                                    hideDelay: 15000000,
-                                    dismissDelay: 150000,
-                                    closable: true
-                                });
-                                t.show();
-                                // t.showAt([0, 300]);
-                                // t.showAt(t.el.getAlignToXY(viewport.el, 'bl-bl', [10, -10]));
-                                t.el.slideIn('b');
-                            } else {
-                            }
-                        });
-
-
-//                    },
-//                    interval: 60000 // in milli seconds
-//                });
-            }
-
-            if (canApproveJV || canApproveDV || canApproveCRV) {
-//                var runner = new Ext.util.TaskRunner();
-//                runner.start({
-//                    run: function () {
-                        //Ext.getCmp('DocumentNotification-paging').moveFirst();
-                        //                    Notification.ReadInvoiceConfirmation(function (result) {
-                        //                    });
-                        window.FinanceVoucher.GetApproveStatusRequest(function (result) {
-                            if (result.success) {
-                                var t = new Ext.ToolTip({
-                                    floating: {
-                                        shim: true
-                                    },
-                                    style: {
-                                        'color': '#6f6f6f',
-                                        'font-size': '12px'
-                                    },
-                                    // anchor: 'bottom',
-                                    // anchorToTarget: false,
-                                    targetXY: [viewport.getWidth() - 330, viewport.getHeight() - 140],
-                                    title: 'Approve Vouchers',
-                                    height: 300,
-                                    html: "<table><tr><td><img style='margin-top:2px;' src='content/images/app/messagebox-info.png'/></td><td>There are new <b>Vouchers</b> waiting for your Approval. Please review and approve them! </td></tr></table>",
-                                    //hideDelay: 15000000,
-                                    dismissDelay: 150000,
-                                    closable: true
-                                });
-                                t.show();
-                                // t.showAt([0, 300]);
-                                // t.showAt(t.el.getAlignToXY(viewport.el, 'bl-bl', [10, -10]));
-                                t.el.slideIn('b');
-                            } else {
-                            }
-                        });
-
-
-//                    },
-//                    interval: 60000 // in milli seconds
-//                });
-            }
-
-            if (canAuthorizeJV || canAuthorizeDV || canAuthorizeCRV) {
-//                var runner = new Ext.util.TaskRunner();
-//                runner.start({
-//                    run: function () {
-                        //Ext.getCmp('DocumentNotification-paging').moveFirst();
-                        //                    Notification.ReadInvoiceConfirmation(function (result) {
-                        //                    });
-                        window.FinanceVoucher.GetAuthorizeStatusRequest(function (result) {
-                            if (result.success) {
-                                var t = new Ext.ToolTip({
-                                    floating: {
-                                        shim: true
-                                    },
-                                    style: {
-                                        'color': '#6f6f6f',
-                                        'font-size': '12px'
-                                    },
-
-//                                    bodyStyle: {
-//                                        background: '#00cc00',
-//                                        'font-size': '16px',
-//                                        color: '#FFF',
-//                                        padding: '10px'
-//                                    },
-                                    targetXY: [viewport.getWidth() - 330, viewport.getHeight() - 200],
-                                    title: 'Authorize Vouchers',
-                                    height: 300,
-                                    html: "<table><tr><td><img style='margin-top:2px;' src='content/images/app/messagebox-info.png'/></td><td>There are new <b>Vouchers</b> waiting for Authorization. Please review and authorize them! </td></tr></table>",
-                                    //hideDelay: 15000000,
-                                    dismissDelay: 150000,
-                                    closable: true
-                                });
-                                t.show();
-                                //t.showAt([0, 300]);
-                                //t.showAt(t.el.getAlignToXY(viewport.el, 'bl-bl', [10, -10]));
-                                t.el.slideIn('b');
-                            } else {
-                            }
-                        });
-
-
-//                    },
-//                    interval: 60000 // in milli seconds
-//                });
-            }
+            
             viewport.doLayout();
         });
     });

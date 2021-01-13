@@ -1,16 +1,16 @@
-﻿Ext.ns('Ext.core.finance.ux.userSubsystem');
+﻿Ext.ns('Ext.mrv.ghginventory.ux.userSubsystem');
 /**
 * @desc      UserSubsystem registration form
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.userSubsystem
-* @class     Ext.core.finance.ux.userSubsystem.Form
+
+
+* @namespace Ext.mrv.ghginventory.ux.userSubsystem
+* @class     Ext.mrv.ghginventory.ux.userSubsystem.Form
 * @extends   Ext.form.FormPanel
 */
 
-Ext.core.finance.ux.userSubsystem.Form = function (config) {
-    Ext.core.finance.ux.userSubsystem.Form.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.userSubsystem.Form = function (config) {
+    Ext.mrv.ghginventory.ux.userSubsystem.Form.superclass.constructor.call(this, Ext.apply({
         api: {
             load: window.UserSubsystem.Get,
             submit: window.UserSubsystem.Save
@@ -55,20 +55,20 @@ Ext.core.finance.ux.userSubsystem.Form = function (config) {
         }]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.userSubsystem.Form, Ext.form.FormPanel);
-Ext.reg('userSubsystem-form', Ext.core.finance.ux.userSubsystem.Form);
+Ext.extend(Ext.mrv.ghginventory.ux.userSubsystem.Form, Ext.form.FormPanel);
+Ext.reg('userSubsystem-form', Ext.mrv.ghginventory.ux.userSubsystem.Form);
 
 /**
 * @desc      UserSubsystem registration form host window
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.userSubsystem
-* @class     Ext.core.finance.ux.userSubsystem.Window
+
+
+* @namespace Ext.mrv.ghginventory.ux.userSubsystem
+* @class     Ext.mrv.ghginventory.ux.userSubsystem.Window
 * @extends   Ext.Window
 */
-Ext.core.finance.ux.userSubsystem.Window = function (config) {
-    Ext.core.finance.ux.userSubsystem.Window.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.userSubsystem.Window = function (config) {
+    Ext.mrv.ghginventory.ux.userSubsystem.Window.superclass.constructor.call(this, Ext.apply({
         layout: 'form',
         width: 500,
         autoHeight: true,
@@ -79,10 +79,10 @@ Ext.core.finance.ux.userSubsystem.Window = function (config) {
         bodyStyle: 'padding:5px;'
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.userSubsystem.Window, Ext.Window, {
+Ext.extend(Ext.mrv.ghginventory.ux.userSubsystem.Window, Ext.Window, {
     initComponent: function () {
-        this.form = new Ext.core.finance.ux.userSubsystem.Form();
-        this.grid = new Ext.core.finance.ux.userSubsystem.Grid({ userId: this.userId });
+        this.form = new Ext.mrv.ghginventory.ux.userSubsystem.Form();
+        this.grid = new Ext.mrv.ghginventory.ux.userSubsystem.Grid({ userId: this.userId });
         this.items = [this.form, this.grid];
         this.buttons = [{
             text: 'Save',
@@ -100,7 +100,7 @@ Ext.extend(Ext.core.finance.ux.userSubsystem.Window, Ext.Window, {
             handler: this.onUserSubsystemClose,
             scope: this
         }];
-        Ext.core.finance.ux.userSubsystem.Window.superclass.initComponent.call(this, arguments);
+        Ext.mrv.ghginventory.ux.userSubsystem.Window.superclass.initComponent.call(this, arguments);
     },
     onUserSubsystemSave: function () {
         if (!this.form.getForm().isValid()) return;
@@ -155,19 +155,19 @@ Ext.extend(Ext.core.finance.ux.userSubsystem.Window, Ext.Window, {
         this.close();
     }
 });
-Ext.reg('userSubsystem-window', Ext.core.finance.ux.userSubsystem.Window);
+Ext.reg('userSubsystem-window', Ext.mrv.ghginventory.ux.userSubsystem.Window);
 
 /**
 * @desc      UserSubsystem grid
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.userSubsystem
-* @class     Ext.core.finance.ux.userSubsystem.Grid
+
+
+* @namespace Ext.mrv.ghginventory.ux.userSubsystem
+* @class     Ext.mrv.ghginventory.ux.userSubsystem.Grid
 * @extends   Ext.grid.GridPanel
 */
-Ext.core.finance.ux.userSubsystem.Grid = function (config) {
-    Ext.core.finance.ux.userSubsystem.Grid.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.userSubsystem.Grid = function (config) {
+    Ext.mrv.ghginventory.ux.userSubsystem.Grid.superclass.constructor.call(this, Ext.apply({
         store: new Ext.data.DirectStore({
             directFn: window.UserSubsystem.GetAll,
             paramsAsHash: false,
@@ -224,7 +224,7 @@ Ext.core.finance.ux.userSubsystem.Grid = function (config) {
         }]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.userSubsystem.Grid, Ext.grid.GridPanel, {
+Ext.extend(Ext.mrv.ghginventory.ux.userSubsystem.Grid, Ext.grid.GridPanel, {
     initComponent: function () {
         this.store.baseParams = { record: Ext.encode({ userId: this.userId }) };
         this.bbar = new Ext.PagingToolbar({
@@ -233,11 +233,11 @@ Ext.extend(Ext.core.finance.ux.userSubsystem.Grid, Ext.grid.GridPanel, {
             displayInfo: true,
             pageSize: this.pageSize
         });
-        Ext.core.finance.ux.userSubsystem.Grid.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.userSubsystem.Grid.superclass.initComponent.apply(this, arguments);
     },
     afterRender: function () {
         this.getStore().load({ params: { start: 0, limit: this.pageSize} });
-        Ext.core.finance.ux.userSubsystem.Grid.superclass.afterRender.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.userSubsystem.Grid.superclass.afterRender.apply(this, arguments);
     }
 });
-Ext.reg('userSubsystem-grid', Ext.core.finance.ux.userSubsystem.Grid);
+Ext.reg('userSubsystem-grid', Ext.mrv.ghginventory.ux.userSubsystem.Grid);

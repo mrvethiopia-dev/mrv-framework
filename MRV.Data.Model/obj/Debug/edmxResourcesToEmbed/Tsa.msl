@@ -52,18 +52,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="GHGLocations">
-      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGLocations">
-        <MappingFragment StoreEntitySet="GHGLocations">
-          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
-          <ScalarProperty Name="CanCaptureData" ColumnName="CanCaptureData" />
-          <ScalarProperty Name="Code" ColumnName="Code" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="GHGParameters">
       <EntityTypeMapping TypeName="ENTRO_MISModel.GHGParameters">
         <MappingFragment StoreEntitySet="GHGParameters">
@@ -205,6 +193,28 @@
         <MappingFragment StoreEntitySet="sysUserSystems">
           <ScalarProperty Name="SystemId" ColumnName="SystemId" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHGLocations">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGLocations">
+        <MappingFragment StoreEntitySet="GHGLocations">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CanCaptureData" ColumnName="CanCaptureData" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="LocationTypeId" ColumnName="LocationTypeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GHGLocationTypes">
+      <EntityTypeMapping TypeName="ENTRO_MISModel.GHGLocationTypes">
+        <MappingFragment StoreEntitySet="GHGLocationTypes">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>

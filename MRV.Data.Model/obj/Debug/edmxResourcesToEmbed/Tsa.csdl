@@ -5,7 +5,6 @@
     <EntitySet Name="GHGDataEntryHeader" EntityType="ENTRO_MISModel.GHGDataEntryHeader" />
     <EntitySet Name="GHGDataTypes" EntityType="ENTRO_MISModel.GHGDataTypes" />
     <EntitySet Name="GHGInventoryYear" EntityType="ENTRO_MISModel.GHGInventoryYear" />
-    <EntitySet Name="GHGLocations" EntityType="ENTRO_MISModel.GHGLocations" />
     <EntitySet Name="GHGParameters" EntityType="ENTRO_MISModel.GHGParameters" />
     <EntitySet Name="GHGSectors" EntityType="ENTRO_MISModel.GHGSectors" />
     <EntitySet Name="GHGTypes" EntityType="ENTRO_MISModel.GHGTypes" />
@@ -31,10 +30,6 @@
       <End Role="GHGInventoryYear" EntitySet="GHGInventoryYear" />
       <End Role="GHGDataEntryHeader" EntitySet="GHGDataEntryHeader" />
     </AssociationSet>
-    <AssociationSet Name="FK_GHGDataEntryHeader_GHGLocations" Association="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGLocations">
-      <End Role="GHGLocations" EntitySet="GHGLocations" />
-      <End Role="GHGDataEntryHeader" EntitySet="GHGDataEntryHeader" />
-    </AssociationSet>
     <AssociationSet Name="FK_GHGDataEntryHeader_sysUser" Association="ENTRO_MISModel.FK_GHGDataEntryHeader_sysUser">
       <End Role="sysUser" EntitySet="sysUser" />
       <End Role="GHGDataEntryHeader" EntitySet="GHGDataEntryHeader" />
@@ -46,10 +41,6 @@
     <AssociationSet Name="FK_GHGParameters_GHGDataTypes" Association="ENTRO_MISModel.FK_GHGParameters_GHGDataTypes">
       <End Role="GHGDataTypes" EntitySet="GHGDataTypes" />
       <End Role="GHGParameters" EntitySet="GHGParameters" />
-    </AssociationSet>
-    <AssociationSet Name="FK_GHGLocations_GHGLocations" Association="ENTRO_MISModel.FK_GHGLocations_GHGLocations">
-      <End Role="GHGLocations" EntitySet="GHGLocations" />
-      <End Role="GHGLocations1" EntitySet="GHGLocations" />
     </AssociationSet>
     <AssociationSet Name="FK_GHGParameters_GHGSectors" Association="ENTRO_MISModel.FK_GHGParameters_GHGSectors">
       <End Role="GHGSectors" EntitySet="GHGSectors" />
@@ -99,6 +90,20 @@
       <End Role="sysUser" EntitySet="sysUser" />
       <End Role="sysUserSystems" EntitySet="sysUserSystems" />
     </AssociationSet>
+    <EntitySet Name="GHGLocations" EntityType="ENTRO_MISModel.GHGLocations" />
+    <EntitySet Name="GHGLocationTypes" EntityType="ENTRO_MISModel.GHGLocationTypes" />
+    <AssociationSet Name="FK_GHGDataEntryHeader_GHGLocations" Association="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGLocations">
+      <End Role="GHGLocations" EntitySet="GHGLocations" />
+      <End Role="GHGDataEntryHeader" EntitySet="GHGDataEntryHeader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGLocations_GHGLocations" Association="ENTRO_MISModel.FK_GHGLocations_GHGLocations">
+      <End Role="GHGLocations" EntitySet="GHGLocations" />
+      <End Role="GHGLocations1" EntitySet="GHGLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGLocations_GHGLocationTypes" Association="ENTRO_MISModel.FK_GHGLocations_GHGLocationTypes">
+      <End Role="GHGLocationTypes" EntitySet="GHGLocationTypes" />
+      <End Role="GHGLocations" EntitySet="GHGLocations" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="GHGDataEntryDetail">
     <Key>
@@ -133,9 +138,9 @@
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="GHGDataEntryDetail" Relationship="ENTRO_MISModel.FK_GHGDataEntryDetail_GHGDataEntryDetail" FromRole="GHGDataEntryHeader" ToRole="GHGDataEntryDetail" />
     <NavigationProperty Name="GHGInventoryYear" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGInventoryYear" FromRole="GHGDataEntryHeader" ToRole="GHGInventoryYear" />
-    <NavigationProperty Name="GHGLocations" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGLocations" FromRole="GHGDataEntryHeader" ToRole="GHGLocations" />
     <NavigationProperty Name="sysUser" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_sysUser" FromRole="GHGDataEntryHeader" ToRole="sysUser" />
     <NavigationProperty Name="sysUser1" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_sysUser1" FromRole="GHGDataEntryHeader" ToRole="sysUser" />
+    <NavigationProperty Name="GHGLocations" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGLocations" FromRole="GHGDataEntryHeader" ToRole="GHGLocations" />
   </EntityType>
   <EntityType Name="GHGDataTypes">
     <Key>
@@ -155,20 +160,6 @@
     <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="GHGDataEntryHeader" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGInventoryYear" FromRole="GHGInventoryYear" ToRole="GHGDataEntryHeader" />
-  </EntityType>
-  <EntityType Name="GHGLocations">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="ParentId" Type="Int32" />
-    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
-    <Property Name="Code" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
-    <Property Name="CanCaptureData" Type="Boolean" Nullable="false" />
-    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
-    <NavigationProperty Name="GHGDataEntryHeader" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGLocations" FromRole="GHGLocations" ToRole="GHGDataEntryHeader" />
-    <NavigationProperty Name="GHGLocations1" Relationship="ENTRO_MISModel.FK_GHGLocations_GHGLocations" FromRole="GHGLocations" ToRole="GHGLocations1" />
-    <NavigationProperty Name="GHGLocations2" Relationship="ENTRO_MISModel.FK_GHGLocations_GHGLocations" FromRole="GHGLocations1" ToRole="GHGLocations" />
   </EntityType>
   <EntityType Name="GHGParameters">
     <Key>
@@ -366,18 +357,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_GHGDataEntryHeader_GHGLocations">
-    <End Type="ENTRO_MISModel.GHGLocations" Role="GHGLocations" Multiplicity="1" />
-    <End Type="ENTRO_MISModel.GHGDataEntryHeader" Role="GHGDataEntryHeader" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="GHGLocations">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="GHGDataEntryHeader">
-        <PropertyRef Name="LocationId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_GHGDataEntryHeader_sysUser">
     <End Type="ENTRO_MISModel.sysUser" Role="sysUser" Multiplicity="0..1" />
     <End Type="ENTRO_MISModel.GHGDataEntryHeader" Role="GHGDataEntryHeader" Multiplicity="*" />
@@ -411,18 +390,6 @@
       </Principal>
       <Dependent Role="GHGParameters">
         <PropertyRef Name="DataTypeId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_GHGLocations_GHGLocations">
-    <End Type="ENTRO_MISModel.GHGLocations" Role="GHGLocations" Multiplicity="0..1" />
-    <End Type="ENTRO_MISModel.GHGLocations" Role="GHGLocations1" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="GHGLocations">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="GHGLocations1">
-        <PropertyRef Name="ParentId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -567,6 +534,67 @@
       </Principal>
       <Dependent Role="sysUserSystems">
         <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="GHGLocations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LocationTypeId" Type="Int32" Nullable="false" />
+    <Property Name="ParentId" Type="Int32" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CanCaptureData" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="GHGDataEntryHeader" Relationship="ENTRO_MISModel.FK_GHGDataEntryHeader_GHGLocations" FromRole="GHGLocations" ToRole="GHGDataEntryHeader" />
+    <NavigationProperty Name="GHGLocations1" Relationship="ENTRO_MISModel.FK_GHGLocations_GHGLocations" FromRole="GHGLocations" ToRole="GHGLocations1" />
+    <NavigationProperty Name="GHGLocations2" Relationship="ENTRO_MISModel.FK_GHGLocations_GHGLocations" FromRole="GHGLocations1" ToRole="GHGLocations" />
+    <NavigationProperty Name="GHGLocationTypes" Relationship="ENTRO_MISModel.FK_GHGLocations_GHGLocationTypes" FromRole="GHGLocations" ToRole="GHGLocationTypes" />
+  </EntityType>
+  <EntityType Name="GHGLocationTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="GHGLocations" Relationship="ENTRO_MISModel.FK_GHGLocations_GHGLocationTypes" FromRole="GHGLocationTypes" ToRole="GHGLocations" />
+  </EntityType>
+  <Association Name="FK_GHGDataEntryHeader_GHGLocations">
+    <End Type="ENTRO_MISModel.GHGLocations" Role="GHGLocations" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.GHGDataEntryHeader" Role="GHGDataEntryHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGLocations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGDataEntryHeader">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGLocations_GHGLocations">
+    <End Type="ENTRO_MISModel.GHGLocations" Role="GHGLocations" Multiplicity="0..1" />
+    <End Type="ENTRO_MISModel.GHGLocations" Role="GHGLocations1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGLocations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGLocations1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GHGLocations_GHGLocationTypes">
+    <End Type="ENTRO_MISModel.GHGLocationTypes" Role="GHGLocationTypes" Multiplicity="1" />
+    <End Type="ENTRO_MISModel.GHGLocations" Role="GHGLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGLocationTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGLocations">
+        <PropertyRef Name="LocationTypeId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

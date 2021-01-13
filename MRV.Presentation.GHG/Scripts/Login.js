@@ -1,16 +1,16 @@
-﻿Ext.ns('Ext.core.finance.ux.reception');
+﻿Ext.ns('Ext.mrv.ghginventory.ux.reception');
 
 /**
 * @desc      Login form
 * @author    Dawit Kiros
-* @copyright (c) 2013, Dawit Kiros
+
 * @date      December 08, 2013
-* @namespace Ext.core.finance.ux.reception
-* @class     Ext.core.finance.ux.reception.LoginForm
+* @namespace Ext.mrv.ghginventory.ux.reception
+* @class     Ext.mrv.ghginventory.ux.reception.LoginForm
 * @extends   Ext.form.FormPanel
 */
-Ext.core.finance.ux.reception.LoginForm = function (config) {
-    Ext.core.finance.ux.reception.LoginForm.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.reception.LoginForm = function (config) {
+    Ext.mrv.ghginventory.ux.reception.LoginForm.superclass.constructor.call(this, Ext.apply({
         api: {
             submit: Reception.Login
         },
@@ -29,20 +29,20 @@ Ext.core.finance.ux.reception.LoginForm = function (config) {
         monitorValid: true
     }, config));
 };
-Ext.extend(Ext.core.finance.ux.reception.LoginForm, Ext.form.FormPanel);
-Ext.reg('login-form', Ext.core.finance.ux.reception.LoginForm);
+Ext.extend(Ext.mrv.ghginventory.ux.reception.LoginForm, Ext.form.FormPanel);
+Ext.reg('login-form', Ext.mrv.ghginventory.ux.reception.LoginForm);
 
 /**
 * @desc      Login form host window
 * @author    Dawit Kiros
-* @copyright (c) 2013, Dawit Kiros
+
 * @date      December 08, 2013
-* @namespace Ext.core.finance.ux.reception
-* @class     Ext.core.finance.ux.reception.LoginWindow
+* @namespace Ext.mrv.ghginventory.ux.reception
+* @class     Ext.mrv.ghginventory.ux.reception.LoginWindow
 * @extends   Ext.Window
 */
-Ext.core.finance.ux.reception.LoginWindow = function (config) {
-    Ext.core.finance.ux.reception.LoginWindow.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.reception.LoginWindow = function (config) {
+    Ext.mrv.ghginventory.ux.reception.LoginWindow.superclass.constructor.call(this, Ext.apply({
         layout: 'form',
         width: 490,
         height : 335,
@@ -54,7 +54,7 @@ Ext.core.finance.ux.reception.LoginWindow = function (config) {
         cls: 'reception-LoginWindow'
     }, config));
 };
-Ext.extend(Ext.core.finance.ux.reception.LoginWindow, Ext.Window, {
+Ext.extend(Ext.mrv.ghginventory.ux.reception.LoginWindow, Ext.Window, {
     defaultFocusField: 'Username',
     softwareLabel: '',
     editionLabel: 'Enterprise Edition',
@@ -103,7 +103,7 @@ Ext.extend(Ext.core.finance.ux.reception.LoginWindow, Ext.Window, {
             }}];
         this.bbar = [{ xtype: 'tbfill' }, this.loginButton];
         this.addEvents('exit', 'beforelogin', 'loginsuccess', 'loginfailure');
-        Ext.core.finance.ux.reception.LoginWindow.superclass.initComponent.call(this, arguments);
+        Ext.mrv.ghginventory.ux.reception.LoginWindow.superclass.initComponent.call(this, arguments);
     },
     initEvents: function () {
         this.on('show', function () {
@@ -117,7 +117,7 @@ Ext.extend(Ext.core.finance.ux.reception.LoginWindow, Ext.Window, {
                 
             }
         }, this);
-        Ext.core.finance.ux.reception.LoginWindow.superclass.initEvents.call(this, arguments);
+        Ext.mrv.ghginventory.ux.reception.LoginWindow.superclass.initEvents.call(this, arguments);
     },
     afterRender: function() {
         var loginButton = this.loginButton;
@@ -127,7 +127,7 @@ Ext.extend(Ext.core.finance.ux.reception.LoginWindow, Ext.Window, {
                 loginButton.setDisabled(false);
             });
         });
-        Ext.core.finance.ux.reception.LoginWindow.superclass.afterRender.call(this, arguments);
+        Ext.mrv.ghginventory.ux.reception.LoginWindow.superclass.afterRender.call(this, arguments);
     },
     onClientValidation : function(formPanel, isValid)
     {
@@ -141,7 +141,7 @@ Ext.extend(Ext.core.finance.ux.reception.LoginWindow, Ext.Window, {
         this.fireEvent('loginsuccess', basicForm, action);
     },
     onLoginFailure: function (basicForm, action) {
-        if (!Ext.core.finance.ux.Reception.isClosed()) {
+        if (!Ext.mrv.ghginventory.ux.Reception.isClosed()) {
             this.passwordField.setValue('');
             Ext.MessageBox.show({
                 title: 'Failure',
@@ -298,7 +298,7 @@ Ext.extend(Ext.core.finance.ux.reception.LoginWindow, Ext.Window, {
         });
     },
     createFormPanel: function (usernameField, passwordField, languageField) {
-        return new Ext.core.finance.ux.reception.LoginForm({
+        return new Ext.mrv.ghginventory.ux.reception.LoginForm({
             items: [
                 usernameField,
                 passwordField,
@@ -334,4 +334,4 @@ Ext.extend(Ext.core.finance.ux.reception.LoginWindow, Ext.Window, {
         }
     }
 });
-Ext.reg('login-window', Ext.core.finance.ux.reception.LoginWindow);
+Ext.reg('login-window', Ext.mrv.ghginventory.ux.reception.LoginWindow);

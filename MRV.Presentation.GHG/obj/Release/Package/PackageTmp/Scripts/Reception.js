@@ -1,7 +1,7 @@
-﻿Ext.namespace('Ext.core.finance.ux');
-Ext.core.finance.ux.Reception = function () {
+﻿Ext.namespace('Ext.mrv.ghginventory.ux');
+Ext.mrv.ghginventory.ux.Reception = function () {
     var options = {
-        loginWindowClass: Ext.core.finance.ux.reception.LoginWindow
+        loginWindowClass: Ext.mrv.ghginventory.ux.reception.LoginWindow
     };
 
     var applicationPath = null,
@@ -39,17 +39,17 @@ Ext.core.finance.ux.Reception = function () {
 
     var onExit = function () {
         if (context == this.TYPE_TOKEN_FAILURE) {
-            Ext.core.finance.ux.SystemMessageManager.wait(
-                new Ext.core.finance.ux.SystemMessage({
+            Ext.mrv.ghginventory.ux.SystemMessageManager.wait(
+                new Ext.mrv.ghginventory.ux.SystemMessage({
                     text: 'Please wait, signing out...',
-                    type: Ext.core.finance.ux.SystemMessage.TYPE_WAIT
+                    type: Ext.mrv.ghginventory.ux.SystemMessage.TYPE_WAIT
                 })
             );
         } else {
-            Ext.core.finance.ux.SystemMessageManager.wait(
-                new Ext.core.finance.ux.SystemMessage({
+            Ext.mrv.ghginventory.ux.SystemMessageManager.wait(
+                new Ext.mrv.ghginventory.ux.SystemMessage({
                     text: 'Please wait, signing out...',
-                    type: Ext.core.finance.ux.SystemMessageManager.TYPE_WAIT
+                    type: Ext.mrv.ghginventory.ux.SystemMessageManager.TYPE_WAIT
                 })
             );
             Reception.Logout(onLogoutSuccess);
@@ -66,11 +66,11 @@ Ext.core.finance.ux.Reception = function () {
             config = config || {};
             Ext.apply(config, { draggable: false });
             loginWindow = new options['loginWindowClass'](config);
-            loginWindow.on('exit', onExit, Ext.core.finance.ux.Reception);
-            loginWindow.on('loginsuccess', onLoginSuccess, Ext.core.finance.ux.Reception);
-            loginWindow.on('loginfailure', onLoginFailure, Ext.core.finance.ux.Reception);
-            loginWindow.on('beforelogin', onBeforeLogin, Ext.core.finance.ux.Reception);
-            loginWindow.on('destroy', onDestroy, Ext.core.finance.ux.Reception);
+            loginWindow.on('exit', onExit, Ext.mrv.ghginventory.ux.Reception);
+            loginWindow.on('loginsuccess', onLoginSuccess, Ext.mrv.ghginventory.ux.Reception);
+            loginWindow.on('loginfailure', onLoginFailure, Ext.mrv.ghginventory.ux.Reception);
+            loginWindow.on('beforelogin', onBeforeLogin, Ext.mrv.ghginventory.ux.Reception);
+            loginWindow.on('destroy', onDestroy, Ext.mrv.ghginventory.ux.Reception);
         }
         if (!loginWindow.isVisible()) {
             loginWindow.show();
@@ -139,19 +139,19 @@ Ext.core.finance.ux.Reception = function () {
             } else if (context !== null) {
                 throw ('Reception.lockWorkbench: Current context is AUTHENTICATE but server returned LOCKED');
             }
-            Ext.core.finance.ux.SystemMessageManager.wait(
-                new Ext.core.finance.ux.SystemMessage({
+            Ext.mrv.ghginventory.ux.SystemMessageManager.wait(
+                new Ext.mrv.ghginventory.ux.SystemMessage({
                     text: 'Please wait, locking workbench...',
-                    type: Ext.core.finance.ux.SystemMessage.TYPE_WAIT
+                    type: Ext.mrv.ghginventory.ux.SystemMessage.TYPE_WAIT
                 })
             );
-            Ext.core.finance.ux.SystemMessageManager.hide();
-            var reception = Ext.core.finance.ux.Reception;
+            Ext.mrv.ghginventory.ux.SystemMessageManager.hide();
+            var reception = Ext.mrv.ghginventory.ux.Reception;
             reception.showLogin(reception.TYPE_UNLOCK);
         },
         restart: function () {
             var msg = Ext.MessageBox;
-            Ext.core.finance.ux.SystemMessageManager.show({
+            Ext.mrv.ghginventory.ux.SystemMessageManager.show({
                 title: 'Restart',
                 msg: 'All unsaved data will be lost. Are you sure you want to restart?',
                 buttons: msg.YESNO,
@@ -160,10 +160,10 @@ Ext.core.finance.ux.Reception = function () {
                 width: 400,
                 fn: function (buttonType) {
                     if (buttonType == 'yes') {
-                        Ext.core.finance.ux.SystemMessageManager.wait(
-                            new Ext.core.finance.ux.SystemMessage({
+                        Ext.mrv.ghginventory.ux.SystemMessageManager.wait(
+                            new Ext.mrv.ghginventory.ux.SystemMessage({
                                 text: 'Restarting application...',
-                                type: Ext.core.finance.ux.SystemMessage.TYPE_WAIT
+                                type: Ext.mrv.ghginventory.ux.SystemMessage.TYPE_WAIT
                             })
                         );
                         (function () {
@@ -177,7 +177,7 @@ Ext.core.finance.ux.Reception = function () {
 
         logout: function () {
             var msg = Ext.MessageBox;
-            Ext.core.finance.ux.SystemMessageManager.show({
+            Ext.mrv.ghginventory.ux.SystemMessageManager.show({
                 title: 'Logout',
                 msg: 'All unsaved data will be lost. Are you sure you want to sign out and exit',
                 buttons: msg.YESNO,
@@ -186,10 +186,10 @@ Ext.core.finance.ux.Reception = function () {
                 width: 400,
                 fn: function (buttonType) {
                     if (buttonType == 'yes') {
-                        Ext.core.finance.ux.SystemMessageManager.wait(
-                            new Ext.core.finance.ux.SystemMessage({
+                        Ext.mrv.ghginventory.ux.SystemMessageManager.wait(
+                            new Ext.mrv.ghginventory.ux.SystemMessage({
                                 text: 'Please wait, signing out...',
-                                type: Ext.core.finance.ux.SystemMessageManager.TYPE_WAIT
+                                type: Ext.mrv.ghginventory.ux.SystemMessageManager.TYPE_WAIT
                             })
                         );
                         Reception.Logout(onLogoutSuccess);
@@ -199,7 +199,7 @@ Ext.core.finance.ux.Reception = function () {
         },
         showLogout: function () {
             if (logoutWindow === null) {
-                logoutWindow = new Ext.core.finance.ux.reception.LogoutWindow();
+                logoutWindow = new Ext.mrv.ghginventory.ux.reception.LogoutWindow();
                 logoutWindow.on('destroy', function () {
                     logoutWindow = null;
                 });

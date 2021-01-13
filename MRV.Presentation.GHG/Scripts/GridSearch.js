@@ -4,7 +4,7 @@
  *
  * @author    Ing. Jozef Sakalos
  * @copyright (c) 2008, by Ing. Jozef Sakalos
- * @date      17. January 2008
+
  * @version   $Id: Ext.ux.grid.Search.js 220 2008-04-29 21:46:51Z jozo $
  *
  * @license Ext.ux.grid.Search is licensed under the terms of

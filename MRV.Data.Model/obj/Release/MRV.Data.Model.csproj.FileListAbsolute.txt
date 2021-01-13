@@ -1,0 +1,6 @@
+D:\Projects\MRV\MRV.Data.Model\bin\Release\MRV.Data.Model.dll.config
+D:\Projects\MRV\MRV.Data.Model\bin\Release\MRV.Data.Model.dll
+D:\Projects\MRV\MRV.Data.Model\bin\Release\MRV.Data.Model.pdb
+D:\Projects\MRV\MRV.Data.Model\obj\Release\MRV.Data.Model.csprojResolveAssemblyReference.cache
+D:\Projects\MRV\MRV.Data.Model\obj\Release\MRV.Data.Model.dll
+D:\Projects\MRV\MRV.Data.Model\obj\Release\MRV.Data.Model.pdb

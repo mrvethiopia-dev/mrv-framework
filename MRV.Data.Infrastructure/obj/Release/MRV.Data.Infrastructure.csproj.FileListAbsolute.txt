@@ -1,0 +1,5 @@
+D:\Projects\MRV\MRV.Data.Infrastructure\bin\Release\MRV.Data.Infrastructure.dll
+D:\Projects\MRV\MRV.Data.Infrastructure\bin\Release\MRV.Data.Infrastructure.pdb
+D:\Projects\MRV\MRV.Data.Infrastructure\obj\Release\MRV.Data.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Projects\MRV\MRV.Data.Infrastructure\obj\Release\MRV.Data.Infrastructure.dll
+D:\Projects\MRV\MRV.Data.Infrastructure\obj\Release\MRV.Data.Infrastructure.pdb

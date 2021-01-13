@@ -3,7 +3,7 @@
 * @desc      Panel to host north items
 * @author    Dawit Kiros Woldemichael
 * @editor    Dawit Kiros Woldemichael
-* @copyright (c) 2014, LIFT
+
 * @date      November 12, 2010
 * @namespace Ext.erp.ux.main
 * @class     Ext.erp.ux.main.North
@@ -20,7 +20,7 @@ Ext.erp.ux.main.North = function () {
             xtype: 'box',
             autoEl: {
                 tag: 'div',
-                html: "<div id='header'><a style='float:right;margin-right:0px;' href='/'><img style='margin-top: 2px;' src='content/images/app/logo.png'/></a><div class='api-title'> . </div></div>"
+                html: "<div id='header'><a style='float:right;margin-right:0px;' href='/'><img style='margin-top: 2px;' src='content/images/app/logo.png'/></a><div class='api-title'> EFCCC </div></div>"
             }
         }, {
             xtype: 'toolbar',
@@ -74,7 +74,7 @@ Ext.erp.ux.main.North = function () {
                 tooltip: 'Change Password',
 
                 handler: function () {
-                    new Ext.core.finance.ux.changePassword.Window({
+                    new Ext.mrv.ghginventory.ux.changePassword.Window({
                         title: 'Change Password', CallerId: 0
                     }).show();
                 }
@@ -86,7 +86,7 @@ Ext.erp.ux.main.North = function () {
 
                 handler: function () {
                     var msg = Ext.MessageBox;
-                    Ext.core.finance.ux.SystemMessageManager.show({
+                    Ext.mrv.ghginventory.ux.SystemMessageManager.show({
                         title: 'Logout',
                         msg: 'Are you sure you want to log out of the system?',
                         buttons: msg.YESNO,
@@ -95,10 +95,10 @@ Ext.erp.ux.main.North = function () {
                         width: 400,
                         fn: function (buttonType) {
                             if (buttonType == 'yes') {
-                                Ext.core.finance.ux.SystemMessageManager.wait(
-                                    new Ext.core.finance.ux.SystemMessage({
+                                Ext.mrv.ghginventory.ux.SystemMessageManager.wait(
+                                    new Ext.mrv.ghginventory.ux.SystemMessage({
                                         text: 'Please wait, signing out...',
-                                        type: Ext.core.finance.ux.SystemMessageManager.TYPE_WAIT
+                                        type: Ext.mrv.ghginventory.ux.SystemMessageManager.TYPE_WAIT
                                     })
                                 );
                                 Workbench.Logout(function (request, response) {
@@ -119,7 +119,7 @@ Ext.reg('north-panel', Ext.erp.ux.main.North);
 /**
 * @desc      Panel to host east items
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, LIFT
+
 * @date      November 12, 2010
 * @namespace Ext.erp.ux.main
 * @class     Ext.erp.ux.main.East
@@ -145,7 +145,7 @@ Ext.reg('east-panel', Ext.erp.ux.main.East);
 /**
 * @desc      Panel to host south items
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, LIFT
+
 * @date      November 12, 2010
 * @namespace Ext.erp.ux.main
 * @class     Ext.erp.ux.main.South
@@ -167,7 +167,7 @@ Ext.reg('south-panel', Ext.erp.ux.main.South);
 /**
 * @desc      Panel to host west items
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, LIFT
+
 * @date      November 12, 2010
 * @namespace Ext.erp.ux.main
 * @class     Ext.erp.ux.main.South
@@ -195,7 +195,7 @@ Ext.reg('west-panel', Ext.erp.ux.main.West);
 * @desc      Panel to host content items in the center
 * @author    Dawit Kiros Woldemichael
 * @editor    Dawit Kiros Woldemichael
-* @copyright (c) 2014, LIFT
+
 * @date      November 12, 2010
 * @namespace Ext.erp.ux.main
 * @class     Ext.erp.ux.main.Center
@@ -259,7 +259,7 @@ Ext.onReady(function () {
 
     var currentUser = Ext.getCmp('loggedInUser-toolbar');
     var loggedInUserFullName = Ext.getCmp('loggedInUserFullName-toolbar');
-    var reception = Ext.core.finance.ux.Reception;
+    var reception = Ext.mrv.ghginventory.ux.Reception;
     reception.getInstance(true);
 
     window.Workbench.InitializeApp(function (response, action) {
@@ -293,12 +293,12 @@ Ext.onReady(function () {
         Ext.getCmp('loggedInUser-toolbar').setValue(action.result.data.Username + ' - ');
         
 
-        Ext.core.finance.ux.Reception.initializeApp(options);
+        Ext.mrv.ghginventory.ux.Reception.initializeApp(options);
         window.Workbench.GetModules(function (result) {
             var modules = result.data;
             for (i = 0; i < modules.length; i++) {
                 var isCollapsed = true;
-                if (modules[i].text == "Accounting Transactions")
+                if (modules[i].text == "Setup")
                     isCollapsed = false;
                 var mTree = new Ext.tree.TreePanel({
                     id: modules[i].text,

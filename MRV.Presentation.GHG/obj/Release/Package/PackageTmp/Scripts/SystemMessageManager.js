@@ -1,6 +1,6 @@
-﻿Ext.namespace('Ext.core.finance.ux');
+﻿Ext.namespace('Ext.mrv.ghginventory.ux');
 
-Ext.core.finance.ux.SystemMessageManager = function () {
+Ext.mrv.ghginventory.ux.SystemMessageManager = function () {
 
     var _context = 'default';
 
@@ -103,7 +103,7 @@ Ext.core.finance.ux.SystemMessageManager = function () {
         /**
         * Shows a dialog with an infinite loading progress bar.
         *
-        * @param {Ext.core.finance.ux.SystemMessage} message
+        * @param {Ext.mrv.ghginventory.ux.SystemMessage} message
         * @param {Object} options
         */
         wait: function (message, options) {
@@ -133,7 +133,7 @@ Ext.core.finance.ux.SystemMessageManager = function () {
         /**
         * Shows a confirm dialog.
         *
-        * @param {Ext.core.finance.ux.SystemMessage} message
+        * @param {Ext.mrv.ghginventory.ux.SystemMessage} message
         * @param {Object} options
         */
         confirm: function (message, options) {
@@ -168,7 +168,7 @@ Ext.core.finance.ux.SystemMessageManager = function () {
         /**
         * Shows a dialog indicating an error happened.
         *
-        * @param {Ext.core.finance.ux.SystemMessage} message
+        * @param {Ext.mrv.ghginventory.ux.SystemMessage} message
         * @param {Object} options
         */
         error: function (message, options) {

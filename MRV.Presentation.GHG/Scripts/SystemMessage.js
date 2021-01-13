@@ -1,21 +1,21 @@
-﻿Ext.namespace('Ext.core.finance.ux');
+﻿Ext.namespace('Ext.mrv.ghginventory.ux');
 
-Ext.core.finance.ux.SystemMessage = function (config) { Ext.apply(this, config); };
+Ext.mrv.ghginventory.ux.SystemMessage = function (config) { Ext.apply(this, config); };
 
-Ext.core.finance.ux.SystemMessage.prototype = {};
+Ext.mrv.ghginventory.ux.SystemMessage.prototype = {};
 
-Ext.core.finance.ux.SystemMessage.TYPE_WARNING = 'warning';
+Ext.mrv.ghginventory.ux.SystemMessage.TYPE_WARNING = 'warning';
 
-Ext.core.finance.ux.SystemMessage.TYPE_ERROR = 'error';
+Ext.mrv.ghginventory.ux.SystemMessage.TYPE_ERROR = 'error';
 
-Ext.core.finance.ux.SystemMessage.TYPE_INFO = 'info';
+Ext.mrv.ghginventory.ux.SystemMessage.TYPE_INFO = 'info';
 
-Ext.core.finance.ux.SystemMessage.TYPE_NOTICE = 'notice';
+Ext.mrv.ghginventory.ux.SystemMessage.TYPE_NOTICE = 'notice';
 
-Ext.core.finance.ux.SystemMessage.TYPE_CRITICAL = 'critical';
+Ext.mrv.ghginventory.ux.SystemMessage.TYPE_CRITICAL = 'critical';
 
-Ext.core.finance.ux.SystemMessage.TYPE_CONFIRM = 'confirm';
+Ext.mrv.ghginventory.ux.SystemMessage.TYPE_CONFIRM = 'confirm';
 
-Ext.core.finance.ux.SystemMessage.TYPE_PROMPT = 'prompt';
+Ext.mrv.ghginventory.ux.SystemMessage.TYPE_PROMPT = 'prompt';
 
-Ext.core.finance.ux.SystemMessage.TYPE_WAIT = 'wait';
+Ext.mrv.ghginventory.ux.SystemMessage.TYPE_WAIT = 'wait';

@@ -158,6 +158,12 @@
     <Compile Include="Classes\Encryption.cs" />
     <Compile Include="Classes\Lookups.cs" />
     <Compile Include="Classes\Permission.cs" />
+    <Compile Include="Controllers\GHGParametersController.cs" />
+    <Compile Include="Controllers\GHGTypesController.cs" />
+    <Compile Include="Controllers\GHGUnitsController.cs" />
+    <Compile Include="Controllers\GHGDataTypesController.cs" />
+    <Compile Include="Controllers\GHGInventoryYearsController.cs" />
+    <Compile Include="Controllers\GHGLocationsController.cs" />
     <Compile Include="Controllers\SearchCriteria.cs" />
     <Compile Include="Classes\Utils.cs" />
     <Compile Include="Controllers\MenusController.cs" />
@@ -168,6 +174,7 @@
     <Compile Include="Controllers\SubMenuController.cs" />
     <Compile Include="Controllers\SystemController.cs" />
     <Compile Include="Controllers\TsaController.cs" />
+    <Compile Include="Controllers\GHGSectorsController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\WorkbenchController.cs">
       <SubType>Code</SubType>
@@ -1265,6 +1272,11 @@
     </Content>
     <Content Include="Global.asax" />
     <Content Include="Scripts\array-tree.js" />
+    <Content Include="Scripts\GHGParameters.js" />
+    <Content Include="Scripts\GHGUnits.js" />
+    <Content Include="Scripts\GHGTypes.js" />
+    <Content Include="Scripts\GHGDataTypes.js" />
+    <Content Include="Scripts\GHGLocations.js" />
     <Content Include="Scripts\GridPrinter.js" />
     <Content Include="Scripts\CheckColumn.js" />
     <Content Include="Scripts\ColumnHeaderGroup.js" />
@@ -1275,6 +1287,7 @@
     <Content Include="Scripts\Exporter-all.js" />
     <Content Include="Scripts\ext-all.js" />
     <Content Include="Scripts\Menus.js" />
+    <Content Include="Scripts\GHGInventoryYears.js" />
     <Content Include="Scripts\SearchMenu.js" />
     <Content Include="Scripts\SearchSubmenu.js" />
     <Content Include="Scripts\SubMenus.js" />
@@ -1300,6 +1313,7 @@
     <Content Include="Scripts\tab-close-menu.js" />
     <Content Include="Scripts\tab-scroller-menu.js" />
     <Content Include="Scripts\TabScrollerMenu.js" />
+    <Content Include="Scripts\GHGSectors.js" />
     <Content Include="Scripts\User.js" />
     <Content Include="Scripts\UserRole.js" />
     <Content Include="Scripts\UserSubsystem.js" />

@@ -52,10 +52,19 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LocationTypeId" Type="int" Nullable="false" />
     <Property Name="ParentId" Type="int" />
     <Property Name="Name" Type="nvarchar" MaxLength="150" Nullable="false" />
     <Property Name="Code" Type="nvarchar" MaxLength="150" Nullable="false" />
     <Property Name="CanCaptureData" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GHGLocationTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="GHGParameters">
@@ -274,6 +283,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_GHGLocations_GHGLocationTypes">
+    <End Role="GHGLocationTypes" Type="Self.GHGLocationTypes" Multiplicity="1" />
+    <End Role="GHGLocations" Type="Self.GHGLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GHGLocationTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="GHGLocations">
+        <PropertyRef Name="LocationTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_GHGParameters_GHGDataTypes">
     <End Role="GHGDataTypes" Type="Self.GHGDataTypes" Multiplicity="1" />
     <End Role="GHGParameters" Type="Self.GHGParameters" Multiplicity="*" />
@@ -436,6 +457,7 @@
     <EntitySet Name="GHGDataTypes" EntityType="Self.GHGDataTypes" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GHGInventoryYear" EntityType="Self.GHGInventoryYear" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GHGLocations" EntityType="Self.GHGLocations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GHGLocationTypes" EntityType="Self.GHGLocationTypes" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GHGParameters" EntityType="Self.GHGParameters" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GHGSectors" EntityType="Self.GHGSectors" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GHGTypes" EntityType="Self.GHGTypes" Schema="dbo" store:Type="Tables" />
@@ -476,6 +498,10 @@
     <AssociationSet Name="FK_GHGLocations_GHGLocations" Association="Self.FK_GHGLocations_GHGLocations">
       <End Role="GHGLocations" EntitySet="GHGLocations" />
       <End Role="GHGLocations1" EntitySet="GHGLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GHGLocations_GHGLocationTypes" Association="Self.FK_GHGLocations_GHGLocationTypes">
+      <End Role="GHGLocationTypes" EntitySet="GHGLocationTypes" />
+      <End Role="GHGLocations" EntitySet="GHGLocations" />
     </AssociationSet>
     <AssociationSet Name="FK_GHGParameters_GHGDataTypes" Association="Self.FK_GHGParameters_GHGDataTypes">
       <End Role="GHGDataTypes" EntitySet="GHGDataTypes" />

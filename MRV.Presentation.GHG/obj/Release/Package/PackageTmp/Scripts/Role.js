@@ -1,15 +1,15 @@
-﻿Ext.ns('Ext.core.finance.ux.role');
+﻿Ext.ns('Ext.mrv.ghginventory.ux.role');
 /**
 * @desc      Role registration form
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.role
-* @class     Ext.core.finance.ux.role.Form
+
+
+* @namespace Ext.mrv.ghginventory.ux.role
+* @class     Ext.mrv.ghginventory.ux.role.Form
 * @extends   Ext.form.FormPanel
 */
-Ext.core.finance.ux.role.Form = function (config) {
-    Ext.core.finance.ux.role.Form.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.role.Form = function (config) {
+    Ext.mrv.ghginventory.ux.role.Form.superclass.constructor.call(this, Ext.apply({
         api: {
             load: window.Role.Get,
             submit: window.Role.Save
@@ -42,20 +42,20 @@ Ext.core.finance.ux.role.Form = function (config) {
         }]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.role.Form, Ext.form.FormPanel);
-Ext.reg('role-form', Ext.core.finance.ux.role.Form);
+Ext.extend(Ext.mrv.ghginventory.ux.role.Form, Ext.form.FormPanel);
+Ext.reg('role-form', Ext.mrv.ghginventory.ux.role.Form);
 
 /**
 * @desc      Role registration form host window
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.role
-* @class     Ext.core.finance.ux.role.Window
+
+
+* @namespace Ext.mrv.ghginventory.ux.role
+* @class     Ext.mrv.ghginventory.ux.role.Window
 * @extends   Ext.Window
 */
-Ext.core.finance.ux.role.Window = function (config) {
-    Ext.core.finance.ux.role.Window.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.role.Window = function (config) {
+    Ext.mrv.ghginventory.ux.role.Window.superclass.constructor.call(this, Ext.apply({
         layout: 'fit',
         width: 400,
         autoHeight: true,
@@ -86,9 +86,9 @@ Ext.core.finance.ux.role.Window = function (config) {
         }
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.role.Window, Ext.Window, {
+Ext.extend(Ext.mrv.ghginventory.ux.role.Window, Ext.Window, {
     initComponent: function () {
-        this.form = new Ext.core.finance.ux.role.Form();
+        this.form = new Ext.mrv.ghginventory.ux.role.Form();
         this.items = [this.form];
 
         this.bbar = [{
@@ -114,7 +114,7 @@ Ext.extend(Ext.core.finance.ux.role.Window, Ext.Window, {
             },
             scope: this
         }];
-        Ext.core.finance.ux.role.Window.superclass.initComponent.call(this, arguments);
+        Ext.mrv.ghginventory.ux.role.Window.superclass.initComponent.call(this, arguments);
     },
     onSave: function () {
         if (!this.form.getForm().isValid()) return;
@@ -139,19 +139,19 @@ Ext.extend(Ext.core.finance.ux.role.Window, Ext.Window, {
         this.close();
     }
 });
-Ext.reg('role-window', Ext.core.finance.ux.role.Window);
+Ext.reg('role-window', Ext.mrv.ghginventory.ux.role.Window);
 
 /**
 * @desc      Role Permission window
 * @author    Dawit Kiros
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.role
-* @class     Ext.core.finance.ux.role.PermissionWindow
+
+
+* @namespace Ext.mrv.ghginventory.ux.role
+* @class     Ext.mrv.ghginventory.ux.role.PermissionWindow
 * @extends   Ext.Window
 */
-Ext.core.finance.ux.role.PermissionWindow = function (config) {
-    Ext.core.finance.ux.role.PermissionWindow.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.role.PermissionWindow = function (config) {
+    Ext.mrv.ghginventory.ux.role.PermissionWindow.superclass.constructor.call(this, Ext.apply({
         layout: 'fit',
         width: 900,
         autoHeight: true,
@@ -168,9 +168,9 @@ Ext.core.finance.ux.role.PermissionWindow = function (config) {
         }
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.role.PermissionWindow, Ext.Window, {
+Ext.extend(Ext.mrv.ghginventory.ux.role.PermissionWindow, Ext.Window, {
     initComponent: function () {
-        this.grid = new Ext.core.finance.ux.role.PermissionGrid();
+        this.grid = new Ext.mrv.ghginventory.ux.role.PermissionGrid();
         this.grid.roleId = this.roleId;
         this.items = [this.grid];
 
@@ -190,7 +190,7 @@ Ext.extend(Ext.core.finance.ux.role.PermissionWindow, Ext.Window, {
             scope: this
         }];
 
-        Ext.core.finance.ux.role.PermissionWindow.superclass.initComponent.call(this, arguments);
+        Ext.mrv.ghginventory.ux.role.PermissionWindow.superclass.initComponent.call(this, arguments);
     },
     onSave: function () {
         var permissions = this.grid.getStore().data.items;
@@ -215,19 +215,19 @@ Ext.extend(Ext.core.finance.ux.role.PermissionWindow, Ext.Window, {
         this.close();
     }
 });
-Ext.reg('role-permissionWindow', Ext.core.finance.ux.role.PermissionWindow);
+Ext.reg('role-permissionWindow', Ext.mrv.ghginventory.ux.role.PermissionWindow);
 
 /**
 * @desc      Role grid
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.role
-* @class     Ext.core.finance.ux.role.Grid
+
+
+* @namespace Ext.mrv.ghginventory.ux.role
+* @class     Ext.mrv.ghginventory.ux.role.Grid
 * @extends   Ext.grid.GridPanel
 */
-Ext.core.finance.ux.role.Grid = function (config) {
-    Ext.core.finance.ux.role.Grid.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.role.Grid = function (config) {
+    Ext.mrv.ghginventory.ux.role.Grid.superclass.constructor.call(this, Ext.apply({
         store: new Ext.data.DirectStore({
             directFn: Role.GetAll,
             paramsAsHash: false,
@@ -282,7 +282,7 @@ Ext.core.finance.ux.role.Grid = function (config) {
         }]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.role.Grid, Ext.grid.GridPanel, {
+Ext.extend(Ext.mrv.ghginventory.ux.role.Grid, Ext.grid.GridPanel, {
     initComponent: function () {
         this.bbar = new Ext.PagingToolbar({
             id: 'role-paging',
@@ -290,28 +290,28 @@ Ext.extend(Ext.core.finance.ux.role.Grid, Ext.grid.GridPanel, {
             displayInfo: true,
             pageSize: this.pageSize
         });
-        Ext.core.finance.ux.role.Grid.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.role.Grid.superclass.initComponent.apply(this, arguments);
     },
     afterRender: function () {
         this.getStore().load({
             params: { start: 0, limit: this.pageSize }
         });
-        Ext.core.finance.ux.role.Grid.superclass.afterRender.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.role.Grid.superclass.afterRender.apply(this, arguments);
     }
 });
-Ext.reg('role-grid', Ext.core.finance.ux.role.Grid);
+Ext.reg('role-grid', Ext.mrv.ghginventory.ux.role.Grid);
 
 /**
 * @desc      Role Permison grid
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.role
-* @class     Ext.core.finance.ux.role.PermissionGrid
+
+
+* @namespace Ext.mrv.ghginventory.ux.role
+* @class     Ext.mrv.ghginventory.ux.role.PermissionGrid
 * @extends   Ext.grid.GridPanel
 */
-Ext.core.finance.ux.role.PermissionGrid = function (config) {
-    Ext.core.finance.ux.role.PermissionGrid.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.role.PermissionGrid = function (config) {
+    Ext.mrv.ghginventory.ux.role.PermissionGrid.superclass.constructor.call(this, Ext.apply({
         store: new Ext.data.DirectStore({
             directFn: Role.GetOperations,
             paramsAsHash: false,
@@ -421,7 +421,7 @@ Ext.core.finance.ux.role.PermissionGrid = function (config) {
         })]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.role.PermissionGrid, Ext.grid.GridPanel, {
+Ext.extend(Ext.mrv.ghginventory.ux.role.PermissionGrid, Ext.grid.GridPanel, {
     initComponent: function () {
         this.tbar = ['->',
         {
@@ -465,27 +465,27 @@ Ext.extend(Ext.core.finance.ux.role.PermissionGrid, Ext.grid.GridPanel, {
             displayInfo: true,
             pageSize: this.pageSize
         });
-        Ext.core.finance.ux.role.PermissionGrid.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.role.PermissionGrid.superclass.initComponent.apply(this, arguments);
     },
     afterRender: function () {
 
-        Ext.core.finance.ux.role.PermissionGrid.superclass.afterRender.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.role.PermissionGrid.superclass.afterRender.apply(this, arguments);
     }
 });
-Ext.reg('rolePermission-grid', Ext.core.finance.ux.role.PermissionGrid);
+Ext.reg('rolePermission-grid', Ext.mrv.ghginventory.ux.role.PermissionGrid);
 
 /**
 * @desc      Role panel
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
+
 * @date      November 01, 2014c
 * @version   $Id: Role.js, 0.1
-* @namespace Ext.core.finance.ux.role
-* @class     Ext.core.finance.ux.role.Panel
+* @namespace Ext.mrv.ghginventory.ux.role
+* @class     Ext.mrv.ghginventory.ux.role.Panel
 * @extends   Ext.Panel
 */
-Ext.core.finance.ux.role.Panel = function (config) {
-    Ext.core.finance.ux.role.Panel.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.role.Panel = function (config) {
+    Ext.mrv.ghginventory.ux.role.Panel.superclass.constructor.call(this, Ext.apply({
         layout: 'fit',
         border: false,
         tbar: {
@@ -495,7 +495,7 @@ Ext.core.finance.ux.role.Panel = function (config) {
                 text: 'Add',
                 id: 'addRole',
                 iconCls: 'icon-add',
-                disabled: !Ext.core.finance.ux.Reception.getPermission('Role', 'CanAdd'),
+                disabled: !Ext.mrv.ghginventory.ux.Reception.getPermission('Role', 'CanAdd'),
                 handler: this.onAddClick
             }, {
                 xtype: 'tbseparator'
@@ -504,7 +504,7 @@ Ext.core.finance.ux.role.Panel = function (config) {
                 text: 'Edit',
                 id: 'editRole',
                 iconCls: 'icon-edit',
-                disabled: !Ext.core.finance.ux.Reception.getPermission('Role', 'CanEdit'),
+                disabled: !Ext.mrv.ghginventory.ux.Reception.getPermission('Role', 'CanEdit'),
                 handler: this.onEditClick
             }, {
                 xtype: 'tbseparator'
@@ -513,14 +513,14 @@ Ext.core.finance.ux.role.Panel = function (config) {
                 text: 'Delete',
                 id: 'deleteRole',
                 iconCls: 'icon-delete',
-                disabled: !Ext.core.finance.ux.Reception.getPermission('Role', 'CanDelete'),
+                disabled: !Ext.mrv.ghginventory.ux.Reception.getPermission('Role', 'CanDelete'),
                 handler: this.onDeleteClick
             }, {
                 xtype: 'button',
                 text: 'Permissions',
                 id: 'saveRolePermission',
                 iconCls: 'icon-accept',
-                disabled: !Ext.core.finance.ux.Reception.getPermission('Role', 'CanEdit'),
+                disabled: !Ext.mrv.ghginventory.ux.Reception.getPermission('Role', 'CanEdit'),
                 handler: this.onSaveRolePermissionClick
             }, {
                 xtype: 'tbfill'
@@ -529,44 +529,44 @@ Ext.core.finance.ux.role.Panel = function (config) {
                 text: 'Fiscal Year',
                 id: 'btnEditFiscalYear',
                 iconCls: 'icon-FiscalYear',
-                disabled: !Ext.core.finance.ux.Reception.getPermission('Role', 'CanEdit'),
+                disabled: !Ext.mrv.ghginventory.ux.Reception.getPermission('Role', 'CanEdit'),
                 handler: this.onEditFiscalYear
             },{
                 xtype: 'button',
                 text: 'Periods',
                 id: 'btnEditPeriods',
                 iconCls: 'icon-Calendar',
-                disabled: !Ext.core.finance.ux.Reception.getPermission('Role', 'CanEdit'),
+                disabled: !Ext.mrv.ghginventory.ux.Reception.getPermission('Role', 'CanEdit'),
                 handler: this.onEditPeriods
             }]
         }
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.role.Panel, Ext.Panel, {
+Ext.extend(Ext.mrv.ghginventory.ux.role.Panel, Ext.Panel, {
     initComponent: function () {
         this.items = [{
             xtype: 'role-grid',
             id: 'role-grid'
         }];
-        Ext.core.finance.ux.role.Panel.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.role.Panel.superclass.initComponent.apply(this, arguments);
     },
     afterRender: function () {
 
-        Ext.core.finance.ux.role.Panel.superclass.afterRender.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.role.Panel.superclass.afterRender.apply(this, arguments);
     },
     onAddClick: function () {
-        new Ext.core.finance.ux.role.Window({
+        new Ext.mrv.ghginventory.ux.role.Window({
             roleId: 0,
             title: 'Add Role'
         }).show();
     },
     onEditFiscalYear: function () {
-        new Ext.core.finance.ux.fiscalYear.Window({
+        new Ext.mrv.ghginventory.ux.fiscalYear.Window({
             title: 'Edit Fiscal Year', CallerId: 0
         }).show();
     },
     onEditPeriods: function () {
-        new Ext.core.finance.ux.payrollPeriods.Window({
+        new Ext.mrv.ghginventory.ux.payrollPeriods.Window({
             title: 'Edit Periods'
         }).show();
     },
@@ -574,7 +574,7 @@ Ext.extend(Ext.core.finance.ux.role.Panel, Ext.Panel, {
         var grid = Ext.getCmp('role-grid');
         if (!grid.getSelectionModel().hasSelection()) return;
         var id = grid.getSelectionModel().getSelected().get('Id');
-        new Ext.core.finance.ux.role.Window({
+        new Ext.mrv.ghginventory.ux.role.Window({
             roleId: id,
             title: 'Edit Role'
         }).show();
@@ -612,13 +612,13 @@ Ext.extend(Ext.core.finance.ux.role.Panel, Ext.Panel, {
         var grid = Ext.getCmp('role-grid');
         if (!grid.getSelectionModel().hasSelection()) return;
         var id = grid.getSelectionModel().getSelected().get('Id');
-        new Ext.core.finance.ux.role.PermissionWindow({
+        new Ext.mrv.ghginventory.ux.role.PermissionWindow({
             roleId: id,
             title: 'Edit Role Permission'
         }).show();
     }
 });
-Ext.reg('role-panel', Ext.core.finance.ux.role.Panel);
+Ext.reg('role-panel', Ext.mrv.ghginventory.ux.role.Panel);
 
 function selectAll(cb, operation){
     var grid = Ext.getCmp('rolePermission-grid');

@@ -1,15 +1,15 @@
-﻿Ext.ns('Ext.core.finance.ux.Menus');
+﻿Ext.ns('Ext.mrv.ghginventory.ux.Menus');
 /**
 * @desc      Menus registration form
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.Menus
-* @class     Ext.core.finance.ux.Menus.Form
+
+
+* @namespace Ext.mrv.ghginventory.ux.Menus
+* @class     Ext.mrv.ghginventory.ux.Menus.Form
 * @extends   Ext.form.FormPanel
 */
-Ext.core.finance.ux.Menus.Form = function (config) {
-    Ext.core.finance.ux.Menus.Form.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.Menus.Form = function (config) {
+    Ext.mrv.ghginventory.ux.Menus.Form.superclass.constructor.call(this, Ext.apply({
         api: {
             load: Menus.Get,
             submit: Menus.Save
@@ -50,20 +50,20 @@ Ext.core.finance.ux.Menus.Form = function (config) {
         }]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.Menus.Form, Ext.form.FormPanel);
-Ext.reg('Menus-form', Ext.core.finance.ux.Menus.Form);
+Ext.extend(Ext.mrv.ghginventory.ux.Menus.Form, Ext.form.FormPanel);
+Ext.reg('Menus-form', Ext.mrv.ghginventory.ux.Menus.Form);
 
 /**
 * @desc      Menus registration form host window
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.Menus
-* @class     Ext.core.finance.ux.Menus.Window
+
+
+* @namespace Ext.mrv.ghginventory.ux.Menus
+* @class     Ext.mrv.ghginventory.ux.Menus.Window
 * @extends   Ext.Window
 */
-Ext.core.finance.ux.Menus.Window = function (config) {
-    Ext.core.finance.ux.Menus.Window.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.Menus.Window = function (config) {
+    Ext.mrv.ghginventory.ux.Menus.Window.superclass.constructor.call(this, Ext.apply({
         layout: 'fit',
         width: 400,
         autoHeight: true,
@@ -97,9 +97,9 @@ Ext.core.finance.ux.Menus.Window = function (config) {
         }
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.Menus.Window, Ext.Window, {
+Ext.extend(Ext.mrv.ghginventory.ux.Menus.Window, Ext.Window, {
     initComponent: function () {
-        this.form = new Ext.core.finance.ux.Menus.Form();
+        this.form = new Ext.mrv.ghginventory.ux.Menus.Form();
         this.items = [this.form];
         this.bbar = [{
             xtype: 'tbfill'
@@ -126,7 +126,7 @@ Ext.extend(Ext.core.finance.ux.Menus.Window, Ext.Window, {
             },
             scope: this
         }];
-        Ext.core.finance.ux.Menus.Window.superclass.initComponent.call(this, arguments);
+        Ext.mrv.ghginventory.ux.Menus.Window.superclass.initComponent.call(this, arguments);
     },
     onSave: function () {
         if (!this.form.getForm().isValid()) return;
@@ -156,19 +156,19 @@ Ext.extend(Ext.core.finance.ux.Menus.Window, Ext.Window, {
         this.close();
     }
 });
-Ext.reg('Menus-window', Ext.core.finance.ux.Menus.Window);
+Ext.reg('Menus-window', Ext.mrv.ghginventory.ux.Menus.Window);
 
 /**
 * @desc      Menus grid
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.Menus
-* @class     Ext.core.finance.ux.Menus.Grid
+
+
+* @namespace Ext.mrv.ghginventory.ux.Menus
+* @class     Ext.mrv.ghginventory.ux.Menus.Grid
 * @extends   Ext.grid.GridPanel
 */
-Ext.core.finance.ux.Menus.Grid = function (config) {
-    Ext.core.finance.ux.Menus.Grid.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.Menus.Grid = function (config) {
+    Ext.mrv.ghginventory.ux.Menus.Grid.superclass.constructor.call(this, Ext.apply({
         store: new Ext.data.DirectStore({
             directFn: Menus.GetAll,
             paramsAsHash: false,
@@ -234,7 +234,7 @@ Ext.core.finance.ux.Menus.Grid = function (config) {
         }]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.Menus.Grid, Ext.grid.GridPanel, {
+Ext.extend(Ext.mrv.ghginventory.ux.Menus.Grid, Ext.grid.GridPanel, {
     initComponent: function () {
         this.bbar = new Ext.PagingToolbar({
             id: 'Menus-paging',
@@ -242,11 +242,11 @@ Ext.extend(Ext.core.finance.ux.Menus.Grid, Ext.grid.GridPanel, {
             displayInfo: true,
             pageSize: this.pageSize
         });
-        Ext.core.finance.ux.Menus.Grid.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.Menus.Grid.superclass.initComponent.apply(this, arguments);
     },
     afterRender: function () {
         this.controlButton();
-        Ext.core.finance.ux.Menus.Grid.superclass.afterRender.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.Menus.Grid.superclass.afterRender.apply(this, arguments);
     },
     controlButton: function () {
         var enabled = !this.getSelectionModel().hasSelection();
@@ -254,20 +254,20 @@ Ext.extend(Ext.core.finance.ux.Menus.Grid, Ext.grid.GridPanel, {
         Ext.getCmp('deleteMenu').setDisabled(enabled);
     }
 });
-Ext.reg('Menus-grid', Ext.core.finance.ux.Menus.Grid);
+Ext.reg('Menus-grid', Ext.mrv.ghginventory.ux.Menus.Grid);
 
 /**
 * @desc      Menus panel
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
+
 * @date      November 01, 2014c
 * @version   $Id: Menus.js, 0.1
-* @namespace Ext.core.finance.ux.Menus
-* @class     Ext.core.finance.ux.Menus.Panel
+* @namespace Ext.mrv.ghginventory.ux.Menus
+* @class     Ext.mrv.ghginventory.ux.Menus.Panel
 * @extends   Ext.Panel
 */
-Ext.core.finance.ux.Menus.Panel = function (config) {
-    Ext.core.finance.ux.Menus.Panel.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.Menus.Panel = function (config) {
+    Ext.mrv.ghginventory.ux.Menus.Panel.superclass.constructor.call(this, Ext.apply({
         layout: 'fit',
         border: false,
         tbar: {
@@ -318,16 +318,16 @@ Ext.core.finance.ux.Menus.Panel = function (config) {
         }
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.Menus.Panel, Ext.Panel, {
+Ext.extend(Ext.mrv.ghginventory.ux.Menus.Panel, Ext.Panel, {
     initComponent: function () {
         this.items = [{
             xtype: 'Menus-grid',
             id: 'Menus-grid'
         }];
-        Ext.core.finance.ux.Menus.Panel.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.Menus.Panel.superclass.initComponent.apply(this, arguments);
     },
     onFilterClick: function () {
-        Ext.core.finance.ux.searchMenu.Observable.on('search-Menus', function (result) {
+        Ext.mrv.ghginventory.ux.searchMenu.Observable.on('search-Menus', function (result) {
             var grid = Ext.getCmp('Menus-grid');
             grid.searchResult = result;
             var systemKeyValue = result['SystemId'].split(';');
@@ -340,7 +340,7 @@ Ext.extend(Ext.core.finance.ux.Menus.Panel, Ext.Panel, {
                 Ext.getCmp('Menus-sitemap').setValue(siteMap + ' Menus');
             }
         }, this);
-        var searchMenuWindow = new Ext.core.finance.ux.searchMenu.Window({
+        var searchMenuWindow = new Ext.mrv.ghginventory.ux.searchMenu.Window({
             title: 'Filter Menus',
             searchEvent: 'search-Menus'
         });
@@ -358,7 +358,7 @@ Ext.extend(Ext.core.finance.ux.Menus.Panel, Ext.Panel, {
             });
             return;
         }
-        new Ext.core.finance.ux.Menus.Window({
+        new Ext.mrv.ghginventory.ux.Menus.Window({
             MenuId: 0,
             title: 'Add Menus'
         }).show();
@@ -367,7 +367,7 @@ Ext.extend(Ext.core.finance.ux.Menus.Panel, Ext.Panel, {
         var grid = Ext.getCmp('Menus-grid');
         if (!grid.getSelectionModel().hasSelection()) return;
         var id = grid.getSelectionModel().getSelected().get('Id');
-        new Ext.core.finance.ux.Menus.Window({
+        new Ext.mrv.ghginventory.ux.Menus.Window({
             MenuId: id,
             title: 'Edit Menus'
         }).show();
@@ -404,4 +404,4 @@ Ext.extend(Ext.core.finance.ux.Menus.Panel, Ext.Panel, {
         });
     }
 });
-Ext.reg('Menus-panel', Ext.core.finance.ux.Menus.Panel);
+Ext.reg('Menus-panel', Ext.mrv.ghginventory.ux.Menus.Panel);

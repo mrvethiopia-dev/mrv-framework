@@ -1,18 +1,18 @@
-﻿Ext.ns('Ext.core.finance.ux.user');
+﻿Ext.ns('Ext.mrv.ghginventory.ux.user');
 
 
 /**
 * @desc      User registration form
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.user
-* @class     Ext.core.finance.ux.user.Form
+
+
+* @namespace Ext.mrv.ghginventory.ux.user
+* @class     Ext.mrv.ghginventory.ux.user.Form
 * @extends   Ext.form.FormPanel
 */
 
-Ext.core.finance.ux.user.Form = function (config) {
-    Ext.core.finance.ux.user.Form.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.user.Form = function (config) {
+    Ext.mrv.ghginventory.ux.user.Form.superclass.constructor.call(this, Ext.apply({
         api: {
             load: window.User.Get,
             submit: window.User.Save
@@ -30,20 +30,20 @@ Ext.core.finance.ux.user.Form = function (config) {
         baseCls: 'x-plain'
     }, config));
 };
-Ext.extend(Ext.core.finance.ux.user.Form, Ext.form.FormPanel);
-Ext.reg('user-form', Ext.core.finance.ux.user.Form);
+Ext.extend(Ext.mrv.ghginventory.ux.user.Form, Ext.form.FormPanel);
+Ext.reg('user-form', Ext.mrv.ghginventory.ux.user.Form);
 
 /**
 * @desc      User registration form host window
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.user
-* @class     Ext.core.finance.ux.user.Window
+
+
+* @namespace Ext.mrv.ghginventory.ux.user
+* @class     Ext.mrv.ghginventory.ux.user.Window
 * @extends   Ext.Window
 */
-Ext.core.finance.ux.user.Window = function (config) {
-    Ext.core.finance.ux.user.Window.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.user.Window = function (config) {
+    Ext.mrv.ghginventory.ux.user.Window.superclass.constructor.call(this, Ext.apply({
         layout: 'form',
         width: 500,
         autoHeight: true,
@@ -74,7 +74,7 @@ Ext.core.finance.ux.user.Window = function (config) {
         }
     }, config));
 };
-Ext.extend(Ext.core.finance.ux.user.Window, Ext.Window, {
+Ext.extend(Ext.mrv.ghginventory.ux.user.Window, Ext.Window, {
     initComponent: function () {        
         this.bbar = [{
             xtype: 'tbfill'
@@ -99,7 +99,7 @@ Ext.extend(Ext.core.finance.ux.user.Window, Ext.Window, {
             },
             scope: this
         }];
-        Ext.core.finance.ux.user.Window.superclass.initComponent.call(this, arguments);
+        Ext.mrv.ghginventory.ux.user.Window.superclass.initComponent.call(this, arguments);
     },
     onSave: function () {
         if (!this.form.getForm().isValid()) return;
@@ -139,21 +139,21 @@ Ext.extend(Ext.core.finance.ux.user.Window, Ext.Window, {
         this.close();
     }
 });
-Ext.reg('user-window', Ext.core.finance.ux.user.Window);
+Ext.reg('user-window', Ext.mrv.ghginventory.ux.user.Window);
 
 
 /**
 * @desc      User grid
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.user
-* @class     Ext.core.finance.ux.user.Grid
+
+
+* @namespace Ext.mrv.ghginventory.ux.user
+* @class     Ext.mrv.ghginventory.ux.user.Grid
 * @extends   Ext.grid.GridPanel
 */
 
-Ext.core.finance.ux.user.Grid = function (config) {
-    Ext.core.finance.ux.user.Grid.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.user.Grid = function (config) {
+    Ext.mrv.ghginventory.ux.user.Grid.superclass.constructor.call(this, Ext.apply({
         store: new Ext.data.DirectStore({
             directFn: window.User.GetAll,
             paramsAsHash: false,
@@ -218,7 +218,7 @@ Ext.core.finance.ux.user.Grid = function (config) {
         }]
     }, config));
 };
-Ext.extend(Ext.core.finance.ux.user.Grid, Ext.grid.GridPanel, {
+Ext.extend(Ext.mrv.ghginventory.ux.user.Grid, Ext.grid.GridPanel, {
     initComponent: function () {
         this.store.baseParams['record'] = Ext.encode({ searchText: '' });
         this.bbar = new Ext.PagingToolbar({
@@ -227,29 +227,29 @@ Ext.extend(Ext.core.finance.ux.user.Grid, Ext.grid.GridPanel, {
             displayInfo: true,
             pageSize: this.pageSize
         });
-        Ext.core.finance.ux.user.Grid.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.user.Grid.superclass.initComponent.apply(this, arguments);
     },
     afterRender: function () {
         this.getStore().load({
             params: { start: 0, limit: this.pageSize }
         });
-        Ext.core.finance.ux.user.Grid.superclass.afterRender.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.user.Grid.superclass.afterRender.apply(this, arguments);
     }
 });
-Ext.reg('user-grid', Ext.core.finance.ux.user.Grid);
+Ext.reg('user-grid', Ext.mrv.ghginventory.ux.user.Grid);
 
 /**
 * @desc      User panel
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
+
 * @date      November 01, 2014c
 * @version   $Id: User.js, 0.1
-* @namespace Ext.core.finance.ux.user
-* @class     Ext.core.finance.ux.user.Panel
+* @namespace Ext.mrv.ghginventory.ux.user
+* @class     Ext.mrv.ghginventory.ux.user.Panel
 * @extends   Ext.Panel
 */
-Ext.core.finance.ux.user.Panel = function (config) {
-    Ext.core.finance.ux.user.Panel.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.user.Panel = function (config) {
+    Ext.mrv.ghginventory.ux.user.Panel.superclass.constructor.call(this, Ext.apply({
         layout: 'fit',
         border: false,
         tbar: {
@@ -259,7 +259,7 @@ Ext.core.finance.ux.user.Panel = function (config) {
                 text: 'Add',
                 id: 'addUser',
                 iconCls: 'icon-add',
-                disabled: !Ext.core.finance.ux.Reception.getPermission('User', 'CanAdd'),
+                disabled: !Ext.mrv.ghginventory.ux.Reception.getPermission('User', 'CanAdd'),
                 handler: this.onAddClick
             }, {
                 xtype: 'tbseparator'
@@ -268,7 +268,7 @@ Ext.core.finance.ux.user.Panel = function (config) {
                 text: 'Edit',
                 id: 'editUser',
                 iconCls: 'icon-edit',
-                disabled: !Ext.core.finance.ux.Reception.getPermission('User', 'CanEdit'),
+                disabled: !Ext.mrv.ghginventory.ux.Reception.getPermission('User', 'CanEdit'),
                 handler: this.onEditClick
             }, {
                 xtype: 'tbseparator'
@@ -277,7 +277,7 @@ Ext.core.finance.ux.user.Panel = function (config) {
                 text: 'Delete',
                 id: 'deleteUser',
                 iconCls: 'icon-delete',
-                disabled: !Ext.core.finance.ux.Reception.getPermission('User', 'CanDelete'),
+                disabled: !Ext.mrv.ghginventory.ux.Reception.getPermission('User', 'CanDelete'),
                 handler: this.onDeleteClick
             }, {
                 xtype: 'tbfill'
@@ -311,13 +311,13 @@ Ext.core.finance.ux.user.Panel = function (config) {
         }
     }, config));
 };
-Ext.extend(Ext.core.finance.ux.user.Panel, Ext.Panel, {
+Ext.extend(Ext.mrv.ghginventory.ux.user.Panel, Ext.Panel, {
     initComponent: function () {
         this.items = [{
             xtype: 'user-grid',
             id: 'user-grid'
         }];
-        Ext.core.finance.ux.user.Panel.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.user.Panel.superclass.initComponent.apply(this, arguments);
     },
     onAddClick: function () {
         var roleCheckBoxCollection = new Array();
@@ -345,7 +345,7 @@ Ext.extend(Ext.core.finance.ux.user.Panel, Ext.Panel, {
                 subsystemCheckBoxCollection[j] = subsystemCheckBox;
             }
 
-            var form = new Ext.core.finance.ux.user.Form({
+            var form = new Ext.mrv.ghginventory.ux.user.Form({
                 items: [{
                     xtype: 'fieldset',
                     title: 'User Info',
@@ -408,7 +408,7 @@ Ext.extend(Ext.core.finance.ux.user.Panel, Ext.Panel, {
                     }]
                 }]
             });
-            new Ext.core.finance.ux.user.Window({
+            new Ext.mrv.ghginventory.ux.user.Window({
                 form: form,
                 roles: roleCheckBoxCollection,
                 subsystems: subsystemCheckBoxCollection,
@@ -469,7 +469,7 @@ Ext.extend(Ext.core.finance.ux.user.Panel, Ext.Panel, {
                     subsystemCheckBoxCollection[i] = subsystemCheckBox;
                 }
 
-                var form = new Ext.core.finance.ux.user.Form({
+                var form = new Ext.mrv.ghginventory.ux.user.Form({
                     items: [{
                         xtype: 'fieldset',
                         title: 'User Info',
@@ -531,7 +531,7 @@ Ext.extend(Ext.core.finance.ux.user.Panel, Ext.Panel, {
                         }]
                     }]
                 });
-                new Ext.core.finance.ux.user.Window({
+                new Ext.mrv.ghginventory.ux.user.Window({
                     form: form,
                     roles: roleCheckBoxCollection,
                     subsystems: subsystemCheckBoxCollection,
@@ -574,4 +574,4 @@ Ext.extend(Ext.core.finance.ux.user.Panel, Ext.Panel, {
         });
     }
 });
-Ext.reg('user-panel', Ext.core.finance.ux.user.Panel);
+Ext.reg('user-panel', Ext.mrv.ghginventory.ux.user.Panel);

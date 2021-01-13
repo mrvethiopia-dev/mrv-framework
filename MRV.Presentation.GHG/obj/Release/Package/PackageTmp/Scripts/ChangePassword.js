@@ -1,16 +1,16 @@
-﻿Ext.ns('Ext.core.finance.ux.changePassword');
+﻿Ext.ns('Ext.mrv.ghginventory.ux.changePassword');
 /**
 * @desc      Payroll Change Password  form
 * @author    Dawit Kiros
-* @copyright (c) 2014, LIFT
-* @date      October 08, 2013
-* @namespace Ext.core.finance.ux.changePassword
-* @class     Ext.core.finance.ux.changePassword.Form
+
+
+* @namespace Ext.mrv.ghginventory.ux.changePassword
+* @class     Ext.mrv.ghginventory.ux.changePassword.Form
 * @extends   Ext.form.FormPanel
 */
 
-Ext.core.finance.ux.changePassword.Form = function (config) {
-    Ext.core.finance.ux.changePassword.Form.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.changePassword.Form = function (config) {
+    Ext.mrv.ghginventory.ux.changePassword.Form.superclass.constructor.call(this, Ext.apply({
         defaults: {
             anchor: '95%',
             labelStyle: 'text-align:left;',
@@ -46,21 +46,21 @@ Ext.core.finance.ux.changePassword.Form = function (config) {
         }]
     }, config));
 };
-Ext.extend(Ext.core.finance.ux.changePassword.Form, Ext.form.FormPanel);
-Ext.reg('changePassword-form', Ext.core.finance.ux.changePassword.Form);
+Ext.extend(Ext.mrv.ghginventory.ux.changePassword.Form, Ext.form.FormPanel);
+Ext.reg('changePassword-form', Ext.mrv.ghginventory.ux.changePassword.Form);
 
 
 /**
 * @desc      changePassword window
 * @author    Dawit Kiros
-* @copyright (c) 2014, LIFT
-* @date      October 08, 2013
-* @namespace Ext.core.finance.ux.changePassword
-* @class     Ext.core.finance.ux.changePassword.Window
+
+
+* @namespace Ext.mrv.ghginventory.ux.changePassword
+* @class     Ext.mrv.ghginventory.ux.changePassword.Window
 * @extends   Ext.Window
 */
-Ext.core.finance.ux.changePassword.Window = function (config) {
-    Ext.core.finance.ux.changePassword.Window.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.changePassword.Window = function (config) {
+    Ext.mrv.ghginventory.ux.changePassword.Window.superclass.constructor.call(this, Ext.apply({
         layout: 'fit',
         width: 350,
         autoHeight: true,
@@ -77,9 +77,9 @@ Ext.core.finance.ux.changePassword.Window = function (config) {
         }
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.changePassword.Window, Ext.Window, {
+Ext.extend(Ext.mrv.ghginventory.ux.changePassword.Window, Ext.Window, {
     initComponent: function () {
-        this.form = new Ext.core.finance.ux.changePassword.Form();
+        this.form = new Ext.mrv.ghginventory.ux.changePassword.Form();
         this.items = [this.form];
         this.buttons = [{
             text: 'Change',
@@ -93,7 +93,7 @@ Ext.extend(Ext.core.finance.ux.changePassword.Window, Ext.Window, {
             scope: this
         }];
 
-        Ext.core.finance.ux.changePassword.Window.superclass.initComponent.call(this, arguments);
+        Ext.mrv.ghginventory.ux.changePassword.Window.superclass.initComponent.call(this, arguments);
     },
     onChange: function () {
 
@@ -124,4 +124,4 @@ Ext.extend(Ext.core.finance.ux.changePassword.Window, Ext.Window, {
         this.close();
     }
 });
-Ext.reg('ChangePassword-window', Ext.core.finance.ux.changePassword.Window);
+Ext.reg('ChangePassword-window', Ext.mrv.ghginventory.ux.changePassword.Window);

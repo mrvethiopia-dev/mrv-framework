@@ -25,6 +25,31 @@ namespace MRV.Data.Model
             set;
         }
     
+        public virtual int LocationTypeId
+        {
+            get { return _locationTypeId; }
+            set
+            {
+                try
+                {
+                    _settingFK = true;
+                    if (_locationTypeId != value)
+                    {
+                        if (GHGLocationTypes != null && GHGLocationTypes.Id != value)
+                        {
+                            GHGLocationTypes = null;
+                        }
+                        _locationTypeId = value;
+                    }
+                }
+                finally
+                {
+                    _settingFK = false;
+                }
+            }
+        }
+        private int _locationTypeId;
+    
         public virtual Nullable<int> ParentId
         {
             get { return _parentId; }
@@ -156,6 +181,21 @@ namespace MRV.Data.Model
             }
         }
         private GHGLocations _gHGLocations2;
+    
+        public virtual GHGLocationTypes GHGLocationTypes
+        {
+            get { return _gHGLocationTypes; }
+            set
+            {
+                if (!ReferenceEquals(_gHGLocationTypes, value))
+                {
+                    var previousValue = _gHGLocationTypes;
+                    _gHGLocationTypes = value;
+                    FixupGHGLocationTypes(previousValue);
+                }
+            }
+        }
+        private GHGLocationTypes _gHGLocationTypes;
 
         #endregion
 
@@ -184,6 +224,26 @@ namespace MRV.Data.Model
             else if (!_settingFK)
             {
                 ParentId = null;
+            }
+        }
+    
+        private void FixupGHGLocationTypes(GHGLocationTypes previousValue)
+        {
+            if (previousValue != null && previousValue.GHGLocations.Contains(this))
+            {
+                previousValue.GHGLocations.Remove(this);
+            }
+    
+            if (GHGLocationTypes != null)
+            {
+                if (!GHGLocationTypes.GHGLocations.Contains(this))
+                {
+                    GHGLocationTypes.GHGLocations.Add(this);
+                }
+                if (LocationTypeId != GHGLocationTypes.Id)
+                {
+                    LocationTypeId = GHGLocationTypes.Id;
+                }
             }
         }
     

@@ -2,7 +2,7 @@
     Ext.Direct.addProvider(Ext.app.REMOTING_API);
     Ext.QuickTips.init();
     Reception.GetApplicationPath(function (response, action) {
-        var reception = Ext.core.finance.ux.Reception;
+        var reception = Ext.mrv.ghginventory.ux.Reception;
         reception.getInstance(false);
         reception.setApplicationPath(action.result.data.ApplicationPath);
         Ext.BLANK_IMAGE_URL = action.result.data.ApplicationPath + '/Content/images/default/s.gif';

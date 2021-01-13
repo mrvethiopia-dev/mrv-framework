@@ -5,8 +5,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <TimeStampOfAssociatedLegacyPublishXmlFile>2018-10-25T09:15:30.0000000+03:00</TimeStampOfAssociatedLegacyPublishXmlFile>
-    <_PublishTargetUrl>D:\Published\DAI_FIN</_PublishTargetUrl>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>
+    </TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>D:\Published\MRV</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Assemblies/Ext.Direct.Mvc.dll">
@@ -70,7 +71,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/10/2013 11:39:24</publishTime>
     </File>
     <File Include="bin/favicon.ico">
-      <publishTime>12/08/2015 09:26:30</publishTime>
+      <publishTime>12/29/2020 12:19:42</publishTime>
     </File>
     <File Include="bin/Help/UserManual.pdf">
       <publishTime>08/01/2016 10:26:02</publishTime>
@@ -83,6 +84,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
       <publishTime>02/20/2011 12:40:08</publishTime>
+    </File>
+    <File Include="bin/MRV.Business.GHG.dll">
+      <publishTime>01/10/2021 10:47:07</publishTime>
+    </File>
+    <File Include="bin/MRV.Data.Infrastructure.dll">
+      <publishTime>01/10/2021 10:47:06</publishTime>
+    </File>
+    <File Include="bin/MRV.Data.Model.dll">
+      <publishTime>01/10/2021 10:47:06</publishTime>
+    </File>
+    <File Include="bin/MRV.Presentation.GHG.dll">
+      <publishTime>01/10/2021 10:47:08</publishTime>
     </File>
     <File Include="bin/NBI.Business.Tsa.dll">
       <publishTime>12/04/2020 09:06:24</publishTime>
@@ -1045,7 +1058,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/05/2010 11:48:30</publishTime>
     </File>
     <File Include="Content/images/app/add.png">
-      <publishTime>07/16/2012 14:24:42</publishTime>
+      <publishTime>01/06/2021 10:42:47</publishTime>
     </File>
     <File Include="Content/images/app/Addition.png">
       <publishTime>12/10/2013 11:40:40</publishTime>
@@ -1105,13 +1118,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/17/2016 15:27:20</publishTime>
     </File>
     <File Include="Content/images/app/cp.png">
-      <publishTime>01/08/2011 00:36:56</publishTime>
+      <publishTime>01/06/2021 11:07:00</publishTime>
     </File>
     <File Include="Content/images/app/DeActive.ico">
       <publishTime>11/14/2013 09:16:50</publishTime>
     </File>
     <File Include="Content/images/app/delete.png">
-      <publishTime>07/16/2012 14:24:42</publishTime>
+      <publishTime>01/06/2021 10:54:34</publishTime>
     </File>
     <File Include="Content/images/app/disapprove.png">
       <publishTime>04/26/2016 16:40:40</publishTime>
@@ -1120,7 +1133,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/16/2012 14:24:56</publishTime>
     </File>
     <File Include="Content/images/app/edit.png">
-      <publishTime>01/05/2010 11:48:00</publishTime>
+      <publishTime>01/06/2021 10:47:31</publishTime>
     </File>
     <File Include="Content/images/app/education.png">
       <publishTime>12/09/2013 06:32:58</publishTime>
@@ -1168,13 +1181,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/09/2013 06:32:58</publishTime>
     </File>
     <File Include="Content/images/app/Help.png">
-      <publishTime>03/19/2010 20:34:26</publishTime>
+      <publishTime>01/06/2021 11:02:55</publishTime>
     </File>
     <File Include="Content/images/app/hierarchy.png">
       <publishTime>12/10/2013 11:40:40</publishTime>
     </File>
     <File Include="Content/images/app/home.png">
-      <publishTime>01/09/2011 00:46:18</publishTime>
+      <publishTime>12/29/2020 21:39:52</publishTime>
     </File>
     <File Include="Content/images/app/html.png">
       <publishTime>01/05/2010 11:48:28</publishTime>
@@ -1201,13 +1214,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/10/2013 11:40:40</publishTime>
     </File>
     <File Include="Content/images/app/login-bg.png">
-      <publishTime>11/03/2014 14:45:46</publishTime>
+      <publishTime>12/21/2020 12:07:35</publishTime>
     </File>
     <File Include="Content/images/app/logo.png">
-      <publishTime>05/12/2016 16:10:38</publishTime>
+      <publishTime>01/07/2021 20:00:40</publishTime>
     </File>
     <File Include="Content/images/app/logout.png">
-      <publishTime>07/16/2012 14:24:42</publishTime>
+      <publishTime>01/06/2021 10:58:25</publishTime>
     </File>
     <File Include="Content/images/app/member.png">
       <publishTime>12/10/2013 11:40:40</publishTime>
@@ -1330,7 +1343,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/11/2016 11:23:30</publishTime>
     </File>
     <File Include="Content/images/app/salaryscale.png">
-      <publishTime>12/09/2013 06:32:58</publishTime>
+      <publishTime>01/03/2021 21:51:38</publishTime>
     </File>
     <File Include="Content/images/app/saved.png">
       <publishTime>12/10/2013 11:40:40</publishTime>
@@ -1342,10 +1355,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/10/2013 11:40:40</publishTime>
     </File>
     <File Include="Content/images/app/settings.png">
-      <publishTime>12/09/2013 06:32:58</publishTime>
+      <publishTime>01/03/2021 21:51:38</publishTime>
     </File>
     <File Include="Content/images/app/shield.png">
-      <publishTime>04/15/2016 20:03:48</publishTime>
+      <publishTime>01/03/2021 22:04:07</publishTime>
     </File>
     <File Include="Content/images/app/startup-bg.png">
       <publishTime>11/03/2014 14:58:06</publishTime>
@@ -3373,7 +3386,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/10/2014 14:45:40</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>12/08/2015 09:26:30</publishTime>
+      <publishTime>12/29/2020 12:19:42</publishTime>
     </File>
     <File Include="Global.asax">
       <publishTime>12/10/2013 11:30:30</publishTime>
@@ -4321,7 +4334,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/23/2016 09:38:40</publishTime>
     </File>
     <File Include="Scripts/ChangePassword.js">
-      <publishTime>03/23/2016 09:38:40</publishTime>
+      <publishTime>01/07/2021 19:53:31</publishTime>
     </File>
     <File Include="Scripts/CheckColumn.js">
       <publishTime>12/10/2013 11:47:24</publishTime>
@@ -4333,7 +4346,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/10/2013 11:47:24</publishTime>
     </File>
     <File Include="Scripts/Common.js">
-      <publishTime>03/23/2016 09:38:40</publishTime>
+      <publishTime>01/07/2021 19:53:31</publishTime>
     </File>
     <File Include="Scripts/crypto.js">
       <publishTime>12/10/2013 11:47:24</publishTime>
@@ -4351,7 +4364,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/05/2018 11:43:22</publishTime>
     </File>
     <File Include="Scripts/Entry.js">
-      <publishTime>03/23/2016 09:38:40</publishTime>
+      <publishTime>01/07/2021 19:53:31</publishTime>
     </File>
     <File Include="Scripts/examples.js">
       <publishTime>12/10/2013 11:47:24</publishTime>
@@ -4495,13 +4508,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/17/2018 19:22:14</publishTime>
     </File>
     <File Include="Scripts/GenericSearch.js">
-      <publishTime>03/23/2016 09:38:40</publishTime>
+      <publishTime>01/07/2021 19:53:37</publishTime>
+    </File>
+    <File Include="Scripts/GHGInventoryYears.js">
+      <publishTime>01/07/2021 19:53:38</publishTime>
+    </File>
+    <File Include="Scripts/GHGLocations.js">
+      <publishTime>01/08/2021 15:51:07</publishTime>
+    </File>
+    <File Include="Scripts/GHGSectors.js">
+      <publishTime>01/07/2021 20:13:19</publishTime>
     </File>
     <File Include="Scripts/GridPrinter.js">
       <publishTime>12/20/2016 12:02:58</publishTime>
     </File>
     <File Include="Scripts/GridSearch.js">
-      <publishTime>12/10/2013 11:47:24</publishTime>
+      <publishTime>01/07/2021 19:50:11</publishTime>
     </File>
     <File Include="Scripts/InvItems.js">
       <publishTime>03/30/2019 07:26:40</publishTime>
@@ -4534,13 +4556,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/16/2018 12:02:18</publishTime>
     </File>
     <File Include="Scripts/Login.js">
-      <publishTime>03/23/2016 09:38:40</publishTime>
+      <publishTime>01/07/2021 19:53:31</publishTime>
     </File>
     <File Include="Scripts/Logout.js">
-      <publishTime>03/23/2016 09:38:40</publishTime>
+      <publishTime>01/07/2021 19:53:31</publishTime>
     </File>
     <File Include="Scripts/Menus.js">
-      <publishTime>03/23/2016 09:38:40</publishTime>
+      <publishTime>01/07/2021 19:53:31</publishTime>
     </File>
     <File Include="Scripts/MultiSelect.js">
       <publishTime>12/21/2015 10:52:04</publishTime>
@@ -4687,19 +4709,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/27/2018 13:37:30</publishTime>
     </File>
     <File Include="Scripts/Reception.js">
-      <publishTime>08/12/2019 10:55:50</publishTime>
+      <publishTime>01/07/2021 21:22:14</publishTime>
     </File>
     <File Include="Scripts/ResponseInspector.js">
       <publishTime>12/10/2013 11:47:24</publishTime>
     </File>
     <File Include="Scripts/Role.js">
-      <publishTime>08/12/2019 10:24:58</publishTime>
+      <publishTime>01/07/2021 19:53:38</publishTime>
     </File>
     <File Include="Scripts/RoleMember.js">
-      <publishTime>03/23/2016 09:38:38</publishTime>
+      <publishTime>01/07/2021 19:53:38</publishTime>
     </File>
     <File Include="Scripts/RolePermission.js">
-      <publishTime>03/23/2016 09:38:38</publishTime>
+      <publishTime>01/07/2021 19:53:32</publishTime>
     </File>
     <File Include="Scripts/RowActions.js">
       <publishTime>12/10/2013 11:47:24</publishTime>
@@ -4765,19 +4787,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/03/2019 07:43:00</publishTime>
     </File>
     <File Include="Scripts/SearchMenu.js">
-      <publishTime>03/23/2016 09:38:38</publishTime>
+      <publishTime>01/07/2021 19:53:32</publishTime>
     </File>
     <File Include="Scripts/SearchSubmenu.js">
-      <publishTime>03/23/2016 09:38:38</publishTime>
+      <publishTime>01/07/2021 19:53:32</publishTime>
     </File>
     <File Include="Scripts/SubMenus.js">
-      <publishTime>03/23/2016 09:38:38</publishTime>
+      <publishTime>01/07/2021 19:53:32</publishTime>
     </File>
     <File Include="Scripts/SystemMessage.js">
-      <publishTime>03/23/2016 09:38:38</publishTime>
+      <publishTime>01/07/2021 21:22:14</publishTime>
     </File>
     <File Include="Scripts/SystemMessageManager.js">
-      <publishTime>03/23/2016 09:38:38</publishTime>
+      <publishTime>01/07/2021 21:22:17</publishTime>
     </File>
     <File Include="Scripts/SystemSoundManager.js">
       <publishTime>12/10/2013 11:47:24</publishTime>
@@ -4792,28 +4814,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/10/2013 11:47:24</publishTime>
     </File>
     <File Include="Scripts/User.js">
-      <publishTime>04/18/2016 16:21:38</publishTime>
+      <publishTime>01/07/2021 19:53:37</publishTime>
     </File>
     <File Include="Scripts/UserRole.js">
-      <publishTime>05/12/2016 16:34:18</publishTime>
+      <publishTime>01/07/2021 19:53:32</publishTime>
     </File>
     <File Include="Scripts/UserSubsystem.js">
-      <publishTime>03/23/2016 09:38:38</publishTime>
+      <publishTime>01/07/2021 19:53:32</publishTime>
     </File>
     <File Include="Scripts/ux-util.js">
       <publishTime>12/10/2013 11:47:24</publishTime>
     </File>
     <File Include="Scripts/Workbench.js">
-      <publishTime>08/12/2019 10:06:10</publishTime>
+      <publishTime>01/07/2021 19:53:32</publishTime>
     </File>
     <File Include="Views/Reception/Index.aspx">
-      <publishTime>03/17/2016 09:15:52</publishTime>
+      <publishTime>12/29/2020 17:41:40</publishTime>
     </File>
     <File Include="Views/Workbench/Index.aspx">
-      <publishTime>02/21/2020 15:56:06</publishTime>
+      <publishTime>01/07/2021 20:39:46</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/05/2020 10:14:01</publishTime>
+      <publishTime>01/10/2021 10:47:09</publishTime>
     </File>
   </ItemGroup>
 </Project>

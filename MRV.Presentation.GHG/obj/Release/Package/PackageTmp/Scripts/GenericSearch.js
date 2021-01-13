@@ -1,18 +1,17 @@
-﻿Ext.ns('Ext.core.finance.ux.genericSearch');
-Ext.core.finance.ux.genericSearch.Observable = new Ext.util.Observable();
-Ext.core.finance.ux.genericSearch.Observable.addEvents('genericSearch');
+﻿Ext.ns('Ext.mrv.ghginventory.ux.genericSearch');
+Ext.mrv.ghginventory.ux.genericSearch.Observable = new Ext.util.Observable();
+Ext.mrv.ghginventory.ux.genericSearch.Observable.addEvents('genericSearch');
 
 /**
 * @desc      Customer selection window
 * @author    Dawit Kiros
-* @copyright (c) 2010, Panafric
-* @date      December 08, 2013
-* @namespace Ext.core.finance.ux.genericSearch
-* @class     Ext.core.finance.ux.genericSearch.Window
+
+* @namespace Ext.mrv.ghginventory.ux.genericSearch
+* @class     Ext.mrv.ghginventory.ux.genericSearch.Window
 * @extends   Ext.Window
 */
-Ext.core.finance.ux.genericSearch.Window = function (config) {
-    Ext.core.finance.ux.genericSearch.Window.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.genericSearch.Window = function (config) {
+    Ext.mrv.ghginventory.ux.genericSearch.Window.superclass.constructor.call(this, Ext.apply({
         layout: 'form',
         width: 500,
         autoHeight: true,
@@ -24,9 +23,9 @@ Ext.core.finance.ux.genericSearch.Window = function (config) {
         bodyStyle: 'padding:5px;'
     }, config));
 };
-Ext.extend(Ext.core.finance.ux.genericSearch.Window, Ext.Window, {
+Ext.extend(Ext.mrv.ghginventory.ux.genericSearch.Window, Ext.Window, {
     initComponent: function () {
-        this.grid = new Ext.core.finance.ux.genericSearch.Grid({ tableName: this.tableName });
+        this.grid = new Ext.mrv.ghginventory.ux.genericSearch.Grid({ tableName: this.tableName });
         this.items = [this.grid];
         this.bbar = [{
             xtype: 'tbfill'
@@ -43,33 +42,33 @@ Ext.extend(Ext.core.finance.ux.genericSearch.Window, Ext.Window, {
             handler: this.onClose,
             scope: this
         }];
-        Ext.core.finance.ux.genericSearch.Window.superclass.initComponent.call(this, arguments);
+        Ext.mrv.ghginventory.ux.genericSearch.Window.superclass.initComponent.call(this, arguments);
     },
     onSelect: function () {
         if (!this.grid.getSelectionModel().hasSelection()) return;
         var result = {};
         result['Id'] = this.grid.getSelectionModel().getSelected().get('Id');
         result['Name'] = this.grid.getSelectionModel().getSelected().get('Name');
-        Ext.core.finance.ux.genericSearch.Observable.fireEvent('genericSearch', result);
+        Ext.mrv.ghginventory.ux.genericSearch.Observable.fireEvent('genericSearch', result);
         this.close();
     },
     onClose: function () {
         this.close();
     }
 });
-Ext.reg('generic-window', Ext.core.finance.ux.genericSearch.Window);
+Ext.reg('generic-window', Ext.mrv.ghginventory.ux.genericSearch.Window);
 
 /**
 * @desc      Customer grid
 * @author    Dawit Kiros
 * @copyright (c) 2010, Panafric
 * @date      December 08, 2013
-* @namespace Ext.core.finance.ux.genericSearch
-* @class     Ext.core.finance.ux.genericSearch.Grid
+* @namespace Ext.mrv.ghginventory.ux.genericSearch
+* @class     Ext.mrv.ghginventory.ux.genericSearch.Grid
 * @extends   Ext.grid.GridPanel
 */
-Ext.core.finance.ux.genericSearch.Grid = function (config) {
-    Ext.core.finance.ux.genericSearch.Grid.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.genericSearch.Grid = function (config) {
+    Ext.mrv.ghginventory.ux.genericSearch.Grid.superclass.constructor.call(this, Ext.apply({
         store: new Ext.data.DirectStore({
             directFn: Ifms.Search,
             paramsAsHash: false,
@@ -118,7 +117,7 @@ Ext.core.finance.ux.genericSearch.Grid = function (config) {
         }]
     }, config));
 };
-Ext.extend(Ext.core.finance.ux.genericSearch.Grid, Ext.grid.GridPanel, {
+Ext.extend(Ext.mrv.ghginventory.ux.genericSearch.Grid, Ext.grid.GridPanel, {
     initComponent: function () {
         this.store.baseParams = { record: Ext.encode({ tableName: this.tableName }) };
         this.bbar = new Ext.PagingToolbar({
@@ -127,11 +126,11 @@ Ext.extend(Ext.core.finance.ux.genericSearch.Grid, Ext.grid.GridPanel, {
             displayInfo: true,
             pageSize: this.pageSize
         });
-        Ext.core.finance.ux.genericSearch.Grid.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.genericSearch.Grid.superclass.initComponent.apply(this, arguments);
     },
     afterRender: function () {
         this.getStore().load({ params: { start: 0, limit: this.pageSize} });
-        Ext.core.finance.ux.genericSearch.Grid.superclass.afterRender.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.genericSearch.Grid.superclass.afterRender.apply(this, arguments);
     }
 });
-Ext.reg('generic-grid', Ext.core.finance.ux.genericSearch.Grid);
+Ext.reg('generic-grid', Ext.mrv.ghginventory.ux.genericSearch.Grid);

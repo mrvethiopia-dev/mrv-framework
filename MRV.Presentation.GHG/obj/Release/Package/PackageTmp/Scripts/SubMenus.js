@@ -1,15 +1,15 @@
-﻿Ext.ns('Ext.core.finance.ux.subMenu');
+﻿Ext.ns('Ext.mrv.ghginventory.ux.subMenu');
 /**
 * @desc      subMenu registration form
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.subMenu
-* @class     Ext.core.finance.ux.subMenu.Form
+
+
+* @namespace Ext.mrv.ghginventory.ux.subMenu
+* @class     Ext.mrv.ghginventory.ux.subMenu.Form
 * @extends   Ext.form.FormPanel
 */
-Ext.core.finance.ux.subMenu.Form = function (config) {
-    Ext.core.finance.ux.subMenu.Form.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.subMenu.Form = function (config) {
+    Ext.mrv.ghginventory.ux.subMenu.Form.superclass.constructor.call(this, Ext.apply({
         api: {
             load: window.SubMenu.Get,
             submit: window.SubMenu.Save
@@ -89,20 +89,20 @@ Ext.core.finance.ux.subMenu.Form = function (config) {
         }]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.subMenu.Form, Ext.form.FormPanel);
-Ext.reg('subMenu-form', Ext.core.finance.ux.subMenu.Form);
+Ext.extend(Ext.mrv.ghginventory.ux.subMenu.Form, Ext.form.FormPanel);
+Ext.reg('subMenu-form', Ext.mrv.ghginventory.ux.subMenu.Form);
 
 /**
 * @desc      subMenu registration form host window
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.subMenu
-* @class     Ext.core.finance.ux.subMenu.Window
+
+
+* @namespace Ext.mrv.ghginventory.ux.subMenu
+* @class     Ext.mrv.ghginventory.ux.subMenu.Window
 * @extends   Ext.Window
 */
-Ext.core.finance.ux.subMenu.Window = function (config) {
-    Ext.core.finance.ux.subMenu.Window.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.subMenu.Window = function (config) {
+    Ext.mrv.ghginventory.ux.subMenu.Window.superclass.constructor.call(this, Ext.apply({
         layout: 'fit',
         width: 400,
         autoHeight: true,
@@ -138,9 +138,9 @@ Ext.core.finance.ux.subMenu.Window = function (config) {
         }
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.subMenu.Window, Ext.Window, {
+Ext.extend(Ext.mrv.ghginventory.ux.subMenu.Window, Ext.Window, {
     initComponent: function () {
-        this.form = new Ext.core.finance.ux.subMenu.Form();
+        this.form = new Ext.mrv.ghginventory.ux.subMenu.Form();
         this.items = [this.form];
         this.bbar = [{
             xtype: 'tbfill'
@@ -170,7 +170,7 @@ Ext.extend(Ext.core.finance.ux.subMenu.Window, Ext.Window, {
             },
             scope: this
         }];
-        Ext.core.finance.ux.subMenu.Window.superclass.initComponent.call(this, arguments);
+        Ext.mrv.ghginventory.ux.subMenu.Window.superclass.initComponent.call(this, arguments);
     },
     onSave: function () {
         if (!this.form.getForm().isValid()) return;
@@ -203,19 +203,19 @@ Ext.extend(Ext.core.finance.ux.subMenu.Window, Ext.Window, {
         this.close();
     }
 });
-Ext.reg('subMenu-window', Ext.core.finance.ux.subMenu.Window);
+Ext.reg('subMenu-window', Ext.mrv.ghginventory.ux.subMenu.Window);
 
 /**
 * @desc      subMenu grid
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
-* @date      November 01, 2014
-* @namespace Ext.core.finance.ux.subMenu
-* @class     Ext.core.finance.ux.subMenu.Grid
+
+
+* @namespace Ext.mrv.ghginventory.ux.subMenu
+* @class     Ext.mrv.ghginventory.ux.subMenu.Grid
 * @extends   Ext.grid.GridPanel
 */
-Ext.core.finance.ux.subMenu.Grid = function (config) {
-    Ext.core.finance.ux.subMenu.Grid.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.subMenu.Grid = function (config) {
+    Ext.mrv.ghginventory.ux.subMenu.Grid.superclass.constructor.call(this, Ext.apply({
         store: new Ext.data.DirectStore({
             directFn: SubMenu.GetAll,
             paramsAsHash: false,
@@ -293,7 +293,7 @@ Ext.core.finance.ux.subMenu.Grid = function (config) {
         }]
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.subMenu.Grid, Ext.grid.GridPanel, {
+Ext.extend(Ext.mrv.ghginventory.ux.subMenu.Grid, Ext.grid.GridPanel, {
     initComponent: function () {
         this.bbar = new Ext.PagingToolbar({
             id: 'subMenu-paging',
@@ -301,11 +301,11 @@ Ext.extend(Ext.core.finance.ux.subMenu.Grid, Ext.grid.GridPanel, {
             displayInfo: true,
             pageSize: this.pageSize
         });
-        Ext.core.finance.ux.subMenu.Grid.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.subMenu.Grid.superclass.initComponent.apply(this, arguments);
     },
     afterRender: function () {
         this.controlButton();
-        Ext.core.finance.ux.subMenu.Grid.superclass.afterRender.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.subMenu.Grid.superclass.afterRender.apply(this, arguments);
     },
     controlButton: function () {
         var enabled = !this.getSelectionModel().hasSelection();
@@ -313,20 +313,20 @@ Ext.extend(Ext.core.finance.ux.subMenu.Grid, Ext.grid.GridPanel, {
         Ext.getCmp('deletesubMenu').setDisabled(enabled);
     }
 });
-Ext.reg('subMenu-grid', Ext.core.finance.ux.subMenu.Grid);
+Ext.reg('subMenu-grid', Ext.mrv.ghginventory.ux.subMenu.Grid);
 
 /**
 * @desc      subMenu panel
 * @author    Dawit Kiros Woldemichael
-* @copyright (c) 2014, 
+
 * @date      November 01, 2014c
 * @version   $Id: subMenu.js, 0.1
-* @namespace Ext.core.finance.ux.subMenu
-* @class     Ext.core.finance.ux.subMenu.Panel
+* @namespace Ext.mrv.ghginventory.ux.subMenu
+* @class     Ext.mrv.ghginventory.ux.subMenu.Panel
 * @extends   Ext.Panel
 */
-Ext.core.finance.ux.subMenu.Panel = function (config) {
-    Ext.core.finance.ux.subMenu.Panel.superclass.constructor.call(this, Ext.apply({
+Ext.mrv.ghginventory.ux.subMenu.Panel = function (config) {
+    Ext.mrv.ghginventory.ux.subMenu.Panel.superclass.constructor.call(this, Ext.apply({
         layout: 'fit',
         border: false,
         tbar: {
@@ -377,16 +377,16 @@ Ext.core.finance.ux.subMenu.Panel = function (config) {
         }
     }, config));
 }
-Ext.extend(Ext.core.finance.ux.subMenu.Panel, Ext.Panel, {
+Ext.extend(Ext.mrv.ghginventory.ux.subMenu.Panel, Ext.Panel, {
     initComponent: function () {
         this.items = [{
             xtype: 'subMenu-grid',
             id: 'subMenu-grid'
         }];
-        Ext.core.finance.ux.subMenu.Panel.superclass.initComponent.apply(this, arguments);
+        Ext.mrv.ghginventory.ux.subMenu.Panel.superclass.initComponent.apply(this, arguments);
     },
     onFilterClick: function () {
-        Ext.core.finance.ux.searchSubmenu.Observable.on('search-subMenu', function (result) {
+        Ext.mrv.ghginventory.ux.searchSubmenu.Observable.on('search-subMenu', function (result) {
             var grid = Ext.getCmp('subMenu-grid');
             grid.searchResult = result;
             var menuKeyValue = result['MenuId'].split(';');
@@ -399,7 +399,7 @@ Ext.extend(Ext.core.finance.ux.subMenu.Panel, Ext.Panel, {
                 Ext.getCmp('subMenu-sitemap').setValue(siteMap + ' subMenu');
             }
         }, this);
-        var searchsubMenuWindow = new Ext.core.finance.ux.searchSubmenu.Window({
+        var searchsubMenuWindow = new Ext.mrv.ghginventory.ux.searchSubmenu.Window({
             title: 'Filter subMenu',
             searchEvent: 'search-subMenu'
         });
@@ -417,7 +417,7 @@ Ext.extend(Ext.core.finance.ux.subMenu.Panel, Ext.Panel, {
             });
             return;
         }
-        new Ext.core.finance.ux.subMenu.Window({
+        new Ext.mrv.ghginventory.ux.subMenu.Window({
             subMenuId: 0,
             title: 'Add subMenu'
         }).show();
@@ -426,7 +426,7 @@ Ext.extend(Ext.core.finance.ux.subMenu.Panel, Ext.Panel, {
         var grid = Ext.getCmp('subMenu-grid');
         if (!grid.getSelectionModel().hasSelection()) return;
         var id = grid.getSelectionModel().getSelected().get('Id');
-        new Ext.core.finance.ux.subMenu.Window({
+        new Ext.mrv.ghginventory.ux.subMenu.Window({
             subMenuId: id,
             title: 'Edit subMenu'
         }).show();
@@ -463,4 +463,4 @@ Ext.extend(Ext.core.finance.ux.subMenu.Panel, Ext.Panel, {
         });
     }
 });
-Ext.reg('subMenu-panel', Ext.core.finance.ux.subMenu.Panel);
+Ext.reg('subMenu-panel', Ext.mrv.ghginventory.ux.subMenu.Panel);

@@ -27,8 +27,8 @@ namespace MRV.Presentation.GHG.Controllers
         
         private readonly Roles _roles;
         private readonly Systems _systems;
-        private readonly Menus _menus;        
-        
+        private readonly Menus _menus;
+        private readonly BizGHGLocationTypes _locationTypes;
         private readonly SearchCriteria SC = new SearchCriteria();
         
         #endregion
@@ -40,7 +40,7 @@ namespace MRV.Presentation.GHG.Controllers
             
             _context = new ENTRO_MISEntities(Constants.ConnectionString);
             _lookup = new Lookups(_context);
-            
+            _locationTypes = new BizGHGLocationTypes(_context);
             _roles = new Roles(_context);
             _systems = new Systems(_context);
             _menus = new Menus(_context);
@@ -160,6 +160,18 @@ namespace MRV.Presentation.GHG.Controllers
             {
                 total = count,
                 data = modules
+            };
+            return this.Direct(result);
+        }
+
+        public ActionResult GetLocationTypes()
+        {
+            var filtered = _locationTypes.GetAll().Where(e => e.IsDeleted == false);
+            var lookup = filtered.Select(a => new { a.Id, a.Name }).Cast<object>().ToList();
+            var result = new
+            {
+                total = lookup.Count(),
+                data = lookup
             };
             return this.Direct(result);
         }

@@ -66,12 +66,6 @@ namespace MRV.Data.Model
         }
         private ObjectSet<GHGInventoryYear> _gHGInventoryYear;
     
-        public ObjectSet<GHGLocations> GHGLocations
-        {
-            get { return _gHGLocations  ?? (_gHGLocations = CreateObjectSet<GHGLocations>("GHGLocations")); }
-        }
-        private ObjectSet<GHGLocations> _gHGLocations;
-    
         public ObjectSet<GHGParameters> GHGParameters
         {
             get { return _gHGParameters  ?? (_gHGParameters = CreateObjectSet<GHGParameters>("GHGParameters")); }
@@ -149,6 +143,18 @@ namespace MRV.Data.Model
             get { return _sysUserSystems  ?? (_sysUserSystems = CreateObjectSet<sysUserSystems>("sysUserSystems")); }
         }
         private ObjectSet<sysUserSystems> _sysUserSystems;
+    
+        public ObjectSet<GHGLocations> GHGLocations
+        {
+            get { return _gHGLocations  ?? (_gHGLocations = CreateObjectSet<GHGLocations>("GHGLocations")); }
+        }
+        private ObjectSet<GHGLocations> _gHGLocations;
+    
+        public ObjectSet<GHGLocationTypes> GHGLocationTypes
+        {
+            get { return _gHGLocationTypes  ?? (_gHGLocationTypes = CreateObjectSet<GHGLocationTypes>("GHGLocationTypes")); }
+        }
+        private ObjectSet<GHGLocationTypes> _gHGLocationTypes;
 
         #endregion
 
