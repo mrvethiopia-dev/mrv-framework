@@ -1,7 +1,7 @@
 ﻿Ext.ns('Ext.mrv.ghginventory.ux.sectors');
 /**
 * @desc      Sector registration form
-* @author    Dawit Kiros
+* @author    Dawit Kiros 
 * @namespace Ext.mrv.ghginventory.ux.sectors
 * @class     Ext.mrv.ghginventory.ux.sectors.Form
 * @extends   Ext.form.FormPanel

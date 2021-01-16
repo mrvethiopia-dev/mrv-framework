@@ -35,13 +35,14 @@ Ext.erp.ux.main.North = function () {
                 //text: 'Setting',
                 iconCls: 'icon-help',
                 tooltip: 'Help',
+                disabled: true,
                 menu: [
                 {
                     text: 'HTML',
                     iconCls: 'icon-html',
                     hidden:true,
                     handler: function() {
-                        window.open('Help/HTML/Payroll Management System Help.html');
+                        window.open('Help/HTML/Help.html');
                     }
                 }, {
                     text: 'Help',
@@ -72,7 +73,7 @@ Ext.erp.ux.main.North = function () {
                 id: 'btnChangePassword',
                 iconCls: 'icon-cngpwd',
                 tooltip: 'Change Password',
-
+                disabled:true,
                 handler: function () {
                     new Ext.mrv.ghginventory.ux.changePassword.Window({
                         title: 'Change Password', CallerId: 0
@@ -83,7 +84,7 @@ Ext.erp.ux.main.North = function () {
                 id: 'btnLogout',
                 iconCls: 'icon-logout',
                 //text: 'Logout',
-
+                disabled: true,
                 handler: function () {
                     var msg = Ext.MessageBox;
                     Ext.mrv.ghginventory.ux.SystemMessageManager.show({

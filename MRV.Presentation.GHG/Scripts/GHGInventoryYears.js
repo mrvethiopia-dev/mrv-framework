@@ -2,8 +2,6 @@
 /**
 * @desc      Inventory Year registration form
 * @author    Dawit Kiros
-
-
 * @namespace Ext.mrv.ghginventory.ux.inventoryYears
 * @class     Ext.mrv.ghginventory.ux.inventoryYears.Form
 * @extends   Ext.form.FormPanel

@@ -20,7 +20,7 @@ Ext.erp.ux.main.North = function () {
             xtype: 'box',
             autoEl: {
                 tag: 'div',
-                html: "<div id='header'><a style='float:right;margin-right:0px;' href='/'><img style='margin-top: 2px;' src='content/images/app/logo.png'/></a><div class='api-title'> . </div></div>"
+                html: "<div id='header'><a style='float:right;margin-right:0px;' href='/'><img style='margin-top: 2px;' src='content/images/app/logo.png'/></a><div class='api-title'> EFCCC </div></div>"
             }
         }, {
             xtype: 'toolbar',
@@ -35,13 +35,14 @@ Ext.erp.ux.main.North = function () {
                 //text: 'Setting',
                 iconCls: 'icon-help',
                 tooltip: 'Help',
+                disabled: true,
                 menu: [
                 {
                     text: 'HTML',
                     iconCls: 'icon-html',
                     hidden:true,
                     handler: function() {
-                        window.open('Help/HTML/Payroll Management System Help.html');
+                        window.open('Help/HTML/Help.html');
                     }
                 }, {
                     text: 'Help',
@@ -72,7 +73,7 @@ Ext.erp.ux.main.North = function () {
                 id: 'btnChangePassword',
                 iconCls: 'icon-cngpwd',
                 tooltip: 'Change Password',
-
+                disabled:true,
                 handler: function () {
                     new Ext.mrv.ghginventory.ux.changePassword.Window({
                         title: 'Change Password', CallerId: 0
@@ -83,7 +84,7 @@ Ext.erp.ux.main.North = function () {
                 id: 'btnLogout',
                 iconCls: 'icon-logout',
                 //text: 'Logout',
-
+                disabled: true,
                 handler: function () {
                     var msg = Ext.MessageBox;
                     Ext.mrv.ghginventory.ux.SystemMessageManager.show({
@@ -298,7 +299,7 @@ Ext.onReady(function () {
             var modules = result.data;
             for (i = 0; i < modules.length; i++) {
                 var isCollapsed = true;
-                if (modules[i].text == "Accounting Transactions")
+                if (modules[i].text == "Setup")
                     isCollapsed = false;
                 var mTree = new Ext.tree.TreePanel({
                     id: modules[i].text,

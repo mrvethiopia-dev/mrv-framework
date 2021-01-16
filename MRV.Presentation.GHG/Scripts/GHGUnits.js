@@ -1,7 +1,7 @@
 ﻿Ext.ns('Ext.mrv.ghginventory.ux.units');
 /**
 * @desc      Unit of Measurement registration form
-* @author    Dawit Kiros
+* @author    Dawit Kiros 
 * @namespace Ext.mrv.ghginventory.ux.units
 * @class     Ext.mrv.ghginventory.ux.units.Form
 * @extends   Ext.form.FormPanel

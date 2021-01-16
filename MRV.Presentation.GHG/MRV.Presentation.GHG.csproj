@@ -1328,15 +1328,18 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Content Include="Web.config">
+    <Content Include="C:\Users\Daki\Desktop\WebConfig\Web.config">
       <SubType>Designer</SubType>
+      <Link>Web.config</Link>
     </Content>
-    <Content Include="Web.Debug.config">
+    <None Include="C:\Users\Daki\Desktop\WebConfig\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
+      <Link>Web.Debug.config</Link>
+    </None>
+    <None Include="C:\Users\Daki\Desktop\WebConfig\Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
-    </Content>
+      <Link>Web.Release.config</Link>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

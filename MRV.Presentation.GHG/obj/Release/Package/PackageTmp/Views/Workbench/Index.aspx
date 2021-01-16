@@ -71,6 +71,10 @@
     <script type="text/javascript" src="<% = Url.Content("~/Scripts/GHGInventoryYears.js") %>"></script>
     <script type="text/javascript" src="<% = Url.Content("~/Scripts/GHGSectors.js") %>"></script>
     <script type="text/javascript" src="<% = Url.Content("~/Scripts/GHGLocations.js") %>"></script>
+    <script type="text/javascript" src="<% = Url.Content("~/Scripts/GHGUnits.js") %>"></script>
+    <script type="text/javascript" src="<% = Url.Content("~/Scripts/GHGTypes.js") %>"></script>
+    <script type="text/javascript" src="<% = Url.Content("~/Scripts/GHGDataTypes.js") %>"></script>
+    <script type="text/javascript" src="<% = Url.Content("~/Scripts/GHGParameters.js") %>"></script>
 
 </head>
 <body>

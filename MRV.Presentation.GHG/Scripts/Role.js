@@ -524,20 +524,6 @@ Ext.mrv.ghginventory.ux.role.Panel = function (config) {
                 handler: this.onSaveRolePermissionClick
             }, {
                 xtype: 'tbfill'
-            }, {
-                xtype: 'button',
-                text: 'Fiscal Year',
-                id: 'btnEditFiscalYear',
-                iconCls: 'icon-FiscalYear',
-                disabled: !Ext.mrv.ghginventory.ux.Reception.getPermission('Role', 'CanEdit'),
-                handler: this.onEditFiscalYear
-            },{
-                xtype: 'button',
-                text: 'Periods',
-                id: 'btnEditPeriods',
-                iconCls: 'icon-Calendar',
-                disabled: !Ext.mrv.ghginventory.ux.Reception.getPermission('Role', 'CanEdit'),
-                handler: this.onEditPeriods
             }]
         }
     }, config));

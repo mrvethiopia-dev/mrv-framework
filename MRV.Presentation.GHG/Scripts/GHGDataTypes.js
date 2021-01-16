@@ -1,7 +1,7 @@
 ﻿Ext.ns('Ext.mrv.ghginventory.ux.dataTypes');
 /**
 * @desc      Data Types registration form
-* @author    Dawit Kiros
+* @author    Dawit Kiros 
 * @namespace Ext.mrv.ghginventory.ux.dataTypes
 * @class     Ext.mrv.ghginventory.ux.dataTypes.Form
 * @extends   Ext.form.FormPanel

@@ -4,7 +4,7 @@
 * @author    Dawit Kiros
 * @namespace Ext.mrv.ghginventory.ux.locations
 * @class     Ext.mrv.ghginventory.ux.locations.Form
-* @extends   Ext.form.FormPanel
+* @extends   Ext.form.FormPanel 
 */
 Ext.mrv.ghginventory.ux.locations.Form = function (config) {
     Ext.mrv.ghginventory.ux.locations.Form.superclass.constructor.call(this, Ext.apply({
